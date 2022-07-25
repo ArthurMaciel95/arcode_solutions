@@ -1,0 +1,27 @@
+.nav{
+    display: flex;
+    background-color: #fff;
+    height: 80px;
+    align-items: center;
+    max-width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.nav .logo img {
+    display: flex;
+    height: 100%;
+
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+}
+.menu li a {
+    font-weight: 400;
+    padding: 20px;
+    color: #4B4B4B;
+}
