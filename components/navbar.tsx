@@ -24,6 +24,9 @@ const Navbar = () => {
       <Button
         variant="contained"
         disableElevation
+        style={{
+          backgroundColor: '#2ED105',
+        }}
         startIcon={<Image src="/tmp/svg/whatsapp.svg" width="20" height="20" />}
       >
         What'sApp

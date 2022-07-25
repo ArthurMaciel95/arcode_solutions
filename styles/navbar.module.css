@@ -19,6 +19,10 @@
 
 .menu li{
     list-style: none;
+
+}
+.menu li a:hover {
+    color: #496FF9;
 }
 .menu li a {
     font-weight: 400;
