@@ -1,11 +1,17 @@
 .nav{
-    display: flex;
+
     background-color: #fff;
     height: 80px;
+   
+
+}
+
+.nav .navArea{
+    display: flex;
+    width: 80%;
     align-items: center;
-    max-width: 80%;
-    justify-content: space-between;
     margin: 0 auto;
+    justify-content: space-between;
 }
 .nav .logo img {
     display: flex;
