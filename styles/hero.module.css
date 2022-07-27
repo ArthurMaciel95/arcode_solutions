@@ -1,5 +1,5 @@
 .main {
-    background-color: #496FF9;
+    background-image: linear-gradient(to right, #496FF9, #58bfff);
     height: 505px;
   
 }
@@ -18,7 +18,30 @@
 }
 
 .main .title p {
- font-size: 22px;
- width: 600px;
- margin-top: 22px;
+    font-size: 22px;
+    width: 600px;
+    margin: 22px 0px;
+    color: #D3DDFF;
 } 
+
+.main .heroArrowDown {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main .heroArrowDown img{
+    position: relative;
+    animation: bounce 0.3s ease 0s infinite alternate;
+}
+
+@keyframes bounce {
+    0%{
+        top: 0px;
+
+    }
+    100%{
+        top: 10px;
+    }
+}

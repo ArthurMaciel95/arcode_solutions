@@ -1,0 +1,49 @@
+.portifolio{
+ margin: 120px auto 0 auto;
+ width: 80%;
+}
+
+.portifolio h2{
+    font-size: 48px;
+    color: #496FF9;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.portifolio .cardArea{
+    display: grid;
+    gap: 34px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.portifolio .cardArea .card{
+    width: 376px;
+    height: 259px;
+   
+    position: relative;
+}
+.portifolio .cardArea .card span{
+    border: 3px dashed #496FF9;
+    position: absolute;
+    width: 376px;
+    height: 259px;
+    bottom: 10px;
+    right: 10px;
+}
+.portifolio .cardArea .card img{
+    width: 376px;
+    height: 259px;
+    background-color: white;
+}
+.portifolio .cardArea .card h4{
+    font-size: 36px;
+    color: #313131;
+    margin: 18px 0px;
+}
+
+.portifolio .cardArea .card p{
+    line-height: 27px;
+    color: #999;
+    font-size: 22px;
+}

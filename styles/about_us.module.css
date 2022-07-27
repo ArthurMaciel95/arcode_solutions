@@ -1,0 +1,82 @@
+.aboutUs{
+    max-width: 70%;
+    margin: 0 auto;
+    position: relative;
+ 
+
+}
+
+.aboutUs h2{
+    color: #496FF9;
+    font-size: 48px;
+    margin-top: 68px;
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.aboutUs div {
+    display: flex;
+}
+
+.aboutUs .dashedCircle {
+    position: absolute;
+    right: -12rem;
+    top: -11rem;
+}
+
+.aboutUs .dashedCircle img{
+    animation: spinning 13s infinite linear;
+}
+
+.aboutUs .dashedLine{
+    position:absolute;
+    left: -25%;
+
+   
+}
+
+.aboutUs .dashedLine img{
+
+}
+
+@keyframes spinning {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.aboutUs div img {
+    width: 356px;
+    height: 356px;
+    background:linear-gradient(to right, #496FF9, #58F5FF) border-box;
+    border-radius: 50em;
+    border: 12px solid transparent;
+    margin-right: 231px;
+}
+
+.aboutUs div .aboutUsDescription{
+
+
+}
+
+.aboutUs  .dots{
+    position: absolute;
+    bottom: -5rem;
+    left: -9rem;
+}
+.aboutUs div .aboutUsDescription h4{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    color: #313131;
+    
+}
+.aboutUs div .aboutUsDescription p{
+    color: #999;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 28px;
+}
