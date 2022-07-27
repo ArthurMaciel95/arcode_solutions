@@ -1,40 +1,35 @@
 import styles from '../styles/portifolio.module.css';
+import CardPortifolio from './card_portifolio';
 
 const Portifolio = () => {
   return (
-    <section className={styles.portifolio}>
+    <section className={styles.portifolio} id="portfolio">
       <h2>PORTIFÓLIO</h2>
       <div className={styles.cardArea}>
-        <div className={styles.card}>
-          <span></span>
-          <img src="" alt="" />
-          <h4>Link-share</h4>
-          <p>
-            plataforma para armagenamento de links de outras plataformas, com
-            ela você consegue compartilhar com outra pessoa sua plataformas como
-            facebook, instagram, tiktok e etc...
-          </p>
-        </div>
-        <div className={styles.card}>
-          <span></span>
-          <img src="" alt="" />
-          <h4>Link-share</h4>
-          <p>
-            plataforma para armagenamento de links de outras plataformas, com
-            ela você consegue compartilhar com outra pessoa sua plataformas como
-            facebook, instagram, tiktok e etc...
-          </p>
-        </div>
-        <div className={styles.card}>
-          <span></span>
-          <img src="" alt="" />
-          <h4>Link-share</h4>
-          <p>
-            plataforma para armagenamento de links de outras plataformas, com
-            ela você consegue compartilhar com outra pessoa sua plataformas como
-            facebook, instagram, tiktok e etc...
-          </p>
-        </div>
+        <CardPortifolio
+          imageUrl=""
+          title="Link-share"
+          description="plataforma para armagenamento de links de outras plataformas, com
+          ela você consegue compartilhar com outra pessoa sua plataformas como
+          facebook, instagram, tiktok e etc..."
+          url=""
+        />
+        <CardPortifolio
+          imageUrl=""
+          title="SOS Passagens Aereas"
+          description="plataforma para armagenamento de links de outras plataformas, com
+          ela você consegue compartilhar com outra pessoa sua plataformas como
+          facebook, instagram, tiktok e etc..."
+          url=""
+        />
+        <CardPortifolio
+          imageUrl=""
+          title="Universo Turismo"
+          description="plataforma para armagenamento de links de outras plataformas, com
+          ela você consegue compartilhar com outra pessoa sua plataformas como
+          facebook, instagram, tiktok e etc..."
+          url=""
+        />
       </div>
     </section>
   );

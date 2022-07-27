@@ -1,9 +1,8 @@
 import styles from '../styles/navbar.module.css';
-import Button from '@mui/material/Button';
-import Image from 'next/image';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import * as React from 'react';
+import ButtonWhatsapp from './button_whatsapp';
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -21,13 +20,13 @@ const Navbar = () => {
       </div>
       <ul className={styles.menu}>
         <li>
-          <a href="#">Sobre Nós</a>
+          <a href="#about">Sobre Nós</a>
         </li>
         <li>
-          <a href="#">Contato</a>
+          <a href="#contact">Contato</a>
         </li>
         <li>
-          <a href="#">Portifólio</a>
+          <a href="#portfolio">Portifólio</a>
         </li>
         <li>
           <a
@@ -56,16 +55,7 @@ const Navbar = () => {
           </Menu>
         </li>
       </ul>
-      <Button
-        variant="contained"
-        disableElevation
-        style={{
-          backgroundColor: '#2ED105',
-        }}
-        startIcon={<Image src="/tmp/svg/whatsapp.svg" width="20" height="20" />}
-      >
-        faça um orçamento
-      </Button>
+      <ButtonWhatsapp />
     </nav>
   );
 };

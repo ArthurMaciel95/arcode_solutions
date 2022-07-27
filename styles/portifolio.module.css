@@ -1,6 +1,7 @@
 .portifolio{
- margin: 120px auto 0 auto;
+ margin: 120px auto;
  width: 80%;
+
 }
 
 .portifolio h2{
@@ -15,7 +16,7 @@
     display: grid;
     gap: 34px;
     grid-template-columns: 1fr 1fr 1fr;
-
+    
 }
 .portifolio .cardArea .card{
     width: 376px;

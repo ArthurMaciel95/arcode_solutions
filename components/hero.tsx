@@ -1,6 +1,7 @@
 import { Button } from '@mui/material';
 import styles from '../styles/hero.module.css';
-import Image from 'next/image';
+
+import ButtonWhatsapp from './button_whatsapp';
 
 const Hero = () => {
   return (
@@ -10,19 +11,7 @@ const Hero = () => {
         <p>
           COM A ARCODE VOCÊ PODE FATURAR MAIS NA FIDELIZAÇÃO DOS SEUS CLIENTES.
         </p>
-        <Button
-          variant="contained"
-          disableElevation
-          style={{
-            backgroundColor: '#2ED105',
-            marginRight: '20px',
-          }}
-          startIcon={
-            <Image src="/tmp/svg/whatsapp.svg" width="20" height="20" />
-          }
-        >
-          faça um orçamento
-        </Button>
+        <ButtonWhatsapp />
         <Button
           variant="outlined"
           disableElevation

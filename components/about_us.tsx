@@ -2,7 +2,7 @@ import styles from '../styles/about_us.module.css';
 
 const AboutUs = () => {
   return (
-    <section className={styles.aboutUs}>
+    <section className={styles.aboutUs} id="about_us">
       <span className={styles.dashedCircle}>
         <img
           src="tmp/svg/dashed_circle.svg"
