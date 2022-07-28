@@ -12,12 +12,20 @@
     margin-bottom: 41px;
 }
 
-.contact form {
+.contact form .formWrap{
     display: flex;
-    width: 100%;
+    margin-bottom: 43px;
 }
 
-.contact form div:first-child {
+.contact form {
+    background-color:white;
+    padding: 20px;
+   
+    
+}
+
+.contact form  .formWrap .form1 {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }

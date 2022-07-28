@@ -1,7 +1,8 @@
+import React from 'react';
 import styles from '../styles/services.module.css';
 import CardServices from './card_services';
 
-const Services = () => {
+const Services: React.FC = () => {
   return (
     <section className={styles.services}>
       <h2>BENEFÍCIOS</h2>

@@ -3,6 +3,7 @@ import Head from 'next/head';
 import AboutUs from '../components/about_us';
 import Contact from '../components/contact';
 import Hero from '../components/hero';
+import ModalCustom from '../components/modal';
 import Navbar from '../components/navbar';
 import Portifolio from '../components/portifolio';
 import Services from '../components/services';
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
       <Portifolio />
       <Services />
       <Contact />
+      <ModalCustom />
     </>
   );
 };
