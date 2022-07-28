@@ -20,7 +20,7 @@
 }
 .portifolio .cardArea .card{
     width: 376px;
-    height: 259px;
+    height: auto;
    
     position: relative;
 }
@@ -29,8 +29,8 @@
     position: absolute;
     width: 376px;
     height: 259px;
-    bottom: 10px;
-    right: 10px;
+    top:-10px;
+    left: -10px;
 }
 .portifolio .cardArea .card img{
     width: 376px;

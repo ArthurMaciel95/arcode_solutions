@@ -1,0 +1,23 @@
+.contact {
+    width: 80vw;
+    margin: 0 auto;
+
+}
+
+.contact h2{
+    color: #496FF9;
+    font-size: 48px;
+    margin-top: 68px;
+    text-align: center;
+    margin-bottom: 41px;
+}
+
+.contact form {
+    display: flex;
+    width: 100%;
+}
+
+.contact form div:first-child {
+    display: flex;
+    flex-direction: column;
+}
