@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import AboutUs from '../components/about_us';
 import Contact from '../components/contact';
+import Fqa from '../components/faq';
 import Hero from '../components/hero';
 import ModalCustom from '../components/modal';
 import Navbar from '../components/navbar';
@@ -20,15 +21,16 @@ const Home: NextPage = () => {
         <link
           href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap"
           rel="stylesheet"
-        ></link>
+        />
       </Head>
+      <ModalCustom />
       <Navbar />
       <Hero />
       <AboutUs />
       <Portifolio />
       <Services />
       <Contact />
-      <ModalCustom />
+      <Fqa />
     </>
   );
 };

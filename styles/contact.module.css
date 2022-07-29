@@ -14,18 +14,22 @@
 
 .contact form .formWrap{
     display: flex;
-    margin-bottom: 43px;
 }
 
 .contact form {
     background-color:white;
     padding: 20px;
-   
+    box-shadow: 0px 4px 7px 2px rgba(161,161,161,0.21);
     
 }
 
-.contact form  .formWrap .form1 {
+.contact form  .formWrap .formSectionOne {
     display: flex;
+    flex: 1; 
     flex-direction: column;
-    width: 50%;
+    margin-right: 20px;
+}
+
+.contact form .formWrap .formSectionTwo{
+    flex: 1;  
 }
