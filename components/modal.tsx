@@ -4,6 +4,7 @@ import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { useAppContext } from '../contexts/AppContext';
 import React from 'react';
 
 const style = {
@@ -19,9 +20,7 @@ const style = {
 };
 
 const ModalCustom = () => {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const { handlerCloseModal, showModal } = useAppContext();
 
   return (
     <div>
@@ -29,15 +28,15 @@ const ModalCustom = () => {
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
-        open={open}
-        onClose={handleClose}
+        open={showModal}
+        onClose={handlerCloseModal}
         closeAfterTransition
         BackdropComponent={Backdrop}
         BackdropProps={{
           timeout: 500,
         }}
       >
-        <Fade in={open}>
+        <Fade in={showModal}>
           <Box sx={style}>
             <Typography id="transition-modal-title" variant="h2" component="h2">
               Mensagem enviada com sucesso!

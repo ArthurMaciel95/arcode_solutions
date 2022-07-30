@@ -9,6 +9,7 @@ import ModalCustom from '../components/modal';
 import Navbar from '../components/navbar';
 import Portifolio from '../components/portifolio';
 import Services from '../components/services';
+import { AppContextProvider } from '../contexts/AppContext';
 
 const Home: NextPage = () => {
   return (
@@ -24,15 +25,17 @@ const Home: NextPage = () => {
           rel="stylesheet"
         />
       </Head>
-      <ModalCustom />
-      <Navbar />
-      <Hero />
-      <AboutUs />
-      <Portifolio />
-      <Services />
-      <Contact />
-      <Fqa />
-      <Footer />
+      <AppContextProvider>
+        <ModalCustom />
+        <Navbar />
+        <Hero />
+        <AboutUs />
+        <Portifolio />
+        <Services />
+        <Contact />
+        <Fqa />
+        <Footer />
+      </AppContextProvider>
     </>
   );
 };

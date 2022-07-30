@@ -5,7 +5,10 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import InputMask from 'react-input-mask';
 import { FormFields } from '../types/formContact';
+import { useAppContext } from '../contexts/AppContext';
 const Contact = () => {
+  const { handlerOpenModal } = useAppContext();
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [tel, setTel] = useState('');
@@ -34,7 +37,7 @@ const Contact = () => {
       tel,
       message,
     };
-
+    handlerOpenModal();
     console.log('sending!', payload);
   };
 
