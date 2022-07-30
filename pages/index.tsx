@@ -3,6 +3,7 @@ import Head from 'next/head';
 import AboutUs from '../components/about_us';
 import Contact from '../components/contact';
 import Fqa from '../components/faq';
+import Footer from '../components/footer';
 import Hero from '../components/hero';
 import ModalCustom from '../components/modal';
 import Navbar from '../components/navbar';
@@ -31,6 +32,7 @@ const Home: NextPage = () => {
       <Services />
       <Contact />
       <Fqa />
+      <Footer />
     </>
   );
 };

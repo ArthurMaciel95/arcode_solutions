@@ -1,0 +1,15 @@
+.footer{
+ 
+    background-color: #496FF9;
+    width: 100vw;
+
+
+}
+
+.footer .footer__area{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    width: 80%;
+    height: 300px;
+}
