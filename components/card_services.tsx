@@ -1,5 +1,5 @@
 import styles from '../styles/services.module.css';
-
+import Image from 'next/image';
 interface CardServiceProps {
   imageUrl: string;
   description: string;
@@ -8,7 +8,7 @@ interface CardServiceProps {
 const CardServices = ({ imageUrl, description }: CardServiceProps) => {
   return (
     <div className={styles.cardServices}>
-      <img src={imageUrl} alt="" />
+      <Image src={imageUrl} alt="" width="150px" height="150px" />
       <p>{description}</p>
     </div>
   );

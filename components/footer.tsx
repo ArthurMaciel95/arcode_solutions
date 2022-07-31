@@ -1,9 +1,14 @@
 import styles from '../styles/footer.module.css';
-
+import Image from 'next/image';
 const Footer = () => {
   return (
     <section className={styles.footer}>
-      <img src="tmp/image/google_secure.png" alt="" />
+      <Image
+        src="/tmp/image/google_secure.png"
+        alt=""
+        width="155px"
+        height="56px"
+      />
       <p>
         © {new Date().getFullYear()} | ARCODESOLUÇÕES LTDA | Todos os direitos
         reservados.

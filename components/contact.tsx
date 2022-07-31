@@ -60,18 +60,10 @@ const Contact = () => {
       handlerLoading();
 
       //ADICIONAR LOGICA PARA ENVIO DE EMAIL
-      await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          Accept: 'application/json, text/plain, */*',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
-      });
-
-      handlerOpenModal();
-      handlerLoading();
-
+      setTimeout(() => {
+        handlerOpenModal();
+        handlerLoading();
+      }, 3000);
       cleaningInputs();
     } catch (err) {
       console.log(err);
@@ -114,13 +106,14 @@ const Contact = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <InputMask
-              mask="(99)99999-9999"
+
+            <TextField
+              label="Celular"
+              name="phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
-            >
-              {() => <TextField label="Celular" name="phone" />}
-            </InputMask>
+            />
+
             <Button
               variant="contained"
               sx={{

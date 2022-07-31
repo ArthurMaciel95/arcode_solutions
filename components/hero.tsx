@@ -1,6 +1,6 @@
 import { Button } from '@mui/material';
 import styles from '../styles/hero.module.css';
-
+import Image from 'next/image';
 import ButtonWhatsapp from './button_whatsapp';
 
 const Hero = () => {
@@ -24,7 +24,12 @@ const Hero = () => {
         </Button>
       </section>
       <span className={styles.heroArrowDown}>
-        <img src="tmp/svg/arrow_down.svg" alt="arrow down hero" />
+        <Image
+          src="/tmp/svg/arrow_down.svg"
+          alt="arrow down hero"
+          width="35px"
+          height="35px"
+        />
       </span>
     </main>
   );

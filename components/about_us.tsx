@@ -1,25 +1,30 @@
 import styles from '../styles/about_us.module.css';
-
+import Image from 'next/image';
 const AboutUs = () => {
   return (
     <section className={styles.aboutUs} id="about_us">
       <span className={styles.dashedCircle}>
-        <img
-          src="tmp/svg/dashed_circle.svg"
+        <Image
+          src="/tmp/svg/dashed_circle.svg"
           alt="dashed circle blue spinning"
+          width="356px"
+          height="356px"
         />
       </span>
       <span className={styles.dashedLine}>
-        <img src="tmp/svg/dashed_line.svg" alt="dashed line waves" />
+        <img src="/tmp/svg/dashed_line.svg" alt="dashed line waves" />
       </span>
       <span className={styles.dots}>
-        <img src="tmp/svg/dots.svg" alt="" />
+        <Image src="/tmp/svg/dots.svg" alt="" height="140px" width="140px" />
       </span>
       <h2>SOBRE NÓS</h2>
       <div>
         <img
-          src="tmp/image/avatar_profile.jpg"
+          src="/tmp/image/avatar_profile.jpg"
           alt="imagem de rosto de arthur rocha, usando camisa branca, cabelo preto e olhos castalhos."
+          height="356px"
+          width="356px"
+          className={styles.avatar}
         />
         <article className={styles.aboutUsDescription}>
           <h4>Arthur Nogueira</h4>

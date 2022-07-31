@@ -11,11 +11,7 @@
     margin: 0 auto;
     justify-content: space-between;
 }
-.nav .logo img {
-    display: flex;
-    height: 100%;
 
-}
 
 .menu{
     display: flex;

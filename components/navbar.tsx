@@ -3,6 +3,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import * as React from 'react';
 import ButtonWhatsapp from './button_whatsapp';
+import Image from 'next/image';
 const Navbar = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -17,7 +18,12 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <div className={styles.navArea}>
         <div className="logo">
-          <img src="tmp/image/arcode_logo.png" alt="logo image" />
+          <Image
+            src="/tmp/image/arcode_logo.png"
+            width="140px"
+            height="51px"
+            alt="logo image"
+          />
         </div>
         <ul className={styles.menu}>
           <li>
@@ -39,7 +45,12 @@ const Navbar = () => {
               className={styles.anchor__dropdown}
             >
               Idiomas
-              <img src="tmp/svg/arrow_down_menu.svg" alt="arrow down icon" />
+              <Image
+                src="/tmp/svg/arrow_down_menu.svg"
+                alt="arrow down icon"
+                width="20px"
+                height="20px"
+              />
             </a>
             <Menu
               id="basic-menu"

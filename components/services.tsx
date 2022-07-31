@@ -8,27 +8,27 @@ const Services: React.FC = () => {
       <h2>BENEFÍCIOS</h2>
       <div className={styles.cardArea}>
         <CardServices
-          imageUrl="tmp/image/localizacao.png"
+          imageUrl="/tmp/image/localizacao.png"
           description="Aumente o tamanho do seu mercado!"
         />
         <CardServices
-          imageUrl="tmp/image/metricas_tables.png"
+          imageUrl="/tmp/image/metricas_tables.png"
           description="Reduza seus custos de divulgação."
         />
         <CardServices
-          imageUrl="tmp/image/computador_check.png"
+          imageUrl="/tmp/image/computador_check.png"
           description="Aumente sua disponibilidade."
         />
         <CardServices
-          imageUrl="tmp/image/metricas.png"
+          imageUrl="/tmp/image/metricas.png"
           description="Aumente o tamanho do seu mercado!"
         />
         <CardServices
-          imageUrl="tmp/image/engrenagem.png"
+          imageUrl="/tmp/image/engrenagem.png"
           description="Otimização para melhor ranqueamento no google."
         />
         <CardServices
-          imageUrl="tmp/image/responsividade.png"
+          imageUrl="/tmp/image/responsividade.png"
           description="Seu site funcionando em diversos dispositivos."
         />
       </div>

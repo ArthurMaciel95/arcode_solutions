@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import { useAppContext } from '../contexts/AppContext';
 import styles from '../styles/modal.module.css';
 import React from 'react';
+import Image from 'next/image';
 
 /* const style = {
   position: 'absolute' as 'absolute',
@@ -40,7 +41,12 @@ const ModalCustom = () => {
         <Fade in={showModal}>
           <section className={styles.modal}>
             <h3>Messagem enviada com sucesso!</h3>
-            <img src="tmp/svg/check_success.svg" alt="" />
+            <Image
+              src="/tmp/svg/check_success.svg"
+              alt=""
+              width="110px"
+              height="110px"
+            />
             <Button
               color="primary"
               variant="contained"

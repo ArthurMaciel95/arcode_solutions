@@ -1,17 +1,12 @@
 import styles from '../styles/portifolio.module.css';
-
-interface CardProps {
-  imageUrl: string;
-  title: string;
-  description: string;
-  url: string;
-}
+import Image from 'next/image';
+import type { CardProps } from '../types/cardPortifolio';
 
 const CardPortifolio = ({ imageUrl, title, description, url }: CardProps) => {
   return (
     <div className={styles.card}>
       <a href={url} target="__blank">
-        <img src={imageUrl} alt="" />
+        <Image src={imageUrl} alt="" height="259px" width="376px" />
       </a>
       <h4>{title}</h4>
       <p>{description}</p>
