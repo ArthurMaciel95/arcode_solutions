@@ -1,6 +1,11 @@
-export type FormFields = {
+export type FormFieldsType = {
   name: string;
   email: string;
-  tel: string;
+  phone: string;
+  message: string;
+};
+
+export type ErrorFormsType = {
+  isError: boolean;
   message: string;
 };

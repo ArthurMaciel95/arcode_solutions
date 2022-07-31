@@ -5,6 +5,7 @@ import Contact from '../components/contact';
 import Fqa from '../components/faq';
 import Footer from '../components/footer';
 import Hero from '../components/hero';
+import SimpleBackdrop from '../components/loading_backdrop';
 import ModalCustom from '../components/modal';
 import Navbar from '../components/navbar';
 import Portifolio from '../components/portifolio';
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <AppContextProvider>
+        <SimpleBackdrop />
         <ModalCustom />
         <Navbar />
         <Hero />

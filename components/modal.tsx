@@ -5,9 +5,10 @@ import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { useAppContext } from '../contexts/AppContext';
+import styles from '../styles/modal.module.css';
 import React from 'react';
 
-const style = {
+/* const style = {
   position: 'absolute' as 'absolute',
   top: '50%',
   left: '50%',
@@ -17,7 +18,7 @@ const style = {
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
-};
+}; */
 
 const ModalCustom = () => {
   const { handlerCloseModal, showModal } = useAppContext();
@@ -37,14 +38,19 @@ const ModalCustom = () => {
         }}
       >
         <Fade in={showModal}>
-          <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h2" component="h2">
-              Mensagem enviada com sucesso!
-            </Typography>
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-            </Typography>
-          </Box>
+          <section className={styles.modal}>
+            <h3>Messagem enviada com sucesso!</h3>
+            <img src="tmp/svg/check_success.svg" alt="" />
+            <Button
+              color="primary"
+              variant="contained"
+              fullWidth
+              sx={{ fontWeight: '600', letterSpacing: '22%' }}
+              onClick={handlerCloseModal}
+            >
+              FECHAR A JANELA
+            </Button>
+          </section>
         </Fade>
       </Modal>
     </div>

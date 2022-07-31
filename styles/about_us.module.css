@@ -2,8 +2,6 @@
     max-width: 70%;
     margin: 0 auto;
     position: relative;
- 
-
 }
 
 .aboutUs h2{
@@ -31,12 +29,12 @@
 .aboutUs .dashedLine{
     position:absolute;
     left: -25%;
-    width: 100vw;
+    
    
 }
 
 .aboutUs .dashedLine img{
-
+    width: 100vw;
 }
 
 @keyframes spinning {

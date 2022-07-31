@@ -5,19 +5,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 const arcodeTheme = createTheme({
   palette: {},
   components: {
-    MuiTextField: {
-      variants: [
-        {
-          props: { variant: 'outlined' },
-          style: {
-            borderRadius: '4px',
-            textTransform: 'none',
-            border: '2px solid #496FF9',
-            outline: 'none',
-          },
-        },
-      ],
-    },
     MuiButton: {
       variants: [
         {

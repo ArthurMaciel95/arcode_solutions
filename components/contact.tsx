@@ -4,15 +4,31 @@ import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import InputMask from 'react-input-mask';
-import { FormFields } from '../types/formContact';
+import { FormFieldsType, ErrorFormsType } from '../types/formContact';
 import { useAppContext } from '../contexts/AppContext';
+import * as Yup from 'yup';
 const Contact = () => {
-  const { handlerOpenModal } = useAppContext();
+  const { handlerOpenModal, loading, handlerLoading } = useAppContext();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [tel, setTel] = useState('');
+  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
+  const [error, setError] = useState<ErrorFormsType>({
+    isError: false,
+    message: '',
+  });
+
+  async function validate(payload: FormFieldsType): Promise<Object> {
+    const FormValidationschema = Yup.object({
+      name: Yup.string().required('O campo está vazio.').min(5).max(30),
+      email: Yup.string().email('Email Inválido.'),
+      phone: Yup.string().required('Telefone inválido.').min(8).max(15),
+      message: Yup.string().required('O campo está vazio.').min(10),
+    });
+
+    return await FormValidationschema.validate(payload);
+  }
 
   /**
    * função para limpar campos de contatos.
@@ -20,7 +36,7 @@ const Contact = () => {
   function cleaningInputs(): void {
     setName('');
     setEmail('');
-    setTel('');
+    setPhone('');
     setMessage('');
   }
 
@@ -28,17 +44,29 @@ const Contact = () => {
    * função para enviar requisição para email do cliente.
    * @param e evento
    */
-  const handlerSubmit = (e: React.FormEvent<HTMLInputElement>): void => {
-    e.preventDefault();
+  const handlerSubmit = async (e: React.FormEvent<HTMLInputElement>) => {
+    try {
+      e.preventDefault();
 
-    const payload: FormFields = {
-      name,
-      email,
-      tel,
-      message,
-    };
-    handlerOpenModal();
-    console.log('sending!', payload);
+      const payload: FormFieldsType = {
+        name,
+        email,
+        phone,
+        message,
+      };
+
+      await validate(payload);
+
+      handlerLoading();
+      setTimeout(() => {
+        handlerOpenModal();
+        handlerLoading();
+      }, 2000);
+
+      cleaningInputs();
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
@@ -58,6 +86,8 @@ const Contact = () => {
               }}
               value={name}
               onChange={(event) => setName(event.target.value)}
+              error={error.isError}
+              helperText={error.isError ? error.message : ''}
             />
 
             <TextField
@@ -75,10 +105,10 @@ const Contact = () => {
             />
             <InputMask
               mask="(99)99999-9999"
-              value={tel}
-              onChange={(e) => setTel(e.target.value)}
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
             >
-              {() => <TextField label="Telefone" />}
+              {() => <TextField label="Celular" />}
             </InputMask>
             <Button
               variant="contained"

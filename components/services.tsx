@@ -9,28 +9,27 @@ const Services: React.FC = () => {
       <div className={styles.cardArea}>
         <CardServices
           imageUrl="tmp/image/localizacao.png"
-          description="AUMENTE O TAMANHO DO SEU MERCADO"
+          description="Aumente o tamanho do seu mercado!"
         />
         <CardServices
           imageUrl="tmp/image/metricas_tables.png"
-          description="REDUZ SEUS CUSTOS DE DIVULGAÇÃO"
+          description="Reduza seus custos de divulgação."
         />
         <CardServices
           imageUrl="tmp/image/computador_check.png"
-          description="AUMENTE SUA DISPONIBILIDADE"
+          description="Aumente sua disponibilidade."
         />
         <CardServices
           imageUrl="tmp/image/metricas.png"
-          description="AUMENTE O TAMANHO DO SEU MERCADO"
+          description="Aumente o tamanho do seu mercado!"
         />
         <CardServices
           imageUrl="tmp/image/engrenagem.png"
-          description="OTIMIZAÇÃO PARA MELHOR RANQUEAMENTO NO GOOGLE."
+          description="Otimização para melhor ranqueamento no google."
         />
         <CardServices
           imageUrl="tmp/image/responsividade.png"
-          description="SEU SITE FUNCIONANDO EM DIVERSOS DISPOSITIVOS ( Celular, Computador,
-          Tablet )"
+          description="Seu site funcionando em diversos dispositivos."
         />
       </div>
     </section>
