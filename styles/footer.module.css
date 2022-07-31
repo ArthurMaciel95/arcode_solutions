@@ -1,15 +1,15 @@
 .footer{
- 
-    background-color: #496FF9;
-    width: 100vw;
-
-
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.footer .footer__area{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 auto;
-    width: 80%;
-    height: 300px;
+.footer img{
+    height: 56px;
+    width: 155px;
+}
+.footer p {
+    font-size: 1rem;
+    color: #606060;
 }

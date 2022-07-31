@@ -58,10 +58,19 @@ const Contact = () => {
       await validate(payload);
 
       handlerLoading();
-      setTimeout(() => {
-        handlerOpenModal();
-        handlerLoading();
-      }, 2000);
+
+      //ADICIONAR LOGICA PARA ENVIO DE EMAIL
+      await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json, text/plain, */*',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      handlerOpenModal();
+      handlerLoading();
 
       cleaningInputs();
     } catch (err) {
@@ -84,6 +93,7 @@ const Contact = () => {
               sx={{
                 marginBottom: '40px',
               }}
+              name="name"
               value={name}
               onChange={(event) => setName(event.target.value)}
               error={error.isError}
@@ -91,6 +101,7 @@ const Contact = () => {
             />
 
             <TextField
+              name="email"
               id="outlined-basic"
               label="Email"
               variant="outlined"
@@ -108,7 +119,7 @@ const Contact = () => {
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             >
-              {() => <TextField label="Celular" />}
+              {() => <TextField label="Celular" name="phone" />}
             </InputMask>
             <Button
               variant="contained"
@@ -132,6 +143,7 @@ const Contact = () => {
               rows={10}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              name="message"
             />
           </div>
         </div>

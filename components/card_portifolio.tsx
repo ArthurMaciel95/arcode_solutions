@@ -10,8 +10,9 @@ interface CardProps {
 const CardPortifolio = ({ imageUrl, title, description, url }: CardProps) => {
   return (
     <div className={styles.card}>
-      <span></span>
-      <img src={imageUrl} alt="" />
+      <a href={url} target="__blank">
+        <img src={imageUrl} alt="" />
+      </a>
       <h4>{title}</h4>
       <p>{description}</p>
     </div>
