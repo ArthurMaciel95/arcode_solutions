@@ -1,7 +1,7 @@
 .main {
     background-image: linear-gradient(to right, #496FF9, #58bfff);
     height: 505px;
-  
+    width: 100%;
 }
 
 .main .title {
@@ -14,12 +14,12 @@
 .main .title h1{
     font-weight: 600;
     font-size: 3rem;
-    width: 639px;
+    
 }
 
 .main .title p {
     font-size: 22px;
-    width: 600px;
+  
     margin: 22px 0px;
     color: #D3DDFF;
 } 
@@ -43,5 +43,28 @@
     }
     100%{
         top: 10px;
+    }
+}
+
+
+@media screen and (max-width:1150px){
+
+}
+@media screen and (max-width:720px){
+    
+}
+@media screen and (max-width:540px){
+    .main .title{
+        max-width: 95%;
+    }
+
+    .main .title h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .main .title p{
+        font-size:1rem;
+        text-align: center;
     }
 }

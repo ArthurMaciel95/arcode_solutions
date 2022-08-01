@@ -6,7 +6,7 @@
 
 .aboutUs h2{
     color: #496FF9;
-    font-size: 48px;
+    font-size: 3rem;
     margin-top: 68px;
     text-align: center;
     margin-bottom: 41px;
@@ -14,6 +14,7 @@
 
 .aboutUs div {
     display: flex;
+    justify-content: space-around;
 }
 
 .aboutUs .dashedCircle {
@@ -47,16 +48,16 @@
 }
 
 .aboutUs div img {
-    width: 356px;
-    height: 356px;
+    
+    max-height: 356px;
     background:linear-gradient(to right, #496FF9, #58F5FF) border-box;
     border-radius: 50em;
     border: 12px solid transparent;
-    margin-right: 231px;
+    
 }
 
 .aboutUs div .aboutUsDescription{
-
+    max-width:400px ;
 
 }
 
@@ -66,7 +67,7 @@
     left: -9rem;
 }
 .aboutUs div .aboutUsDescription h4{
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 28px;
     color: #313131;
@@ -77,4 +78,38 @@
     font-weight: 400;
     font-size: 22px;
     margin-bottom: 28px;
+}
+
+
+@media screen and (max-width:1150px){
+    .aboutUs div{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:720px){
+    .aboutUs{
+        max-width: 95vw;
+    }
+
+  
+
+    .aboutUs .dashedCircle {
+        display: none;
+    }
+    .aboutUs .dashedLine{
+        display: none;
+    }
+}
+
+@media screen and (max-width:540px){
+    .aboutUs{
+        max-width: 95vw;
+    }
+    .aboutUs h2{
+        font-size: 2.5rem;
+    }
+    .aboutUs  .dots{
+        top: 0px;
+    }
 }

@@ -6,7 +6,7 @@
 
 .contact h2{
     color: #496FF9;
-    font-size: 48px;
+    font-size: 3rem;
     margin-top: 68px;
     text-align: center;
     margin-bottom: 41px;
@@ -32,4 +32,25 @@
 
 .contact form .formWrap .formSectionTwo{
     flex: 1;  
+}
+
+@media screen and (max-width:1150px){
+
+}
+@media screen and (max-width:720px){
+    
+}
+@media screen and (max-width:540px){
+    .contact h2{
+        font-size: 2.5rem;
+    }
+    .contact form  .formWrap .formSectionOne{
+        margin-right: 0px;
+    }
+    .contact form .formWrap .formSectionTwo{
+        margin-bottom: 40px;
+    }
+    .contact .formWrap{
+        flex-direction: column-reverse;
+    }
 }

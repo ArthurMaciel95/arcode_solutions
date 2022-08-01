@@ -22,8 +22,6 @@ const AboutUs = () => {
         <img
           src="/tmp/image/avatar_profile.jpg"
           alt="imagem de rosto de arthur rocha, usando camisa branca, cabelo preto e olhos castalhos."
-          height="356px"
-          width="356px"
           className={styles.avatar}
         />
         <article className={styles.aboutUsDescription}>
