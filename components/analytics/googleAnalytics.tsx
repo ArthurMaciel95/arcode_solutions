@@ -4,10 +4,12 @@ import { GA_TRACKING_ID } from '../../lib/gtag';
 const Analytics = () => (
   <>
     <Script
+      id="gtm-script"
       strategy="afterInteractive"
       src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
     />
     <Script
+      id="gtm-script-track"
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{
         __html: `
