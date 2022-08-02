@@ -24,14 +24,22 @@
 }
 
 @media screen and (max-width:540px){
+    .services{
+        width: 95%;
+        margin: 80px auto;
+    }
     .services .cardArea{
         font-size: 2.5rem;
         width: 100%;
      
     }
+
+    .services  h2{
+        font-size: 2rem;
+    }
 }
 .services  h2{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #496FF9;
     text-align: center;
     margin-bottom: 60px;

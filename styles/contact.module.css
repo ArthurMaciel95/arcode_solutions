@@ -41,6 +41,10 @@
     
 }
 @media screen and (max-width:540px){
+    .contact{
+        width: 95%;
+        
+    }
     .contact h2{
         font-size: 2.5rem;
     }
