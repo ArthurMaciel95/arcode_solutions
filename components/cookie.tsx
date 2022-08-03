@@ -1,6 +1,8 @@
 import styles from '../styles/cookie_bar.module.css';
 import { Button } from '@mui/material';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
+
 const CookieBar = () => {
   const [cookie, setCookie] = useState<Boolean>();
 
@@ -12,7 +14,7 @@ const CookieBar = () => {
     window.localStorage.setItem('cookie_accept', 'true');
     setCookie(false);
   }
-  console.log(cookie);
+
   return cookie ? (
     <span className={styles.cookieBar}>
       <h4>Politica de Cookie</h4>
@@ -23,9 +25,7 @@ const CookieBar = () => {
           concorda com estas condições.
         </p>
         <div>
-          <a href="/policy-privacy" target="__blank">
-            Configurações de cookie.
-          </a>
+          <Link href="/policy-privacy">Configurações de cookie.</Link>
           <Button variant="contained" onClick={handlerCookieEnable}>
             Aceitar
           </Button>
