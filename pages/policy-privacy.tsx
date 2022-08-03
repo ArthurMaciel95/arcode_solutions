@@ -37,7 +37,11 @@ const PolicyPrivacy = () => {
         s&atilde;o operados por n&oacute;s. Esteja ciente de que n&atilde;o
         temos controle sobre o conte&uacute;do e pr&aacute;ticas desses sites e
         n&atilde;o podemos aceitar responsabilidade por suas respectivas&nbsp;
-        <a href="https://politicaprivacidade.com/" target="_BLANK">
+        <a
+          href="https://politicaprivacidade.com/"
+          target="_BLANK"
+          rel="noopener"
+        >
           pol&iacute;ticas de privacidade
         </a>
         .
@@ -52,8 +56,8 @@ const PolicyPrivacy = () => {
         aceita&ccedil;&atilde;o de nossas pr&aacute;ticas em torno de{' '}
         <a
           href="https://avisodeprivacidad.info/"
-          rel="nofollow"
           target="_BLANK"
+          rel="noopener"
         >
           Aviso de Privacidad
         </a>{' '}
@@ -252,8 +256,8 @@ const PolicyPrivacy = () => {
           racista, xenof&oacute;bica,{' '}
           <a
             href="https://ondeapostar.com/betano-e-confiavel"
-            rel="nofollow"
             target="_BLANK"
+            rel="noopener"
           >
             {' '}
             betano
