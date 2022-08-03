@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useContext, useState } from 'react';
+import React, { createContext, ReactNode, useContext, useState } from 'react';
 
 type appContextType = {
   showModal: boolean;
@@ -6,12 +6,14 @@ type appContextType = {
   loading: boolean;
   disabled: boolean;
   cookieAccept: boolean;
+  openSideBar: boolean;
   setCookieIsAccept: (state: boolean) => void;
   CloseModal: () => void;
   OpenModal: () => void;
   handlerOnSubmit: () => void;
   handlerLoading: () => void;
   setDisabledFields: (state: boolean) => void;
+  toggleDrawer: (open: boolean) => void;
 };
 
 const defaultValues: appContextType = {
@@ -20,12 +22,14 @@ const defaultValues: appContextType = {
   isOnSubmit: false,
   loading: false,
   cookieAccept: false,
+  openSideBar: false,
   setCookieIsAccept: () => false,
   handlerLoading: () => null,
   CloseModal: () => null,
   OpenModal: () => null,
   handlerOnSubmit: () => null,
   setDisabledFields: () => false,
+  toggleDrawer: () => null,
 };
 
 const appContext = createContext<appContextType>(defaultValues);
@@ -66,10 +70,27 @@ export const AppContextProvider = ({ children }: Props) => {
   function setCookieIsAccept(state: any) {
     setCookieAccept(state);
   }
+  const [openSideBar, setOpenSideBar] = useState(false);
+
+  const toggleDrawer = (open: boolean) => {
+    (event: React.KeyboardEvent | React.MouseEvent) => {
+      if (
+        event &&
+        event.type === 'keydown' &&
+        ((event as React.KeyboardEvent).key === 'Tab' ||
+          (event as React.KeyboardEvent).key === 'Shift')
+      ) {
+        return;
+      }
+    };
+    setOpenSideBar(open);
+  };
 
   return (
     <appContext.Provider
       value={{
+        toggleDrawer,
+        openSideBar,
         loading,
         showModal,
         disabled,
