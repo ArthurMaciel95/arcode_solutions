@@ -23,7 +23,7 @@ const PolicyPrivacy = () => {
         Apenas retemos as informa&ccedil;&otilde;es coletadas pelo tempo
         necess&aacute;rio para fornecer o servi&ccedil;o solicitado. Quando
         armazenamos dados, protegemos dentro de meios comercialmente
-        aceit&aacute;veis ​​para evitar perdas e roubos, bem como acesso,
+        aceit&aacute;veis para evitar perdas e roubos, bem como acesso,
         divulga&ccedil;&atilde;o, c&oacute;pia, uso ou modifica&ccedil;&atilde;o
         n&atilde;o autorizados.
       </p>
@@ -37,11 +37,7 @@ const PolicyPrivacy = () => {
         s&atilde;o operados por n&oacute;s. Esteja ciente de que n&atilde;o
         temos controle sobre o conte&uacute;do e pr&aacute;ticas desses sites e
         n&atilde;o podemos aceitar responsabilidade por suas respectivas&nbsp;
-        <a
-          href="https://politicaprivacidade.com/"
-          target="_BLANK"
-          rel="noopener"
-        >
+        <a href="https://politicaprivacidade.com/">
           pol&iacute;ticas de privacidade
         </a>
         .
@@ -54,14 +50,8 @@ const PolicyPrivacy = () => {
       <p>
         O uso continuado de nosso site ser&aacute; considerado como
         aceita&ccedil;&atilde;o de nossas pr&aacute;ticas em torno de{' '}
-        <a
-          href="https://avisodeprivacidad.info/"
-          target="_BLANK"
-          rel="noopener"
-        >
-          Aviso de Privacidad
-        </a>{' '}
-        e informa&ccedil;&otilde;es pessoais. Se voc&ecirc; tiver alguma
+        <a href="https://avisodeprivacidad.info/">Aviso de Privacidad</a> e
+        informa&ccedil;&otilde;es pessoais. Se voc&ecirc; tiver alguma
         d&uacute;vida sobre como lidamos com dados do usu&aacute;rio e
         informa&ccedil;&otilde;es pessoais, entre em contacto connosco.
       </p>
@@ -76,7 +66,7 @@ const PolicyPrivacy = () => {
         como as usamos e por que &agrave;s vezes precisamos armazenar esses
         cookies. Tamb&eacute;m compartilharemos como voc&ecirc; pode impedir que
         esses cookies sejam armazenados, no entanto, isso pode fazer o downgrade
-        ou 'quebrar' certos elementos da funcionalidade do site.
+        ou quebrar certos elementos da funcionalidade do site.
       </p>
       <h3>Como usamos os cookies?</h3>
       <p>
@@ -86,8 +76,8 @@ const PolicyPrivacy = () => {
         sem desativar completamente a funcionalidade e os recursos que eles
         adicionam a este site. &Eacute; recomend&aacute;vel que voc&ecirc; deixe
         todos os cookies se n&atilde;o tiver certeza se precisa ou n&atilde;o
-        deles, caso sejam usados ​​para fornecer um servi&ccedil;o que
-        voc&ecirc; usa.
+        deles, caso sejam usados para fornecer um servi&ccedil;o que voc&ecirc;
+        usa.
       </p>
       <h3>Desativar cookies</h3>
       <p>
@@ -134,7 +124,7 @@ const PolicyPrivacy = () => {
           <br />
           <br />
           Este site oferece servi&ccedil;os de assinatura de boletim informativo
-          ou e-mail e os cookies podem ser usados ​​para lembrar se voc&ecirc;
+          ou e-mail e os cookies podem ser usados para lembrar se voc&ecirc;
           j&aacute; est&aacute; registrado e se deve mostrar determinadas
           notifica&ccedil;&otilde;es v&aacute;lidas apenas para usu&aacute;rios
           inscritos / n&atilde;o inscritos.
@@ -200,7 +190,7 @@ const PolicyPrivacy = () => {
         <li>
           Este site usa o Google Analytics, que &eacute; uma das
           solu&ccedil;&otilde;es de an&aacute;lise mais difundidas e
-          confi&aacute;veis ​​da Web, para nos ajudar a entender como voc&ecirc;
+          confi&aacute;veis da Web, para nos ajudar a entender como voc&ecirc;
           usa o site e como podemos melhorar sua experi&ecirc;ncia. Esses
           cookies podem rastrear itens como quanto tempo voc&ecirc; gasta no
           site e as p&aacute;ginas visitadas, para que possamos continuar
@@ -223,7 +213,7 @@ const PolicyPrivacy = () => {
           Periodicamente, testamos novos recursos e fazemos
           altera&ccedil;&otilde;es subtis na maneira como o site se apresenta.
           Quando ainda estamos testando novos recursos, esses cookies podem ser
-          usados ​​para garantir que voc&ecirc; receba uma experi&ecirc;ncia
+          usados para garantir que voc&ecirc; receba uma experi&ecirc;ncia
           consistente enquanto estiver no site, enquanto entendemos quais
           otimiza&ccedil;&otilde;es os nossos usu&aacute;rios mais apreciam.
         </li>
@@ -254,16 +244,9 @@ const PolicyPrivacy = () => {
         <li>
           B) N&atilde;o difundir propaganda ou conte&uacute;do de natureza
           racista, xenof&oacute;bica,{' '}
-          <a
-            href="https://ondeapostar.com/betano-e-confiavel"
-            target="_BLANK"
-            rel="noopener"
-          >
-            {' '}
-            betano
-          </a>{' '}
-          ou azar, qualquer tipo de pornografia ilegal, de apologia ao
-          terrorismo ou contra os direitos humanos;
+          <a href="https://ondeapostar.com/betano-e-confiavel"> betano</a> ou
+          azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo
+          ou contra os direitos humanos;
         </li>
         <li>
           C) N&atilde;o causar danos aos sistemas f&iacute;sicos (hardwares) e
