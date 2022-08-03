@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from 'react';
+import React, { ReactNode, useState, useEffect } from 'react';
 import styles from '../styles/contact.module.css';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
@@ -8,7 +8,15 @@ import { FormFieldsType, ErrorFormsType } from '../types/formContact';
 import { useAppContext } from '../contexts/AppContext';
 import * as Yup from 'yup';
 const Contact = () => {
-  const { handlerOpenModal, loading, handlerLoading } = useAppContext();
+  const {
+    OpenModal,
+    loading,
+    handlerLoading,
+    disabled,
+    setDisabledFields,
+    setCookieIsAccept,
+    cookieAccept,
+  } = useAppContext();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -18,6 +26,10 @@ const Contact = () => {
     isError: false,
     message: '',
   });
+
+  useEffect(() => {
+    setCookieIsAccept(!window.localStorage.getItem('cookie_accept') as boolean);
+  }, []);
 
   async function validate(payload: FormFieldsType): Promise<Object> {
     const FormValidationschema = Yup.object({
@@ -54,15 +66,16 @@ const Contact = () => {
         phone,
         message,
       };
-
       await validate(payload);
 
+      setDisabledFields(true);
       handlerLoading();
 
       //ADICIONAR LOGICA PARA ENVIO DE EMAIL
       setTimeout(() => {
-        handlerOpenModal();
+        OpenModal();
         handlerLoading();
+        setDisabledFields(false);
       }, 3000);
       cleaningInputs();
     } catch (err) {
@@ -89,6 +102,7 @@ const Contact = () => {
               value={name}
               onChange={(event) => setName(event.target.value)}
               error={error.isError}
+              disabled={disabled}
               helperText={error.isError ? error.message : ''}
             />
 
@@ -104,6 +118,7 @@ const Contact = () => {
                 color: '#999',
               }}
               value={email}
+              disabled={disabled}
               onChange={(e) => setEmail(e.target.value)}
             />
 
@@ -112,6 +127,7 @@ const Contact = () => {
               name="phone"
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
+              disabled={disabled}
             />
 
             <Button
@@ -123,6 +139,7 @@ const Contact = () => {
                 marginTop: '20px  ',
               }}
               type="submit"
+              disabled={disabled}
             >
               ENVIAR AGORA!
             </Button>
@@ -137,6 +154,7 @@ const Contact = () => {
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               name="message"
+              disabled={disabled}
             />
           </div>
         </div>
