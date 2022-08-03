@@ -17,7 +17,10 @@ const CookieBar = () => {
 
   return cookie ? (
     <span className={styles.cookieBar}>
-      <h4>Politica de Cookie</h4>
+      <h4>
+        Politica de Cookie{' '}
+        <img src="/tmp/image/cookie.png" alt="biscoito rodando em espiral" />
+      </h4>
       <article>
         <p>
           Utilizamos cookies essenciais e tecnologias semelhantes de acordo com
