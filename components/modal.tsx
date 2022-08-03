@@ -1,28 +1,14 @@
 import Backdrop from '@mui/material/Backdrop';
-import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import { useAppContext } from '../contexts/AppContext';
 import styles from '../styles/modal.module.css';
 import React from 'react';
 import Image from 'next/image';
 
-/* const style = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-}; */
-
 const ModalCustom = () => {
-  const { handlerCloseModal, showModal } = useAppContext();
+  const { CloseModal, showModal } = useAppContext();
 
   return (
     <div>
@@ -31,7 +17,7 @@ const ModalCustom = () => {
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
         open={showModal}
-        onClose={handlerCloseModal}
+        onClose={CloseModal}
         closeAfterTransition
         BackdropComponent={Backdrop}
         BackdropProps={{
@@ -52,7 +38,7 @@ const ModalCustom = () => {
               variant="contained"
               fullWidth
               sx={{ fontWeight: '600', letterSpacing: '22%' }}
-              onClick={handlerCloseModal}
+              onClick={CloseModal}
             >
               FECHAR A JANELA
             </Button>

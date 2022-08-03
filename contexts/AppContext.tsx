@@ -4,20 +4,28 @@ type appContextType = {
   showModal: boolean;
   isOnSubmit: boolean;
   loading: boolean;
-  handlerCloseModal: () => void;
-  handlerOpenModal: () => void;
+  disabled: boolean;
+  cookieAccept: boolean;
+  setCookieIsAccept: (state: boolean) => void;
+  CloseModal: () => void;
+  OpenModal: () => void;
   handlerOnSubmit: () => void;
   handlerLoading: () => void;
+  setDisabledFields: (state: boolean) => void;
 };
 
 const defaultValues: appContextType = {
+  disabled: false,
   showModal: false,
   isOnSubmit: false,
   loading: false,
+  cookieAccept: false,
+  setCookieIsAccept: () => false,
   handlerLoading: () => null,
-  handlerCloseModal: () => null,
-  handlerOpenModal: () => null,
+  CloseModal: () => null,
+  OpenModal: () => null,
   handlerOnSubmit: () => null,
+  setDisabledFields: () => false,
 };
 
 const appContext = createContext<appContextType>(defaultValues);
@@ -34,11 +42,13 @@ export const AppContextProvider = ({ children }: Props) => {
   const [showModal, setShowModal] = useState(false);
   const [isOnSubmit, setIsOnSubmit] = useState(false);
   const [loading, setLoading] = useState(false);
-  function handlerCloseModal() {
+  const [disabled, setDisabled] = useState(false);
+  const [cookieAccept, setCookieAccept] = useState(false);
+  function CloseModal() {
     setShowModal(false);
   }
 
-  function handlerOpenModal() {
+  function OpenModal() {
     setShowModal(true);
   }
 
@@ -49,15 +59,27 @@ export const AppContextProvider = ({ children }: Props) => {
     setLoading((state) => !state);
   }
 
+  function setDisabledFields(state: any) {
+    setDisabled(state);
+  }
+
+  function setCookieIsAccept(state: any) {
+    setCookieAccept(state);
+  }
+
   return (
     <appContext.Provider
       value={{
-        handlerLoading,
         loading,
         showModal,
-        handlerCloseModal,
-        handlerOpenModal,
+        disabled,
         isOnSubmit,
+        setCookieIsAccept,
+        cookieAccept,
+        handlerLoading,
+        setDisabledFields,
+        CloseModal,
+        OpenModal,
         handlerOnSubmit,
       }}
     >

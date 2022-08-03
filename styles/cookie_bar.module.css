@@ -10,9 +10,20 @@
     padding: 15px 30px;
 }
 
-.cookieBar h4{
-
-
+.cookieBar h4 img{
+    animation: spinning 5s infinite linear;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 10px;
+}
+@keyframes spinning {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
 }
 
 .cookieBar article{
@@ -32,4 +43,7 @@
     
     color: #576d96;
 }
+
+
+
 
