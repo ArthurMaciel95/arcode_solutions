@@ -84,7 +84,7 @@ const Contact = () => {
   };
 
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contact">
       <h2>ENTRE EM CONTATO</h2>
       <Box component="form" onSubmit={handlerSubmit}>
         <div className={styles.formWrap}>

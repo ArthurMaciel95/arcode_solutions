@@ -2,7 +2,7 @@ import styles from '../styles/about_us.module.css';
 import Image from 'next/image';
 const AboutUs = () => {
   return (
-    <section className={styles.aboutUs} id="about_us">
+    <section className={styles.aboutUs} id="about">
       <span className={styles.dashedCircle}>
         <Image
           src="/tmp/svg/dashed_circle.svg"

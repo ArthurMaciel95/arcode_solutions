@@ -69,24 +69,7 @@ const Fqa = () => {
           </p>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <p className={styles.accordionSummary}>
-            Quanto custa a manuteção do site?
-          </p>
-        </AccordionSummary>
-        <AccordionDetails>
-          <p className={styles.accordionDescription}>
-            Cobramos <strong>R$40,00</strong> por mês para manter o site
-            funcionando e o tempo todo no ar. Esse valor inclui o custo de
-            hospedagem. Nenhum outro valor será cobrado.
-          </p>
-        </AccordionDetails>
-      </Accordion>
+
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
