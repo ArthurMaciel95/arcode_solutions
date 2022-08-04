@@ -17,7 +17,7 @@ const AboutUs = () => {
       <span className={styles.dots}>
         <Image src="/tmp/svg/dots.svg" alt="" height="140px" width="140px" />
       </span>
-      <h2>SOBRE NÓS</h2>
+      <h2>SOBRE MIM</h2>
       <div>
         <img
           src="/tmp/image/avatar_profile.jpg"
@@ -27,14 +27,13 @@ const AboutUs = () => {
         <article className={styles.aboutUsDescription}>
           <h4>Arthur Nogueira</h4>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum
+            Desde 2018 no mercado, comecei a programar pra suprir uma
+            necessidade do meu pai criar um site para seu negócio. e com isso
+            ele prosperou bastante na obtenção de seus clientes.
           </p>
           <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum
+            Atualmente trabalho por conta propria afim de entregar valor para
+            seu negócio, seja com site pessoal, vendas, marketing e etc...
           </p>
         </article>
       </div>
