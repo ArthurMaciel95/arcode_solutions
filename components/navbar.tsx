@@ -43,6 +43,9 @@ const Navbar = () => {
               <a href="#portfolio">Portifólio</a>
             </li>
             <li>
+              <a href="#faq">FAQ</a>
+            </li>
+            <li>
               <a
                 id="basic-button"
                 aria-controls={open ? 'basic-menu' : undefined}

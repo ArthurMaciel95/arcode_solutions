@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Fqa = () => {
   return (
-    <section className={styles.faq}>
+    <section className={styles.faq} id="faq">
       <h2>PERGUNTAS FREQUENTES</h2>
 
       <Accordion>
