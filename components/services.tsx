@@ -17,15 +17,15 @@ const Services: React.FC = () => {
         />
         <CardServices
           imageUrl="/tmp/image/computador_check.png"
-          description="Aumente sua disponibilidade."
+          description="Aumente o seu 'léque' de canais para divulgar seu produto.(Site, instagram, facebook)."
         />
         <CardServices
           imageUrl="/tmp/image/metricas.png"
-          description="Aumente o tamanho do seu mercado!"
+          description="Tenha controle e informações de seus clientes através de metricas do google."
         />
         <CardServices
           imageUrl="/tmp/image/engrenagem.png"
-          description="Otimização para melhor ranqueamento no google."
+          description="Oferecemos site com Otimo SEO para um melhor ranqueamento nas pesquisas do google."
         />
         <CardServices
           imageUrl="/tmp/image/responsividade.png"
