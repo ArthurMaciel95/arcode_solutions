@@ -3,6 +3,12 @@
     height: 5rem;
 
 }
+
+.nav .navArea .btnSideBar{
+    display: none;
+}
+
+
 @media screen and (max-width:500px){
     .nav{
         width: 100%;
@@ -20,6 +26,9 @@
     .nav .navArea  a{
         display: none;
     }
+    .nav .navArea .btnSideBar{
+        display: inline;
+    }
 }
 .nav .navArea{
     display: flex;
@@ -28,6 +37,7 @@
     margin: 0 auto;
     justify-content: space-between;
 }
+
 
 
 .menu{
