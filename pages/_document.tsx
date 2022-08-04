@@ -22,6 +22,7 @@ class MyDocument extends Document {
             property="og:title"
             content="Arcode, Criação de site para seu negócio."
           />
+          <meta name="google-site-verification" content="_wc3aDk7IHirXjdcsHoiv-tOsx7OkoXNvVKHxYqhpbY" />
           <meta
             property="og:description"
             content="Arcode ajuda alavancar suas vendas através da criação de seu site para seu negócio."
