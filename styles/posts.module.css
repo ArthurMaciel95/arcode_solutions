@@ -1,6 +1,6 @@
 .posts{
     width: 80vw;
-    margin: 80px auto;
+    margin: 180px auto;
     display: grid;
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -51,13 +51,27 @@
 }
 
 
-@media only screen and (max-width:1440px){
-
+@media screen and (max-width:1150px){   
+ .posts{
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+ }
 }
-
-@media only screen and (max-width:1440px){
+@media screen and (max-width:720px){
+    
 }
+@media screen and (max-width:540px){
+    .posts{
+      
+     display: flex;
+     flex-direction: column;
+     margin: auto;
+     }
 
-@media only screen and (max-width:1440px){
+     .posts .postCard{
+       
+     }
+     .posts .postCard img{
+       width: 100%;
+    }
 }
-

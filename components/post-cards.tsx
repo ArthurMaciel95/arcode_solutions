@@ -27,6 +27,7 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({
           alt={alt}
           width="276px"
           height="188px"
+          layout="responsive"
           objectFit="cover"
         />
         <div className={styles.tagArea}>
