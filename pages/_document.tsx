@@ -2,12 +2,13 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang="en" className="scroll-smooth">
+      <Html lang="pt">
         <Head>
           <meta
             name="description"
             content="Crie seu site na ARCODE SOLUCÕES, conosco você terá seu site do seu jeito. também lhe ajudamos a alavancar seus negócios através de SEO."
-          />
+          ></meta>
+
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -20,7 +21,10 @@ class MyDocument extends Document {
             content="width=device-width, initial-scale=1.0"
           />
           <meta property="og:url" content="https://www.arcodesolucoes.com/" />
-          <meta property="og:type" content="site_name" />
+          <meta
+            property="og:site_name"
+            content="Crie seu site na ARCODE SOLUÇÕES WEB. temos diversos serviços para alavancar seu negócio."
+          />
           <meta
             property="og:title"
             content="Arcode, Criação de site para seu negócio."

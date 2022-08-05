@@ -1,12 +1,12 @@
 .main {
-    background-image: linear-gradient(to right, #496FF9, #58bfff);
+    background-image: linear-gradient(to right, var( --primary-color), var(--secondary-color));
     height: 505px;
     width: 100%;
 }
 
 .main .title {
    
-    color: #fff;
+    color: var(--white-color);
     margin: 0 auto;
     max-width: 80%;
     padding: 80px 0 40px 0px;
@@ -23,7 +23,7 @@
     font-size: 22px;
     width: 600px;
     margin: 22px 0px;
-    color: #D3DDFF;
+    color: var(--font-white-ligth-color)
 } 
 
 .main .heroArrowDown {
