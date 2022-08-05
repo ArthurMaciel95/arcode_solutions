@@ -29,7 +29,7 @@ const Navbar = () => {
               src="/tmp/image/arcode_logo.png"
               width="140px"
               height="51px"
-              alt="logo image"
+              alt="logo da empresa arcode, contém um circulo azul."
             />
           </div>
           <ul className={styles.menu}>

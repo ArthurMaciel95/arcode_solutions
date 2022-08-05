@@ -5,7 +5,7 @@ const Footer = () => {
     <section className={styles.footer}>
       <Image
         src="/tmp/image/google_secure.png"
-        alt=""
+        alt="imagem de certificado do google de site seguro;"
         width="155px"
         height="56px"
       />
