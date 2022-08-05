@@ -1,6 +1,6 @@
 .cookieBar{
     width: 100%;
-    background-color: white;
+    background-color: var(--white-color);
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -41,7 +41,7 @@
     margin-right: 20px;
 
     
-    color: #576d96;
+    color: var(--font-link-color)
 }
 
 

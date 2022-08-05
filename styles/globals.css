@@ -1,3 +1,21 @@
+:root{
+
+  --white-color:#ffffff;
+  --primary-color:#496FF9;
+  --secondary-color:#58bfff;
+  --shadow-color:0px 4px 7px 2px rgba(161,161,161,0.21);
+
+
+  --font-link-color:#576d96;
+  --font-black-color:#313131;
+  --font-gray-color:#7f7f7f;
+  --font-white-ligth-color:#D3DDFF;
+  --fs-lg-header:3rem;
+  --fs-sm-header:2rem;
+
+}
+
+
 html,
 body {
   padding: 0;

@@ -1,6 +1,6 @@
 .modal {
     max-width: 600px;
-    background-color: white;
+    background-color: var(--white-color);
     position: absolute;
     left: 35%;
     top: 20%;
@@ -13,7 +13,7 @@
 }
 
 .modal h3{
-    color: #515151;
+    color: var(--font-gray-color);
     font-size: 2rem;
 }
 

@@ -6,6 +6,7 @@ import ButtonWhatsapp from './button_whatsapp';
 import Image from 'next/image';
 import SwipeableTemporaryDrawer from './sidebar';
 import { Button, IconButton } from '@mui/material';
+import CircularProgress from '@mui/material/CircularProgress';
 import { useAppContext } from '../contexts/AppContext';
 import MenuIcon from '@mui/icons-material/Menu';
 const Navbar = () => {
@@ -30,6 +31,7 @@ const Navbar = () => {
               width="140px"
               height="51px"
               alt="logo da empresa arcode, contém um circulo azul."
+              priority
             />
           </div>
           <ul className={styles.menu}>

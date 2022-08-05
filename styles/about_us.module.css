@@ -5,7 +5,7 @@
 }
 
 .aboutUs h2{
-    color: #496FF9;
+    color: var( --primary-color);
     font-size: 3rem;
     margin-top: 68px;
     text-align: center;
@@ -47,10 +47,10 @@
     }
 }
 
-.aboutUs div img {
+.aboutUs div  img {
     
-    max-height: 356px;
-    background:linear-gradient(to right, #496FF9, #58F5FF) border-box;
+    max-width: 356px;
+    background:linear-gradient(to right, var(--primary-color), var(--secondary-color)) border-box;
     border-radius: 50em;
     border: 12px solid transparent;
     
@@ -62,6 +62,7 @@
 }
 
 .aboutUs  .dots{
+    height: fit-content;
     position: absolute;
     bottom: -5rem;
     left: -9rem;
@@ -70,11 +71,11 @@
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 28px;
-    color: #313131;
+    color: var(--font-black-color)
     
 }
 .aboutUs div .aboutUsDescription p{
-    color: #999;
+    color: var(--font-gray-color);
     font-weight: 400;
     font-size: 22px;
     margin-bottom: 28px;
@@ -107,6 +108,7 @@
 }
 
 @media screen and (max-width:540px){
+
     .aboutUs div img {
         z-index: 200;
     }
