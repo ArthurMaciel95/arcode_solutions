@@ -10,6 +10,7 @@ import SimpleBackdrop from '../components/loading_backdrop';
 import ModalCustom from '../components/modal';
 import Navbar from '../components/navbar';
 import Portifolio from '../components/portifolio';
+import Posts from '../components/posts';
 import Services from '../components/services';
 import { AppContextProvider } from '../contexts/AppContext';
 
@@ -28,6 +29,7 @@ const Home: NextPage = () => {
         <AboutUs />
         <Portifolio />
         <Services />
+        <Posts />
         <Contact />
         <Fqa />
         <Footer />

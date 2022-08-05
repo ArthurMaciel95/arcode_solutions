@@ -6,10 +6,9 @@ import ButtonWhatsapp from './button_whatsapp';
 import Image from 'next/image';
 import SwipeableTemporaryDrawer from './sidebar';
 import { Button, IconButton } from '@mui/material';
-import CircularProgress from '@mui/material/CircularProgress';
 import { useAppContext } from '../contexts/AppContext';
 import MenuIcon from '@mui/icons-material/Menu';
-const Navbar = () => {
+const Navbar: React.FunctionComponent = (): JSX.Element => {
   const { toggleDrawer } = useAppContext();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
