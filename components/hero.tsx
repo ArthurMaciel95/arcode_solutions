@@ -26,7 +26,7 @@ const Hero = () => {
       <span className={styles.heroArrowDown}>
         <Image
           src="/tmp/svg/arrow_down.svg"
-          alt="arrow down hero"
+          alt="seta apontando para baixo"
           width="35px"
           height="35px"
         />
