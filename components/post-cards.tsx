@@ -5,9 +5,8 @@ import Link from 'next/link';
 type PostCardProps = {
   srcImg: string;
   alt: string;
-  tags: Array<string>;
+  tags: Array<'TUTORIAL' | 'TECNOLOGIA' | 'PROGRAMAÇÃO' | 'MARKETING'>;
   title: string;
-  description: string;
   url: string;
   createAt: string;
 };
@@ -16,23 +15,31 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({
   srcImg,
   alt,
   title,
-  description,
   url,
   tags,
   createAt,
 }): JSX.Element => {
   return (
-    <a href={url}>
+    <Link href={url}>
       <article className={styles.postCard}>
-        <Image src={srcImg} alt={alt} />
-        <span>{createAt}</span>
-        {tags.map((tag, index) => (
-          <span key={index}>{tag}</span>
-        ))}
+        <Image
+          src={srcImg}
+          alt={alt}
+          width="276px"
+          height="188px"
+          objectFit="cover"
+        />
+        <div className={styles.tagArea}>
+          {tags.map((tag, index) => (
+            <span className={styles.tags} key={index}>
+              {tag.toLocaleUpperCase()}
+            </span>
+          ))}
+        </div>
         <h4>{title}</h4>
-        <p>{description}</p>
+        <span className={styles.postDate}>{createAt}</span>
       </article>
-    </a>
+    </Link>
   );
 };
 

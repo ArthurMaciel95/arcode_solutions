@@ -1,5 +1,63 @@
 .posts{
     width: 80vw;
     margin: 80px auto;
-    background-color: red;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+  
 }
+
+.posts .postCard{
+    display: flex;
+    flex-direction: column;
+    max-width: 276px ;
+}
+
+.posts .postCard img{
+    border-radius: 4px;
+}
+
+.posts .postCard .tagArea{
+    display: flex;
+}
+
+.posts .postCard .postDate{
+    font-size: 1rem;
+    color: var(--font-gray-color);
+}
+
+.posts .postCard .tagArea .tags{
+ font-size: 0.8rem;
+ color: var(--white-color);
+ background: rgb(255, 160, 160);
+ width: fit-content;
+ padding: 6px 11px;
+ border-radius: 15px;
+ font-weight: 600;
+    width: fit-content;
+ margin: 6px 0px;
+}
+
+.posts .postCard .tagArea .tags:nth-child(1){
+    margin-right: 5px;
+}
+.posts .postCard h4{
+ font-size: 1.5rem;
+ font-weight: 600;
+ letter-spacing: 22p;
+ line-height: 2.1rem;
+ color: var(--font-black-color);
+}
+
+
+@media only screen and (max-width:1440px){
+
+}
+
+@media only screen and (max-width:1440px){
+}
+
+@media only screen and (max-width:1440px){
+}
+
