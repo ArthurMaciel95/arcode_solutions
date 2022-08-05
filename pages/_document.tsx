@@ -37,7 +37,7 @@ class MyDocument extends Document {
 
           <meta
             name="keywords"
-            content="site,fazer,criar,arcode,fazer,plataforma,ecommerce,vendas,soluções,orçamento,seo"
+            content="site,fazer,criar,arcode,fazer,plataforma,ecommerce,vendas,soluções,orçamento,seo, criar site, como aumentar minha vendas, aumentar, negócio, medidas, métricas,"
           />
           <meta name="author" content="Arthur Rocha" />
         </Head>
