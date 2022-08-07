@@ -1,4 +1,4 @@
-import React, { createContext, ReactNode, useContext, useState } from 'react';
+import React, { createContext, ReactNode, useContext, useState } from "react";
 
 type appContextType = {
   showModal: boolean;
@@ -63,11 +63,11 @@ export const AppContextProvider = ({ children }: Props) => {
     setLoading((state) => !state);
   }
 
-  function setDisabledFields(state: any) {
+  function setDisabledFields(state: boolean) {
     setDisabled(state);
   }
 
-  function setCookieIsAccept(state: any) {
+  function setCookieIsAccept(state: boolean) {
     setCookieAccept(state);
   }
   const [openSideBar, setOpenSideBar] = useState(false);
@@ -76,9 +76,9 @@ export const AppContextProvider = ({ children }: Props) => {
     (event: React.KeyboardEvent | React.MouseEvent) => {
       if (
         event &&
-        event.type === 'keydown' &&
-        ((event as React.KeyboardEvent).key === 'Tab' ||
-          (event as React.KeyboardEvent).key === 'Shift')
+        event.type === "keydown" &&
+        ((event as React.KeyboardEvent).key === "Tab" ||
+          (event as React.KeyboardEvent).key === "Shift")
       ) {
         return;
       }

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 
 const CookieBar = () => {
-  const [cookie, setCookie] = useState<Boolean>();
+  const [cookie, setCookie] = useState<boolean>();
 
   useEffect(() => {
     setCookie((state) => !window.localStorage.getItem("cookie_accept"));

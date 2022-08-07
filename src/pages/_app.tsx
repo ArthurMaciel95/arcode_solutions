@@ -21,11 +21,11 @@ const arcodeTheme = createTheme({
   },
 });
 
-const darkTheme = createTheme({
+/* const darkTheme = createTheme({
   palette: {
     mode: "dark",
   },
-});
+}); */
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();

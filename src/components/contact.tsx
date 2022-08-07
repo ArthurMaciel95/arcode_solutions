@@ -31,7 +31,7 @@ const Contact = () => {
     setCookieIsAccept(!window.localStorage.getItem("cookie_accept") as boolean);
   }, []);
 
-  async function validate(payload: FormFieldsType): Promise<Object> {
+  async function validate(payload: FormFieldsType): Promise<object> {
     const FormValidationschema = Yup.object({
       name: Yup.string().required("O campo está vazio.").min(5).max(30),
       email: Yup.string().email("Email Inválido."),
