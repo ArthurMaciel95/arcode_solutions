@@ -1,0 +1,64 @@
+.cookieBar{
+    width: 100%;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    border: 2px solid black;
+    padding: 15px 30px;
+}
+
+.cookieBar h4 img{
+    animation: spinning 5s infinite linear;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 10px;
+}
+@keyframes spinning {
+    from{
+        transform: rotate(360deg);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+.cookieBar article{
+    display: flex;
+  
+
+    flex-direction: column;
+
+}
+.cookieBar article div{
+    display: flex;
+   justify-content: flex-end;
+}
+
+.cookieBar article  p{
+
+}
+
+.cookieBar article div a{
+    text-decoration: underline;
+    margin-right: 20px;
+
+    
+    color: var(--font-link-color)
+}
+
+
+@media only screen and (max-width:720px){
+    .cookieBar article div{
+        flex-direction: column;
+     
+    }
+
+}
+
+
+
+

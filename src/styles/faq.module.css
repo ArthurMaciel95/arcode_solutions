@@ -1,0 +1,49 @@
+.faq{
+    width: 80vw;
+    margin: 160px auto;
+}
+
+.faq h2{
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    color: var( --primary-color);
+    margin-bottom: 60px;
+}
+
+.faq .accordionSummary{
+    font-size: 2.5rem;
+    color: var(--font-black-color);
+    font-weight: 400;
+}
+
+.faq .accordionDescription{
+    color: var(--font-gray-color);
+    font-size: 2rem;
+}
+
+
+
+@media screen and (max-width:1150px){
+
+}
+
+@media screen and (max-width:720px){
+    .faq h2{
+        font-size: 2.5rem;
+    }
+    .faq .accordionSummary{
+        font-size: 1.3rem;
+    }
+    .faq .accordionDescription{
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+}
+
+@media screen and (max-width:540px){
+    .faq{
+        width: 95%;
+    }
+    
+}

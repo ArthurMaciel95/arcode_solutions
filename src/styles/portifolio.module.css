@@ -1,0 +1,75 @@
+.portifolio{
+ margin: 120px auto;
+ width: 80%;
+
+}
+
+.portifolio h2{
+    font-size: 2.5rem;
+    color: var( --primary-color);
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.portifolio .cardArea{
+    display: grid;
+    gap: 34px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.portifolio .cardArea .card{
+    max-width: 376px;
+    height: auto;
+   
+    position: relative;
+}
+
+.portifolio .cardArea .card img{
+    overflow: hidden;
+    background-color: white;
+    object-fit: cover;
+    box-shadow: var( --shadow-color);
+    transition: 0.3s ease-in;
+}
+
+.portifolio .cardArea .card img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease-out;
+}
+.portifolio .cardArea .card h4{
+    font-size: 2rem;
+    color: var(--font-black-color);
+    margin: 18px 0px;
+}
+
+.portifolio .cardArea .card p{
+    line-height: 27px;
+    color: var(--font-gray-color);
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width:1150px){
+    .portifolio .cardArea{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:720px){
+    .portifolio .cardArea{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:540px){
+    .portifolio{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .portifolio h2{
+        font-size: 2rem;
+    }
+    .portifolio .cardArea{
+        width: 100%;
+    }
+}
