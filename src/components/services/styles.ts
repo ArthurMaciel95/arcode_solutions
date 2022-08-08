@@ -30,6 +30,7 @@ export const Container = styled.section`
     margin: 80px auto;
 
     .card-area {
+      grid-template-columns: 1fr;
       font-size: 2.5rem;
       width: 100%;
     }
