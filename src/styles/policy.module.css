@@ -1,0 +1,40 @@
+.policy{
+    width: 70vw;
+    margin: 20px auto;
+    background-color: white;
+    padding: 5px;
+}
+
+.policy h2{
+    box-sizing: border-box; margin: 0px; line-height: 1.2; font-size: 20px; letter-spacing: -0.05em; color: #323232; padding-bottom: 20px; font-family: Montserrat, sans-serif; background-color: #ffffff;
+}
+
+.policy h3{
+    box-sizing: border-box; margin: 0px 0px 20px; line-height: 1.2; font-size: 16px; letter-spacing: -0.05em; color: #555555; font-family: Montserrat, sans-serif; background-color: #ffffff;
+}
+
+.policy p {
+    box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-size: 16px; color: #797979;  background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.polici p a{
+    box-sizing: border-box; color: #055af9; text-decoration-line: none; background-color: transparent;
+}
+
+.policy ul {
+    font-size: 16px; box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; color: #797979;  background-color: #ffffff;
+}
+
+.policy ul li{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media screen and (max-width:540px){
+    .policy{
+        width: 95vw;
+        margin: 20px 10px;
+    }
+}
