@@ -27,13 +27,15 @@ const AboutUs = () => {
         <article className="about-description">
           <h4>Arthur Nogueira</h4>
           <p>
-            Desde 2018 no mercado, comecei a programar pra suprir uma
-            necessidade do meu pai criar um site para seu negócio. e com isso
-            ele prosperou bastante na obtenção de seus clientes.
+            desde 2018 venho me aperfeiçoando na criação de sites, aprendi
+            diversas técnicas que evoluiram na construção de sites. já trabalhei
+            em diversas empresa relacionadas ao ramo de desenvolvimento de web
+            sites.
           </p>
           <p>
             Atualmente trabalho por conta propria afim de entregar valor para
-            seu negócio, seja com site pessoal, vendas, marketing e etc...
+            seu negócio, venho me especializando em comércio online, Sass e
+            outros produtos.
           </p>
         </article>
       </div>

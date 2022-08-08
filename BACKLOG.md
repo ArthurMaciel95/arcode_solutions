@@ -7,4 +7,4 @@
 ### PRIORIDADES
 - [ ] Adicionar novo idiomas.
 - [ ] Criar configuração de cookies.
-- [ ] Alterar estilos para CSS-in-js.
+- [x] Alterar estilos para CSS-in-js.
