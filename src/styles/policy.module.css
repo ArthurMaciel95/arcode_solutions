@@ -15,6 +15,7 @@
 
 .policy p {
     box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem; font-size: 16px; color: #797979;  background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .polici p a{
@@ -27,6 +28,7 @@
 
 .policy ul li{
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 

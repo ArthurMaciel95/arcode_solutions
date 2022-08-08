@@ -1,4 +1,4 @@
-import styles from '../styles/policy.module.css';
+import styles from "../styles/policy.module.css";
 
 const PolicyPrivacy = () => {
   return (
@@ -8,7 +8,7 @@ const PolicyPrivacy = () => {
         A sua privacidade &eacute; importante para n&oacute;s. &Eacute;
         pol&iacute;tica do Arcode soluções respeitar a sua privacidade em
         rela&ccedil;&atilde;o a qualquer informa&ccedil;&atilde;o sua que
-        possamos coletar no site{' '}
+        possamos coletar no site
         <a href="https://arcodesolucoes.com">Arcode soluções</a>, e outros sites
         que possu&iacute;mos e operamos.
       </p>
@@ -49,7 +49,7 @@ const PolicyPrivacy = () => {
       </p>
       <p>
         O uso continuado de nosso site ser&aacute; considerado como
-        aceita&ccedil;&atilde;o de nossas pr&aacute;ticas em torno de{' '}
+        aceita&ccedil;&atilde;o de nossas pr&aacute;ticas em torno de{" "}
         <a href="https://avisodeprivacidad.info/">Aviso de Privacidad</a> e
         informa&ccedil;&otilde;es pessoais. Se voc&ecirc; tiver alguma
         d&uacute;vida sobre como lidamos com dados do usu&aacute;rio e
@@ -243,7 +243,7 @@ const PolicyPrivacy = () => {
         </li>
         <li>
           B) N&atilde;o difundir propaganda ou conte&uacute;do de natureza
-          racista, xenof&oacute;bica,{' '}
+          racista, xenof&oacute;bica,{" "}
           <a href="https://ondeapostar.com/betano-e-confiavel"> betano</a> ou
           azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo
           ou contra os direitos humanos;
@@ -264,7 +264,7 @@ const PolicyPrivacy = () => {
         caso interaja com um dos recursos que voc&ecirc; usa em nosso site.
       </p>
       <p>
-        Esta pol&iacute;tica &eacute; efetiva a partir de{' '}
+        Esta pol&iacute;tica &eacute; efetiva a partir de{" "}
         <strong>2 agosto 2022 21:54</strong>
       </p>
     </section>
