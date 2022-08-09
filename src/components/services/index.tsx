@@ -1,10 +1,10 @@
 import React from "react";
-import { Container } from "./styles";
+import * as S from "./styles";
 import CardServices from "../service-card";
 
 const Services: React.FC = () => {
   return (
-    <Container id="services">
+    <S.Container id="services">
       <h2>BENEFÍCIOS</h2>
       <div className="card-area">
         <CardServices
@@ -38,7 +38,7 @@ const Services: React.FC = () => {
           alt="ilustração mostrando diversos dispositivos mostrando um site."
         />
       </div>
-    </Container>
+    </S.Container>
   );
 };
 
