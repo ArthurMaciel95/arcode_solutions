@@ -18,6 +18,12 @@ export const Container = styled.section`
     margin-bottom: 60px;
   }
 
+  @media screen and (max-width: 1150px) {
+    .card-area {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
   @media screen and (max-width: 720px) {
     .card-area {
       grid-template-columns: 1fr;
@@ -37,12 +43,6 @@ export const Container = styled.section`
 
     h2 {
       font-size: 2rem;
-    }
-  }
-
-  @media screen and (max-width: 1150px) {
-    .card-area {
-      grid-template-columns: 1fr 1fr;
     }
   }
 `;

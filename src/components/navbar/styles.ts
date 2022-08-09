@@ -9,7 +9,7 @@ export const Container = styled.section`
     width: 80%;
     align-items: center;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: space-around;
     .btn-sidebar {
       display: none;
     }

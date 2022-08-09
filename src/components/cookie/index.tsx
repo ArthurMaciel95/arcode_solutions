@@ -2,10 +2,11 @@ import * as S from "./styles";
 import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useAppContext } from "contexts/AppContext";
 
 const CookieBar = () => {
   const [cookie, setCookie] = useState<boolean>();
-
+  const { handlerDialog } = useAppContext();
   useEffect(() => {
     setCookie((state) => !window.localStorage.getItem("cookie_accept"));
   }, []);
@@ -29,7 +30,9 @@ const CookieBar = () => {
         </p>
         <div>
           <Link href="/policy-privacy">Confirir as Politicas de Cookies.</Link>
-          <Button variant="outlined">Gerenciar Cookies</Button>
+          <Button variant="outlined" onClick={() => handlerDialog(true)}>
+            Gerenciar Cookies
+          </Button>
           <Button variant="contained" onClick={handlerCookieEnable}>
             Aceitar todos
           </Button>

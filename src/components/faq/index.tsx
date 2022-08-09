@@ -46,8 +46,8 @@ const Fqa = () => {
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
+          aria-controls="panel3a-content"
+          id="panel3a-header"
         >
           <p className="summary">
             Quanto tempo demora para que meu site seja localizado por sites de
@@ -68,8 +68,8 @@ const Fqa = () => {
       <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
+          aria-controls="panel4a-content"
+          id="panel4a-header"
         >
           <p className="summary">Porque ter um site?</p>
         </AccordionSummary>

@@ -1,16 +1,17 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+
 :root{
 
     --white-color:#ffffff;
     --primary-color:#496FF9;
     --secondary-color:#58bfff;
     --shadow-color:0px 4px 7px 2px rgba(161,161,161,0.21);
-  
+    --tags-color:#09749d;
     --font-link-color:#576d96;
     --font-black-color:#313131;
-    --font-gray-color:#7f7f7f;
+    --font-gray-color:#505050;
     --font-white-ligth-color:#D3DDFF;
     --fs-lg-header:3rem;
     --fs-sm-header:2rem;
@@ -29,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    font-family: Fredoka, sans-serif;
+    font-family: "Fredoka", sans-serif; 
     background-color: #F5F5F5;
     scroll-behavior: smooth;
   } 

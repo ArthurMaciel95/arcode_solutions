@@ -7,7 +7,7 @@ const Posts: React.FC = (): JSX.Element => {
     <>
       <S.Container>
         <PostCard
-          srcImg="/tmp/image/criaçãodesite.jpg"
+          srcImg="/tmp/image/criaçãodesite.webp"
           alt="vários dispositivos, computador, celular, notebook mostrando um site"
           tags={["TECNOLOGIA"]}
           title="Ainda vale a pena criar sites em 2022?"
@@ -24,7 +24,7 @@ const Posts: React.FC = (): JSX.Element => {
           createAt="há 4 dias atrás"
         />
         <PostCard
-          srcImg="/tmp/image/o-que-e-ecommerce.png"
+          srcImg="/tmp/image/o-que-e-ecommerce.webp"
           alt="um carrinho de compra pequeno em cima de uma teclado de computador, a tecla 'entrar' está na cor amarela."
           tags={["PROGRAMAÇÃO"]}
           title="5 dicas para alavancar seu e-commerce."
@@ -32,7 +32,7 @@ const Posts: React.FC = (): JSX.Element => {
           createAt="há 1 semana atrás"
         />
         <PostCard
-          srcImg="/tmp/image/criaçãodesite.jpg"
+          srcImg="/tmp/image/criaçãodesite.webp"
           alt=""
           tags={["MARKETING", "TUTORIAL"]}
           title="Ainda vale a pena criar sites em 2022?"

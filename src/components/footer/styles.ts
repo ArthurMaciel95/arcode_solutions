@@ -15,13 +15,12 @@ export const Footer = styled.section`
   }
 
   @media screen and (max-width: 540px) {
-    .footer {
-      flex-direction: column;
-      p {
-        font-size: 0.8rem;
-      }
-      img {
-      }
+    flex-direction: column;
+    p {
+      font-size: 0.8rem;
+      padding: 20px;
+    }
+    img {
     }
   }
 `;

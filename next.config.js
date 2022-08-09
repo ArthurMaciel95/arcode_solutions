@@ -2,7 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-
   i18n: {
     /**
      * Provide the locales you want to support in your application

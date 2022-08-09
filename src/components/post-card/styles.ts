@@ -21,7 +21,7 @@ export const Container = styled.section`
   .tag-area .tags {
     font-size: 0.8rem;
     color: var(--white-color);
-    background: rgb(100, 159, 255);
+    background: var(--tags-color);
     width: fit-content;
     padding: 6px 11px;
     border-radius: 15px;

@@ -113,7 +113,7 @@ const Contact = () => {
         <div className="form-wrap">
           <div className="form-section-one">
             <TextField
-              id="outlined-basic"
+              id="outlined-field-name"
               label="Nome"
               variant="outlined"
               fullWidth
@@ -128,7 +128,7 @@ const Contact = () => {
             />
 
             <TextField
-              id="outlined-basic"
+              id="outlined-field-email"
               label="Email"
               variant="outlined"
               fullWidth
@@ -163,7 +163,7 @@ const Contact = () => {
           </div>
           <div className="form-section-two">
             <TextField
-              id="outlined-multiline-static"
+              id="outlined-multiline-message"
               label="Mensagem"
               multiline
               type="text"

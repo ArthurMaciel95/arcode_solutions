@@ -48,7 +48,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
             </li>
             <li>
               <a
-                id="basic-button"
+                id="button-nav-1"
                 aria-controls={open ? "basic-menu" : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? "true" : undefined}
@@ -64,7 +64,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
                 />
               </a>
               <Menu
-                id="basic-menu"
+                id="menu-nav-1"
                 anchorEl={anchorEl}
                 open={open}
                 onClose={handleClose}
