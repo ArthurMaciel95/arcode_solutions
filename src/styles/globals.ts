@@ -30,7 +30,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    font-family: "Fredoka", sans-serif; 
+    font-family: "Fredoka", sans-serif !important;
     background-color: #F5F5F5;
     scroll-behavior: smooth;
   } 
