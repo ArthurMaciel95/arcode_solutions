@@ -15,7 +15,12 @@ const AboutUs = () => {
         <img src="/tmp/svg/dashed_line.svg" alt="dashed line waves" />
       </span>
       <span className="dots">
-        <Image src="/tmp/svg/dots.svg" alt="" height="140px" width="140px" />
+        <Image
+          src="/tmp/svg/dots.svg"
+          alt="pessoa usando camisa branca, olhos e cabelo castanho."
+          layout="fill"
+          objectFit="cover"
+        />
       </span>
       <h2>SOBRE MIM</h2>
       <div>

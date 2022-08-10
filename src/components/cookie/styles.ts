@@ -8,7 +8,7 @@ export const Container = styled.span`
   position: fixed;
   bottom: 0;
   z-index: 1000;
-  border: 2px solid black;
+  border: 2px solid #dadada;
   padding: 15px 30px;
 
   h4 img {

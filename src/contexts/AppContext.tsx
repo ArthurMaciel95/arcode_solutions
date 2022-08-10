@@ -7,6 +7,8 @@ type appContextType = {
   disabled: boolean;
   cookieAccept: boolean;
   openSideBar: boolean;
+  showDialog: boolean;
+  handlerDialog: (state: boolean) => void;
   setCookieIsAccept: (state: boolean) => void;
   CloseModal: () => void;
   OpenModal: () => void;
@@ -17,6 +19,7 @@ type appContextType = {
 };
 
 const defaultValues: appContextType = {
+  showDialog: false,
   disabled: false,
   showModal: false,
   isOnSubmit: false,
@@ -24,6 +27,7 @@ const defaultValues: appContextType = {
   cookieAccept: false,
   openSideBar: false,
   setCookieIsAccept: () => false,
+  handlerDialog: () => null,
   handlerLoading: () => null,
   CloseModal: () => null,
   OpenModal: () => null,
@@ -43,6 +47,7 @@ type Props = {
 };
 
 export const AppContextProvider = ({ children }: Props) => {
+  const [showDialog, setShowDialog] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [isOnSubmit, setIsOnSubmit] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -54,6 +59,10 @@ export const AppContextProvider = ({ children }: Props) => {
 
   function OpenModal() {
     setShowModal(true);
+  }
+
+  function handlerDialog(state: boolean) {
+    setShowDialog(state);
   }
 
   function handlerOnSubmit() {
@@ -89,6 +98,8 @@ export const AppContextProvider = ({ children }: Props) => {
   return (
     <appContext.Provider
       value={{
+        showDialog,
+        handlerDialog,
         toggleDrawer,
         openSideBar,
         loading,

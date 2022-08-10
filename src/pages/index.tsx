@@ -8,12 +8,13 @@ import Fqa from "components/faq";
 import Footer from "components/footer";
 import Hero from "components/hero";
 import SimpleBackdrop from "components/loading_backdrop";
-import ModalCustom from "components/modal -custom";
+import ModalCustom from "components/modal-custom";
 import Navbar from "components/navbar";
 import Portifolio from "components/portifolio";
 import Posts from "components/posts";
 import Services from "components/services";
 import { AppContextProvider } from "contexts/AppContext";
+import DialogCustom from "components/modal-custom/modal-configuration-cookie/indexs";
 
 const Home: NextPage = () => {
   return (
@@ -30,6 +31,7 @@ const Home: NextPage = () => {
         <GlobalStyles />
         <CookieBar />
         <SimpleBackdrop />
+        <DialogCustom />
         <ModalCustom />
         <Navbar />
         <Hero />

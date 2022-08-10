@@ -8,11 +8,17 @@ export const Container = styled.section`
   );
   height: 505px;
   width: 100%;
+  position: relative;
+  .hero {
+    display: flex;
 
-  .title {
-    color: var(--white-color);
-    margin: 0 auto;
     max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero .title {
+    color: var(--white-color);
+
     padding: 80px 0 40px 0px;
     h1 {
       width: 600px;
@@ -31,8 +37,10 @@ export const Container = styled.section`
     margin-top: 50px;
     display: flex;
     justify-content: center;
+    position: absolute;
+    right: 50%;
+    bottom: 40px;
     img {
-      position: relative;
       animation: bounce 0.3s ease 0s infinite alternate;
     }
   }
@@ -47,11 +55,14 @@ export const Container = styled.section`
   }
 
   @media screen and (max-width: 1150px) {
+    .hero_image {
+      display: none;
+    }
   }
   @media screen and (max-width: 720px) {
   }
   @media screen and (max-width: 540px) {
-    .title {
+    .hero .title {
       max-width: 95%;
       h1 {
         font-size: 2rem;

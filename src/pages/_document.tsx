@@ -71,6 +71,7 @@ class MyDocument extends Document {
             name="keywords"
             content="site,fazer,criar,arcode,fazer,plataforma,ecommerce,vendas,soluções,orçamento,seo, criar site, como aumentar minha vendas, aumentar, negócio, medidas, métricas,"
           />
+
           <meta name="author" content="ARCODE SOLUÇÕES WEB" />
           <meta
             name="theme-color"
@@ -82,6 +83,7 @@ class MyDocument extends Document {
             media="(prefers-color-scheme: dark)"
             content="#000"
           />
+
           <link rel="apple-touch-icon" sizes="20x20" href="/favicon.ico" />
         </Head>
         <body>
