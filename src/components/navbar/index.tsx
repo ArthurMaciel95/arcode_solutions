@@ -22,7 +22,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
   return (
     <>
       <SwipeableTemporaryDrawer />
-      <S.Container>
+      <S.Container id="navbar">
         <div className="nav-area">
           <div className="logo">
             <Image
