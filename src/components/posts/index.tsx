@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
-import PostCard from "../post-card";
+import { PostCard } from "../post-card";
 
 const Posts: React.FC = (): JSX.Element => {
   return (
