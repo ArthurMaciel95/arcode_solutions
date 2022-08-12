@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.section`
+export const Container = styled.nav`
   background-color: var(--white-color);
   height: 5rem;
 

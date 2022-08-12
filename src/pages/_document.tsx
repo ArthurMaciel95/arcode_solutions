@@ -43,11 +43,26 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap"
             rel="stylesheet"
           />
-
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:url" content="https://www.arcodesolucoes.com" />
+          <meta
+            name="twitter:title"
+            content="Arcode, Criação de site para seu negócio."
+          />
+          <meta
+            name="twitter:description"
+            content="Crie seu site na ARCODE SOLUCÕES, conosco você terá seu site do seu jeito. também lhe ajudamos a alavancar seus negócios através de SEO."
+          />
+          <meta
+            name="twitter:image"
+            content="https://i.imgur.com/8Q825KL.png"
+          />
+          <meta name="twitter:creator" content="@ArthurRocha" />
           <meta
             name="description"
             content="Crie seu site na ARCODE SOLUCÕES, conosco você terá seu site do seu jeito. também lhe ajudamos a alavancar seus negócios através de SEO."
           />
+          <link rel="manifest" href="/manifest.json" />
           <meta property="og:url" content="https://www.arcodesolucoes.com/" />
           <meta
             property="og:site_name"

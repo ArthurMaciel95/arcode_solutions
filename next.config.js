@@ -1,18 +1,14 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-  i18n: {
-    /**
-     * Provide the locales you want to support in your application
-     */
-    locales: ["en-US", "pt-BR", "es-ES"],
-    /**
-     * This is the default locale you want to be used when visiting
-     * a non-locale prefixed path.
-     */
-    defaultLocale: "pt-BR",
-  },
-};
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const withPWA = require("next-pwa");
 
-module.exports = nextConfig;
+module.exports = withPWA({
+  reactStrictMode: true,
+  pwa: {
+    dest: "public",
+    register: true,
+    skipWaiting: true,
+    disable: process.env.NODE_ENV === "development",
+  },
+});
+
+//FAZER ESSA PORRA FUNCIONAR!!

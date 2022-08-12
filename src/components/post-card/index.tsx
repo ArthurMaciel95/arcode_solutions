@@ -2,7 +2,7 @@ import * as React from "react";
 import * as S from "./styles";
 import Image from "next/image";
 import Link from "next/link";
-type PostCardProps = {
+export type PostCardProps = {
   srcImg: string;
   alt: string;
   tags: Array<"TUTORIAL" | "TECNOLOGIA" | "PROGRAMAÇÃO" | "MARKETING">;
@@ -11,7 +11,7 @@ type PostCardProps = {
   createAt: string;
 };
 
-const PostCard: React.FunctionComponent<PostCardProps> = ({
+export const PostCard: React.FunctionComponent<PostCardProps> = ({
   srcImg,
   alt,
   title,
@@ -42,5 +42,3 @@ const PostCard: React.FunctionComponent<PostCardProps> = ({
     </Link>
   );
 };
-
-export default PostCard;

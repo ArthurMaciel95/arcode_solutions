@@ -12,7 +12,7 @@ declare module "@mui/material/Button" {
   }
 }
 
-const arcodeTheme = createTheme({
+export const arcodeTheme = createTheme({
   palette: {},
   components: {
     MuiButton: {

@@ -8,6 +8,7 @@ import SwipeableTemporaryDrawer from "../sidebar";
 import { Button, IconButton } from "@mui/material";
 import { useAppContext } from "../../contexts/AppContext";
 import MenuIcon from "@mui/icons-material/Menu";
+
 const Navbar: React.FunctionComponent = (): JSX.Element => {
   const { toggleDrawer } = useAppContext();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -22,7 +23,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
   return (
     <>
       <SwipeableTemporaryDrawer />
-      <S.Container>
+      <S.Container id="navbar">
         <div className="nav-area">
           <div className="logo">
             <Image
