@@ -26,7 +26,7 @@ export const arcodeTheme = createTheme({
             background: "#2ED105",
             fontWeight: "600",
             "&:hover": {
-              backgroundColor: "#25ba5d",
+              backgroundColor: "#38b718",
               color: "#fff",
             },
           },

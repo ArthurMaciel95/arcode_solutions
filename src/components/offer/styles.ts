@@ -31,6 +31,9 @@ export const Container = styled.section`
     margin: 25px 0;
     font-weight: 400;
   }
+  .btn-whats {
+    font-size: 2rem;
+  }
 
   @media screen and (max-width: 720px) {
     h2 {
@@ -44,6 +47,10 @@ export const Container = styled.section`
     button {
       font-size: 1.2rem;
       padding: 10px 15px;
+    }
+    .btn-whats {
+      font-size: 1.5rem;
+      padding: 10px;
     }
   }
 
@@ -61,6 +68,10 @@ export const Container = styled.section`
     button {
       font-size: 1rem;
       padding: 10px 15px;
+    }
+    .btn-whats {
+      font-size: 1rem;
+      padding: 8px;
     }
   }
 `;

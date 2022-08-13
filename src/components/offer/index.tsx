@@ -2,6 +2,7 @@ import * as S from "./styles";
 import Button from "@mui/material/Button";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+
 const Offer = () => {
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll={false}>
@@ -17,7 +18,8 @@ const Offer = () => {
 
         <Button
           variant="whatsapp"
-          sx={{ padding: "20px 30px", fontSize: "2rem" }}
+          sx={{ padding: "20px 30px" }}
+          className="btn-whats"
           href="https://wa.me/5521989578285?text=Eu%20gostaria%20de%20fazer%20um%20orçamento."
         >
           <Image
@@ -27,7 +29,7 @@ const Offer = () => {
             alt="icone whatsapp"
             priority
           />
-          Faça um orçamento conosco agora!
+          Faça um orçamento agora!
         </Button>
       </S.Container>
     </AnimationOnScroll>

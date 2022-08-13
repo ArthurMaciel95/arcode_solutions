@@ -1,6 +1,7 @@
 import * as S from "./styles";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+
 const AboutUs = () => {
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll={false}>
