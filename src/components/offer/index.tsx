@@ -16,6 +16,7 @@ const Offer = () => {
       <Button
         variant="whatsapp"
         sx={{ padding: "20px 30px", fontSize: "2rem" }}
+        href="https://wa.me/5521989578285?text=Eu%20gostaria%20de%20fazer%20um%20orçamento."
       >
         <Image
           src="/tmp/svg/whatsapp.svg"
