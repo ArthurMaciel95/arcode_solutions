@@ -15,6 +15,7 @@ import Posts from "components/posts";
 import Services from "components/services";
 import { AppContextProvider } from "contexts/AppContext";
 import DialogCustom from "components/modal-custom/modal-configuration-cookie/indexs";
+import Offer from "components/offer";
 
 const Home: NextPage = () => {
   return (
@@ -39,6 +40,7 @@ const Home: NextPage = () => {
         <Posts />
         <Portifolio />
         <Services />
+        <Offer />
         <Contact />
         <Fqa />
         <Footer />
