@@ -10,9 +10,9 @@
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
     "test:ci": "jest --runInBand",
-    "generate": "yarn plop --plopfile generators/plopfile.js",
+    "generate": "plop --plopfile generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -s ./public",
     "postinstall": "husky install",
     "prepare": "husky install",
     "cy:open": "cypress open",
@@ -22,12 +22,12 @@
     "schema:download": "apollo client:download-schema --endpoint=http://localhost:1337/graphql schema-temp.gql",
     "schema:convert": "node convertToNonNull.js",
     "codegen": "apollo codegen:generate --target typescript --excludes=node_modules/ --includes=src/graphql/**/*.ts --localSchemaFile schema.gql --tagName=gql --outputFlat src/graphql/generated",
-    "types:generate": "yarn schema:download && yarn schema:convert && yarn codegen"
+    "types:generate": "npm schema:download && npm schema:convert && npm codegen"
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix",
-      "yarn test --findRelatedTests --bail"
+      "npm lint --fix",
+      "npm test --findRelatedTests --bail"
     ]
   },
   "husky": {
@@ -41,7 +41,7 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.1",
     "animate.css": "^4.1.1",
-    "next": "12.2.3",
+    "next": "^12.2.5",
     "next-pwa": "^5.5.5",
     "nodemailer": "^6.7.7",
     "react": "18.2.0",

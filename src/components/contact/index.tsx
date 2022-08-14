@@ -110,7 +110,7 @@ const Contact = () => {
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll={false}>
       <S.Container id="contact">
-        <h2>ENTRE EM CONTATO</h2>
+        <h2 className="title-section">ENTRE EM CONTATO</h2>
         <Box component="form" onSubmit={handleSubmit(onSubmit)}>
           <div className="form-wrap">
             <div className="form-section-one">

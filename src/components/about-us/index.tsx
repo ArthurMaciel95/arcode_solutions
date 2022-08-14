@@ -25,7 +25,7 @@ const AboutUs = () => {
             objectFit="cover"
           />
         </span>
-        <h2>SOBRE MIM</h2>
+        <h2 className="title-section">SOBRE MIM</h2>
         <div>
           <img
             src="/tmp/image/avatar_profile.jpg"
