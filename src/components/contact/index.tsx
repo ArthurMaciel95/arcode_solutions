@@ -8,6 +8,7 @@ import { useForm, Resolver, SubmitHandler } from "react-hook-form";
 import { FormFieldsType, ErrorFormsType } from "../../types/formContact";
 import { useAppContext } from "../../contexts/AppContext";
 import * as Yup from "yup";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 const Contact = () => {
   const {
     OpenModal,
@@ -107,75 +108,77 @@ const Contact = () => {
   const onSubmit: SubmitHandler<FormFieldsType> = (data) => console.log(data);
 
   return (
-    <S.Container id="contact">
-      <h2>ENTRE EM CONTATO</h2>
-      <Box component="form" onSubmit={handleSubmit(onSubmit)}>
-        <div className="form-wrap">
-          <div className="form-section-one">
-            <TextField
-              id="outlined-field-name"
-              label="Nome"
-              variant="outlined"
-              fullWidth
-              type="text"
-              sx={{
-                marginBottom: "40px",
-              }}
-              {...register("name")}
-              error={error.isError}
-              disabled={disabled}
-              helperText={error.isError ? error.message : ""}
-            />
+    <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll={false}>
+      <S.Container id="contact">
+        <h2>ENTRE EM CONTATO</h2>
+        <Box component="form" onSubmit={handleSubmit(onSubmit)}>
+          <div className="form-wrap">
+            <div className="form-section-one">
+              <TextField
+                id="outlined-field-name"
+                label="Nome"
+                variant="outlined"
+                fullWidth
+                type="text"
+                sx={{
+                  marginBottom: "40px",
+                }}
+                {...register("name")}
+                error={error.isError}
+                disabled={disabled}
+                helperText={error.isError ? error.message : ""}
+              />
 
-            <TextField
-              id="outlined-field-email"
-              label="Email"
-              variant="outlined"
-              fullWidth
-              type="email"
-              sx={{
-                marginBottom: "40px",
-                color: "#999",
-              }}
-              {...register("email")}
-              disabled={disabled}
-            />
+              <TextField
+                id="outlined-field-email"
+                label="Email"
+                variant="outlined"
+                fullWidth
+                type="email"
+                sx={{
+                  marginBottom: "40px",
+                  color: "#999",
+                }}
+                {...register("email")}
+                disabled={disabled}
+              />
 
-            <TextField
-              label="Celular"
-              {...register("phone")}
-              disabled={disabled}
-            />
+              <TextField
+                label="Celular"
+                {...register("phone")}
+                disabled={disabled}
+              />
 
-            <Button
-              variant="contained"
-              sx={{
-                padding: "20px",
-                fontWeight: "600",
-                letterSpacing: "4px",
-                marginTop: "20px  ",
-              }}
-              type="submit"
-              disabled={disabled}
-            >
-              ENVIAR AGORA!
-            </Button>
+              <Button
+                variant="contained"
+                sx={{
+                  padding: "20px",
+                  fontWeight: "600",
+                  letterSpacing: "4px",
+                  marginTop: "20px  ",
+                }}
+                type="submit"
+                disabled={disabled}
+              >
+                ENVIAR AGORA!
+              </Button>
+            </div>
+            <div className="form-section-two">
+              <TextField
+                id="outlined-multiline-message"
+                label="Mensagem"
+                multiline
+                type="text"
+                fullWidth
+                rows={10}
+                disabled={disabled}
+                {...register("message")}
+              />
+            </div>
           </div>
-          <div className="form-section-two">
-            <TextField
-              id="outlined-multiline-message"
-              label="Mensagem"
-              multiline
-              type="text"
-              fullWidth
-              rows={10}
-              disabled={disabled}
-              {...register("message")}
-            />
-          </div>
-        </div>
-      </Box>
-    </S.Container>
+        </Box>
+      </S.Container>
+    </AnimationOnScroll>
   );
 };
 

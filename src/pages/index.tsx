@@ -16,7 +16,7 @@ import Services from "components/services";
 import { AppContextProvider } from "contexts/AppContext";
 import DialogCustom from "components/modal-custom/modal-configuration-cookie/indexs";
 import Offer from "components/offer";
-
+import "animate.css/animate.min.css";
 const Home: NextPage = () => {
   return (
     <>
