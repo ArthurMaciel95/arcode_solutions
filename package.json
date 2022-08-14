@@ -41,7 +41,7 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.1",
     "animate.css": "^4.1.1",
-    "next": "12.2.3",
+    "next": "12.2.5",
     "next-pwa": "^5.5.5",
     "nodemailer": "^6.7.7",
     "react": "18.2.0",
