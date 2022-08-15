@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.nav`
-  background-color: var(--white-color);
+  background-color: var(--background-color);
   height: 5rem;
 
   .nav-area {
@@ -9,7 +9,7 @@ export const Container = styled.nav`
     width: 80%;
     align-items: center;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     .btn-sidebar {
       display: none;
     }

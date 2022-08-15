@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.span`
   width: 100%;
-  background-color: var(--white-color);
+  background-color: var(--card-background);
   display: flex;
   flex-direction: column;
   position: fixed;
   bottom: 0;
   z-index: 1000;
-  border: 2px solid #dadada;
+  border: 2px solid var(--background-color);
   padding: 15px 30px;
 
   h4 img {

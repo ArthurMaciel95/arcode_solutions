@@ -9,7 +9,7 @@ export const Container = styled.section`
 
   h2 {
     text-align: center;
-    color: #222;
+    color: var(--font-black-color);
     font-size: 4rem;
     font-family: "Open Sans", sans-serif;
 

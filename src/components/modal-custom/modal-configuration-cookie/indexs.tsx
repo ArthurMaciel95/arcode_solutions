@@ -27,7 +27,7 @@ const DialogCustom = () => {
   };
 
   return (
-    <div>
+    <dialog>
       <Dialog
         open={showDialog}
         onClose={handleClose}
@@ -138,7 +138,7 @@ const DialogCustom = () => {
           </Button>
         </DialogActions>
       </Dialog>
-    </div>
+    </dialog>
   );
 };
 

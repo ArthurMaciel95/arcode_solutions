@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { GlobalStyles } from "styles/globals";
+
 import AboutUs from "components/about-us";
 import Contact from "components/contact";
 import CookieBar from "components/cookie";
@@ -29,7 +29,6 @@ const Home: NextPage = () => {
         />
       </Head>
       <AppContextProvider>
-        <GlobalStyles />
         <CookieBar />
         <SimpleBackdrop />
         <DialogCustom />

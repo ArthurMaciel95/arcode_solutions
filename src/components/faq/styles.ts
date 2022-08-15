@@ -13,14 +13,14 @@ export const Container = styled.section`
   }
 
   .summary {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--font-black-color);
     font-weight: 400;
   }
 
   .description {
     color: var(--font-gray-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   @media screen and (max-width: 1150px) {

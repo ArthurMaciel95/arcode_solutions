@@ -23,8 +23,7 @@ const Fqa = () => {
               Você chama a gente pelo <strong>WhatsApp</strong> e conta um pouco
               sobre o seu site e o que você quer. Nosso time te responderá
               rapidamente e pedirá o máximo de informações possível para que seu
-              site fique perfeito. Começamos a fazer no mesmo instante e
-              entregamos em até 2 dias úteis.
+              site fique perfeito. Começamos a fazer no mesmo instante.
             </p>
           </AccordionDetails>
         </Accordion>
@@ -72,7 +71,7 @@ const Fqa = () => {
             aria-controls="panel4a-content"
             id="panel4a-header"
           >
-            <p className="summary">Porque ter um site?</p>
+            <p className="summary">Por que ter um site?</p>
           </AccordionSummary>
           <AccordionDetails>
             <p className="description">

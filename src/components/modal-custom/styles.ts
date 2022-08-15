@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.section`
   max-width: 600px;
-  background-color: var(--white-color);
+  background-color: var(--card-background);
   position: absolute;
   left: 35%;
   top: 20%;

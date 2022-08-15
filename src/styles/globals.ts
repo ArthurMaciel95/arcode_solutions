@@ -3,7 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyles = createGlobalStyle`
 
 :root{
-  --background-color:#fff;
+  --card-background:#fff;
+    --background-color:#F2F2F2;
     --white-color:#ffffff;
     --primary-color:#496FF9;
     --secondary-color:#58bfff;
@@ -30,8 +31,8 @@ export const GlobalStyles = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    font-family: "Fredoka", sans-serif !important;
-    background-color: var(---background-color);
+    font-family: "Fredoka", sans-serif ;
+    background-color: var(--background-color);
     scroll-behavior: smooth;
   } 
   
@@ -49,15 +50,16 @@ export const GlobalStyles = createGlobalStyle`
   @media (prefers-color-scheme: dark) {
 :root{
 
-  --background-color:#353535;
+  --background-color:#121212;
+  --card-background:#262626;
   --white-color:#ffffff;
   --primary-color:#496FF9;
     --secondary-color:#58bfff;
-    --shadow-color:0px 4px 7px 2px rgba(161,161,161,0.21);
+    --shadow-color:0px 4px 4px 1px rgba(0,0,0,0.5);
     --tags-color:#09749d;
-    --font-link-color:#576d96;
+    --font-link-color:#0066ff;
     --font-black-color:#f2f2f2;
-    --font-gray-color:#a1a1a1;
+    --font-gray-color:#d1d1d1;
     --font-white-ligth-color:#D3DDFF;
     --fs-lg-header:3rem;
     --fs-sm-header:2rem;
@@ -82,6 +84,12 @@ export const GlobalStyles = createGlobalStyle`
     margin-top: 68px;
     text-align: center;
     margin-bottom: 41px;
+    background: -webkit-linear-gradient(bottom, #496ff9, #58bfff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .degrad-color{
     background: -webkit-linear-gradient(bottom, #496ff9, #58bfff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
