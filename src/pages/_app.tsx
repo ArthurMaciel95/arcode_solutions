@@ -6,6 +6,7 @@ import * as gtag from "../lib/gtag";
 import Analytics from "../components/analytics/googleAnalytics";
 import { GlobalStyles } from "../styles/globals";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { SessionProvider } from "next-auth/react";
 declare module "@mui/material/Button" {
   interface ButtonPropsVariantOverrides {
     whatsapp: true;
@@ -13,13 +14,7 @@ declare module "@mui/material/Button" {
   }
 }
 
-/* const darkTheme = createTheme({
-  palette: {
-    mode: "dark",
-  },
-}); */
-
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   const router = useRouter();
 
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -67,6 +62,28 @@ function MyApp({ Component, pageProps }: AppProps) {
           },
         ],
       },
+
+      MuiTextField: {
+        variants: [
+          {
+            props: {
+              variant: "outlined",
+            },
+            style: {
+              color: "var(--font-gray-color)",
+
+              fontWeight: "600",
+              "&:hover": {
+                borderColor: "grey",
+              },
+              "& .MuiButton-startIcon": {
+                position: "absolute",
+                left: 0,
+              },
+            },
+          },
+        ],
+      },
     },
   });
 
@@ -83,7 +100,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={arcodeTheme}>
       <GlobalStyles />
-      <Component {...pageProps} />
+      <SessionProvider session={session}>
+        <Component {...pageProps} />
+      </SessionProvider>
       <Analytics />
     </ThemeProvider>
   );

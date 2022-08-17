@@ -2,13 +2,13 @@ import * as S from "./styles";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import * as React from "react";
-import ButtonWhatsapp from "../button_whatsapp";
 import Image from "next/image";
 import SwipeableTemporaryDrawer from "../sidebar";
-import { Button, IconButton } from "@mui/material";
+import { Avatar, Button, IconButton, Stack, Typography } from "@mui/material";
 import { useAppContext } from "../../contexts/AppContext";
 import MenuIcon from "@mui/icons-material/Menu";
-
+import { signIn, signOut, useSession } from "next-auth/react";
+import Link from "next/link";
 const Navbar: React.FunctionComponent = (): JSX.Element => {
   const { toggleDrawer } = useAppContext();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -19,6 +19,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const { status, data: session } = useSession();
 
   return (
     <>
@@ -87,8 +88,38 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
               <MenuIcon fontSize="large" />
             </IconButton>
           </span>
-
-          <ButtonWhatsapp />
+          {status === "unauthenticated" && (
+            <Button variant="outlined" onClick={() => signIn()}>
+              Login
+            </Button>
+          )}
+          {status === "authenticated" && (
+            <Stack direction="row" spacing={1}>
+              <Image
+                src={session.user?.image as string}
+                layout="fixed"
+                height="45px"
+                width="45px"
+                objectFit="cover"
+                className="navbar-image-profile"
+              />
+              <Stack direction="column">
+                <Typography
+                  variant="body2"
+                  sx={{ color: "var(--font-gray-color)" }}
+                >
+                  {session.user?.email as string}
+                </Typography>
+                <Typography
+                  variant="body2"
+                  sx={{ cursor: "pointer" }}
+                  onClick={() => signOut()}
+                >
+                  Logout
+                </Typography>
+              </Stack>
+            </Stack>
+          )}
         </div>
       </S.Container>
     </>

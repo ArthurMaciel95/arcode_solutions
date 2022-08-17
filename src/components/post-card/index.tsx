@@ -37,7 +37,9 @@ export const PostCard: React.FunctionComponent<PostCardProps> = ({
           ))}
         </div>
         <h4>{title}</h4>
-        <span className="post-date">{createAt}</span>
+        <time dateTime={createAt} className="post-date">
+          {createAt}
+        </time>
       </S.Container>
     </Link>
   );

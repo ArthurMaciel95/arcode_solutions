@@ -2,7 +2,7 @@ import * as React from "react";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 import { useAppContext } from "../contexts/AppContext";
-export default function SimpleBackdrop() {
+function SimpleBackdrop() {
   const { loading, handlerLoading } = useAppContext();
 
   return (
@@ -20,3 +20,5 @@ export default function SimpleBackdrop() {
     </div>
   );
 }
+
+export default SimpleBackdrop;

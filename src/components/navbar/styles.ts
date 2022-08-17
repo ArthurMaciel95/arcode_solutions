@@ -31,6 +31,9 @@ export const Container = styled.nav`
       }
     }
   }
+  .navbar-image-profile {
+    border-radius: 50%;
+  }
 
   .anchor__dropdown {
     cursor: pointer;
