@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from "./styles";
+import * as S from "../../../../styles/styles.blog";
 import Image from "next/image";
 import Link from "@mui/material/Link";
 import Breadcrumbs from "@mui/material/Breadcrumbs";

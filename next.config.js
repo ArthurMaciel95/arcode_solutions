@@ -2,36 +2,32 @@
 const withPWA = require("next-pwa");
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const withPlugins = require("next-compose-plugins");
-/** @type {import('next').NextConfig} */
-module.exports = withPlugins([
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  reactStrictMode: true,
+
+  images: {
+    domains: ["lh3.googleusercontent.com"],
+  },
+  i18n: {
+    locales: ["en-US", "pt-BR", "es-ES"],
+    defaultLocale: "pt-BR",
+  },
+};
+
+module.exports = withPlugins(
   [
-    withPWA,
-    {
+    withPWA({
       reactStrictMode: true,
       pwa: {
         dest: "public",
         register: true,
         skipWaiting: true,
-        disable: false,
+        disable: process.env.NODE_ENV === "development",
       },
-    },
+    }),
   ],
-  {
-    reactStrictMode: true,
-
-    images: {
-      domains: ["lh3.googleusercontent.com"],
-    },
-    i18n: {
-      /**
-       * Provide the locales you want to support in your application
-       */
-      locales: ["en-US", "pt-BR", "es-ES"],
-      /**
-       * This is the default locale you want to be used when visiting
-       * a non-locale prefixed path.
-       */
-      defaultLocale: "pt-BR",
-    },
-  },
-]);
+  nextConfig,
+);

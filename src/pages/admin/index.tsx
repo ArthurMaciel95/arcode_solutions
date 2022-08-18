@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSession } from "next-auth/react";
 import Backdrop from "components/loading_backdrop";
 import { GetServerSideProps } from "next";
@@ -6,7 +6,7 @@ import { authOptions } from "pages/api/auth/[...nextauth]";
 import { unstable_getServerSession } from "next-auth";
 const Admin = () => {
   const { data: session, status: sessionStatus } = useSession();
-  console.log(session);
+
   return (
     <>
       {sessionStatus === "loading" && <Backdrop />}

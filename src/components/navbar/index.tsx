@@ -89,9 +89,14 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
             </IconButton>
           </span>
           {status === "unauthenticated" && (
-            <Button variant="outlined" onClick={() => signIn()}>
-              Login
-            </Button>
+            <div>
+              <Button variant="outlined" onClick={() => signIn()}>
+                Login
+              </Button>
+              <Button variant="text" onClick={() => console.log("click")}>
+                Sign Up
+              </Button>
+            </div>
           )}
           {status === "authenticated" && (
             <Stack direction="row" spacing={1}>
