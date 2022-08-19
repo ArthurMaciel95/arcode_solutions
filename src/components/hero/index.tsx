@@ -30,6 +30,8 @@ const Hero = () => {
             src="/tmp/image/hero_desktop_mobile.png"
             width="650px"
             height="400px"
+            placeholder="blur"
+            blurDataURL="/tmp/image/hero_desktop_mobile.png"
           />
         </div>
       </section>

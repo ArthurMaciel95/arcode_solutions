@@ -83,7 +83,7 @@ const Login = () => {
           ></Image>
         </Box>
         <Typography variant="h5" fontFamily="Open sans" fontWeight="400">
-          Faça o cadastro
+          Faça o Login
         </Typography>
         <Typography
           variant="subtitle1"
@@ -94,26 +94,7 @@ const Login = () => {
           site do seu jeito.
         </Typography>
         {hasError && <Typography></Typography>}
-        <Button
-          variant="outlined"
-          fullWidth
-          startIcon={
-            <Image
-              src="/tmp/svg/google_icon.svg"
-              layout="fixed"
-              width="20px"
-              height="20px"
-            />
-          }
-          onClick={handleSubmit}
-        >
-          Faça login com o google
-        </Button>
-        <Divider sx={{ margin: "10px 0px" }}>
-          <Typography variant="subtitle1">
-            <Divider>Ou</Divider>
-          </Typography>
-        </Divider>
+
         <TextField
           id="standard-basic"
           label="Email"
@@ -146,6 +127,26 @@ const Login = () => {
 
         <Button variant="contained" fullWidth onClick={handleSubmit}>
           Entrar
+        </Button>
+        <Divider sx={{ margin: "10px 0px" }}>
+          <Typography variant="subtitle1">
+            <Divider>Ou</Divider>
+          </Typography>
+        </Divider>
+        <Button
+          variant="outlined"
+          fullWidth
+          startIcon={
+            <Image
+              src="/tmp/svg/google_icon.svg"
+              layout="fixed"
+              width="20px"
+              height="20px"
+            />
+          }
+          onClick={handleSubmit}
+        >
+          Faça login com o google
         </Button>
       </Box>
     </>

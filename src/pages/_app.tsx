@@ -103,11 +103,11 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
       <SessionProvider session={session}>
         <GlobalStyles />
         <NextNProgress
-          color="#496FF9"
-          height={3}
+          color="#29D"
           startPosition={0.3}
           stopDelayMs={200}
-          showOnShallow={true}
+          height={3}
+          showOnShallow={false}
         />
         <Component {...pageProps} />
       </SessionProvider>
