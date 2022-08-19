@@ -25,6 +25,7 @@ const AboutUs = () => {
             objectFit="cover"
             placeholder="blur"
             blurDataURL="/tmp/svg/dots.svg"
+            height="300px"
           />
         </span>
         <h2 className="title-section">SOBRE MIM</h2>

@@ -6,10 +6,11 @@ const Footer = () => {
       <Image
         src="/tmp/image/google_secure.png"
         alt="imagem de certificado do google de site seguro;"
-        width="155px"
-        height="56px"
+        width="145px"
+        height="50px"
         placeholder="blur"
         blurDataURL="/tmp/image/google_secure.png"
+        layout="fixed"
       />
       <p>
         © {new Date().getFullYear()} | ARCODESOLUÇÕES LTDA | Todos os direitos
