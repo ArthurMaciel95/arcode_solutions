@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production next start",
     "lint": "eslint src  --fix",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
@@ -20,8 +20,7 @@
     "schema:download": "apollo client:download-schema --endpoint=http://localhost:1337/graphql schema-temp.gql",
     "schema:convert": "node convertToNonNull.js",
     "codegen": "apollo codegen:generate --target typescript --excludes=node_modules/ --includes=src/graphql/**/*.ts --localSchemaFile schema.gql --tagName=gql --outputFlat src/graphql/generated",
-    "types:generate": "npm schema:download && npm schema:convert && npm codegen",
-    "prepare": "husky install"
+    "types:generate": "npm schema:download && npm schema:convert && npm codegen"
   },
   "lint-staged": {
     "src/**/*": [
@@ -29,7 +28,6 @@
       "npm test --findRelatedTests --bail"
     ]
   },
-
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -79,7 +77,6 @@
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-storybook": "^0.6.4",
-    "husky": "^8.0.1",
     "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.3",
     "jest-styled-components": "^7.1.0",
