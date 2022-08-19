@@ -74,43 +74,12 @@ const Contact = () => {
     setMessage("");
   }
 
-  /**
-   * função para enviar requisição para email do cliente.
-   * @param e evento
-   */
-  /*   const handlerSubmit = async (e: React.FormEvent<HTMLInputElement>) => {
-    try {
-      e.preventDefault();
-
-      const payload: FormFieldsType = {
-        name,
-        email,
-        phone,
-        message,
-      };
-      await validate(payload);
-
-      setDisabledFields(true);
-      handlerLoading();
-
-      //ADICIONAR LOGICA PARA ENVIO DE EMAIL
-      setTimeout(() => {
-        OpenModal();
-        handlerLoading();
-        setDisabledFields(false);
-      }, 3000);
-      cleaningInputs();
-    } catch (err) {
-      console.log(err);
-    }
-  }; */
-
   const onSubmit: SubmitHandler<FormFieldsType> = (data) => console.log(data);
 
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll={false}>
       <S.Container id="contact">
-        <h2>ENTRE EM CONTATO</h2>
+        <h2 className="title-section">ENTRE EM CONTATO</h2>
         <Box component="form" onSubmit={handleSubmit(onSubmit)}>
           <div className="form-wrap">
             <div className="form-section-one">

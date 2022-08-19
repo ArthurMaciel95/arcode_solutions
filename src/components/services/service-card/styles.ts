@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 376px;
-  background-color: white;
+  background-color: var(--card-background);
   border-radius: 4px;
   box-shadow: var(--shadow-color);
   padding: 20px;

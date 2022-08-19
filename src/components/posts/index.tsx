@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
-import { PostCard } from "../post-card";
+import { PostCard } from "./post-card";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 const Posts: React.FC = (): JSX.Element => {
   return (

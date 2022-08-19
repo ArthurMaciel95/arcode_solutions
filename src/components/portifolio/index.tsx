@@ -1,5 +1,5 @@
 import * as S from "./styles";
-import CardPortifolio from "../portifolio-card";
+import CardPortifolio from "./portifolio-card";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 const Portifolio = () => {
   return (

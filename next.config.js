@@ -1,16 +1,31 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const withPWA = require("next-pwa");
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const runtimeCaching = require("next-pwa/cache");
-module.exports = withPWA({
-  reactStrictMode: true,
-  pwa: {
-    dest: "public",
-    register: true,
-    skipWaiting: true,
-    disable: process.env.NODE_ENV === "development",
-    runtimeCaching,
+const withPlugins = require("next-compose-plugins");
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  images: {
+    domains: ["lh3.googleusercontent.com"],
   },
-});
+  i18n: {
+    locales: ["en-US", "pt-BR", "es-ES"],
+    defaultLocale: "pt-BR",
+  },
+};
 
-//FAZER ESSA PORRA FUNCIONAR!!
+module.exports = withPlugins(
+  [
+    withPWA({
+      reactStrictMode: true,
+      pwa: {
+        dest: "public",
+        register: true,
+        skipWaiting: true,
+        disable: process.env.NODE_ENV === "development",
+      },
+    }),
+  ],
+  nextConfig,
+);

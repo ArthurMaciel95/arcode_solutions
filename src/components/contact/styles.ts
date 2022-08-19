@@ -13,7 +13,7 @@ export const Container = styled.section`
   }
 
   form {
-    background-color: white;
+    background-color: var(--card-background);
     padding: 20px;
     box-shadow: var(--shadow-color);
     .form-wrap {

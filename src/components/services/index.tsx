@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
-import CardServices from "../service-card";
+import CardServices from "./service-card";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 const Services: React.FC = () => {
   return (

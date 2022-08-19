@@ -3,6 +3,7 @@ import { Button } from "@mui/material";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useAppContext } from "contexts/AppContext";
+import Image from "next/image";
 
 const CookieBar = () => {
   const [cookie, setCookie] = useState<boolean>();
@@ -20,7 +21,15 @@ const CookieBar = () => {
     <S.Container>
       <h4>
         Politica de Cookie
-        <img src="/tmp/image/cookie.png" alt="biscoito rodando em espiral" />
+        <Image
+          src="/tmp/image/cookie.png"
+          placeholder="blur"
+          blurDataURL="/tmp/image/cookie.png"
+          alt="biscoito rodando em espiral"
+          height="25px"
+          width="25px"
+          layout="fixed"
+        />
       </h4>
       <article>
         <p>

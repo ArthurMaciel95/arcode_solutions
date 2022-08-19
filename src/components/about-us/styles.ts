@@ -6,11 +6,13 @@ export const Container = styled.section`
   position: relative;
 
   h2 {
-    color: var(--primary-color);
     font-size: 3rem;
     margin-top: 68px;
     text-align: center;
     margin-bottom: 41px;
+    background: -webkit-linear-gradient(bottom, #496ff9, #58bfff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   div {

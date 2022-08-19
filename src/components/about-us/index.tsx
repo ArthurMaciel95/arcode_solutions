@@ -23,9 +23,11 @@ const AboutUs = () => {
             alt="pessoa usando camisa branca, olhos e cabelo castanho."
             layout="fill"
             objectFit="cover"
+            placeholder="blur"
+            blurDataURL="/tmp/svg/dots.svg"
           />
         </span>
-        <h2>SOBRE MIM</h2>
+        <h2 className="title-section">SOBRE MIM</h2>
         <div>
           <img
             src="/tmp/image/avatar_profile.jpg"
