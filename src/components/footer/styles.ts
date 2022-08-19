@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Footer = styled.section`
-  height: 80px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;

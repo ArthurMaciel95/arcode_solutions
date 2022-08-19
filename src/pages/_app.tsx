@@ -7,7 +7,7 @@ import Analytics from "../components/analytics/googleAnalytics";
 import { GlobalStyles } from "../styles/globals";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { SessionProvider } from "next-auth/react";
-import NextNProgress from "nextjs-progressbar";
+import NextjsProgressbar from "nextjs-progressbar";
 declare module "@mui/material/Button" {
   interface ButtonPropsVariantOverrides {
     whatsapp: true;
@@ -102,13 +102,7 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
     <ThemeProvider theme={arcodeTheme}>
       <SessionProvider session={session}>
         <GlobalStyles />
-        <NextNProgress
-          color="#29D"
-          startPosition={0.3}
-          stopDelayMs={200}
-          height={3}
-          showOnShallow={false}
-        />
+        <NextjsProgressbar />
         <Component {...pageProps} />
       </SessionProvider>
       <Analytics />

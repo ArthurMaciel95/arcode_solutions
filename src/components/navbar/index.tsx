@@ -9,7 +9,9 @@ import { useAppContext } from "../../contexts/AppContext";
 import MenuIcon from "@mui/icons-material/Menu";
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const Navbar: React.FunctionComponent = (): JSX.Element => {
+  const router = useRouter();
   const { toggleDrawer } = useAppContext();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -93,7 +95,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
           </span>
           {status === "unauthenticated" && (
             <div>
-              <Button variant="outlined" onClick={() => signIn()}>
+              <Button variant="outlined" onClick={() => router.push("/login")}>
                 Login
               </Button>
               <Button variant="text" onClick={() => console.log("click")}>
