@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production next start",
+    "start": "next start",
     "lint": "eslint src  --fix",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
@@ -13,8 +13,6 @@
     "generate": "plop --plopfile generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
     "build-storybook": "build-storybook -s ./public",
-    "postinstall": "husky install",
-    "prepare": "husky install",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "test:e2e": "start-server-and-test dev 3000 cy:open",
@@ -22,7 +20,8 @@
     "schema:download": "apollo client:download-schema --endpoint=http://localhost:1337/graphql schema-temp.gql",
     "schema:convert": "node convertToNonNull.js",
     "codegen": "apollo codegen:generate --target typescript --excludes=node_modules/ --includes=src/graphql/**/*.ts --localSchemaFile schema.gql --tagName=gql --outputFlat src/graphql/generated",
-    "types:generate": "npm schema:download && npm schema:convert && npm codegen"
+    "types:generate": "npm schema:download && npm schema:convert && npm codegen",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*": [
@@ -30,11 +29,7 @@
       "npm test --findRelatedTests --bail"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
+
   "dependencies": {
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
@@ -76,7 +71,7 @@
     "@typescript-eslint/parser": "^5.32.0",
     "babel-loader": "^8.2.5",
     "babel-plugin-styled-components": "^2.0.7",
-    "eslint": "8.20.0",
+    "eslint": "8.22.0",
     "eslint-config-next": "12.2.3",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-html": "^7.1.0",
