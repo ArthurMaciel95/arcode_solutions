@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const Container = styled.nav`
   background-color: var(--background-color);
   height: 5rem;
-
+  display: flex;
+  justify-content: center;
   .nav-area {
     display: flex;
     width: 80%;
@@ -23,7 +24,7 @@ export const Container = styled.nav`
 
       & a {
         font-weight: 400;
-        padding: 20px;
+        padding: 0px 20px;
         color: var(--font-gray-color);
         &:hover {
           color: var(--primary-color);
@@ -47,6 +48,7 @@ export const Container = styled.nav`
     .nav-area {
       width: 100%;
       height: 100%;
+      justify-content: space-around;
       .menu {
         display: none;
       }

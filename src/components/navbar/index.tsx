@@ -33,6 +33,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
               height="51px"
               alt="logo da empresa arcode, contém um círculo azul."
               priority
+              layout="fixed"
               placeholder="blur"
               blurDataURL="/tmp/image/arcode_logo.png"
             />
