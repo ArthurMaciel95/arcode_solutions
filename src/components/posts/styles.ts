@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  width: 80vw;
-  margin: 180px auto;
+  margin: 120px auto;
+  max-width: 1400px;
   display: grid;
   flex-wrap: wrap;
   grid-template-columns: 1fr 1fr 1fr 1fr;

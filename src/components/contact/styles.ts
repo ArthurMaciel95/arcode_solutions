@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  width: 80vw;
-  margin: 0 auto;
+  margin: 120px auto;
+  max-width: 1400px;
 
   h2 {
     color: var(--primary-color);

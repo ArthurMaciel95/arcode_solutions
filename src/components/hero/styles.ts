@@ -9,9 +9,10 @@ export const Container = styled.section`
   height: 505px;
   width: 100%;
   position: relative;
+
   .hero {
     display: flex;
-
+    justify-content: center;
     max-width: 80%;
     margin: 0 auto;
   }
