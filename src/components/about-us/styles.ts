@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  max-width: 70%;
-  margin: 0 auto;
+  margin: 120px auto;
+  max-width: 1400px;
   position: relative;
 
   h2 {
@@ -50,6 +50,7 @@ export const Container = styled.section`
 
   div .avatar {
     max-width: 356px;
+    max-height: 356px;
     background: linear-gradient(
         to right,
         var(--primary-color),

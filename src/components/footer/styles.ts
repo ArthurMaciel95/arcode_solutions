@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Footer = styled.section`
+  margin: 120px auto;
+  max-width: 1400px;
   height: auto;
   display: flex;
   justify-content: space-around;
