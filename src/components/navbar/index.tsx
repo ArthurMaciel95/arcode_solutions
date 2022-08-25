@@ -93,43 +93,6 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
               <MenuIcon fontSize="large" />
             </IconButton>
           </span>
-          {status === "unauthenticated" && (
-            <div>
-              <Button variant="outlined" onClick={() => router.push("/login")}>
-                Login
-              </Button>
-              <Button variant="text" onClick={() => console.log("click")}>
-                Sign Up
-              </Button>
-            </div>
-          )}
-          {status === "authenticated" && (
-            <Stack direction="row" spacing={1}>
-              <Image
-                src={session.user?.image as string}
-                layout="fixed"
-                height="45px"
-                width="45px"
-                objectFit="cover"
-                className="navbar-image-profile"
-              />
-              <Stack direction="column">
-                <Typography
-                  variant="body2"
-                  sx={{ color: "var(--font-gray-color)" }}
-                >
-                  {session.user?.email as string}
-                </Typography>
-                <Typography
-                  variant="body2"
-                  sx={{ cursor: "pointer" }}
-                  onClick={() => signOut()}
-                >
-                  Logout
-                </Typography>
-              </Stack>
-            </Stack>
-          )}
         </div>
       </S.Container>
     </>
