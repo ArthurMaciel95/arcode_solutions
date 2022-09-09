@@ -19,8 +19,9 @@ const Hero = () => {
             disableElevation
             style={{
               color: "white",
-              border: "1px solid white",
+              border: "1px solid white"
             }}
+            href="/#portfolio"
           >
             VER PORTIFOLIO
           </Button>
