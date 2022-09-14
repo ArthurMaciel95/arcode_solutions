@@ -2,17 +2,15 @@ import { Button } from "@mui/material";
 import * as S from "./styles";
 import Image from "next/image";
 import ButtonWhatsapp from "../button_whatsapp";
-
+import { useTranslation } from "next-i18next";
 const Hero = () => {
+  const { t, i18n } = useTranslation("common");
   return (
     <S.Container>
       <section className="hero">
         <div className="title">
-          <h1>PRECISANDO DE UM SITE PARA SEU NEGÓCIO?</h1>
-          <p>
-            Entre para a <strong>era digital</strong> e seja visto pelo seus
-            clientes em potencial.
-          </p>
+          <h1>{t("hero.title")}</h1>
+          <p>{t("hero.subtitle")}</p>
           <ButtonWhatsapp />
           <Button
             variant="outlined"
@@ -23,7 +21,7 @@ const Hero = () => {
             }}
             href="/#portfolio"
           >
-            VER PORTIFOLIO
+            {t("hero.buttons_hero.btn_outline")}
           </Button>
         </div>
         <div className="hero_image">
@@ -42,6 +40,8 @@ const Hero = () => {
           alt="seta apontando para baixo"
           width="35px"
           height="35px"
+          placeholder="blur"
+          blurDataURL="/tmp/svg/arrow_down.svg"
         />
       </span>
     </S.Container>

@@ -1,0 +1,158 @@
+{
+    "navbar":{
+        "logo_alt":"Arcode company logo, contains a blue circle.",
+        "about_us":"About Us",
+        "contact":"Contact",
+        "portfolio":"Portfolio",
+        "faq":"FAQ",
+        "menu_languages":{
+            "languages":"languages",
+            "portuguese":"Portuguese",
+            "english":"English",
+            "spanish":"Spanish"
+        }
+    },
+    "hero":{
+        "title":"NEED A WEBSITE FOR YOUR BUSINESS?",
+        "subtitle":"Step into the digital age and be seen by your potential customers.",
+        "buttons_hero":{
+            "btn_whats":"MAKE A BUDGET",
+            "btn_outline":"SEE PORTFOLIO"
+        }
+    },
+    "about_me":{
+        "title":"ABOUT ME",
+        "owner_name":"Arthur Nogueira",
+        "owner_image_alt":"face image of arthur rocha, wearing white shirt, black hair and brown eyes.",
+        "description":{
+            "p1":"Since 2018 I've been perfecting myself in website creation, I've learned several techniques that have evolved in website construction. I have worked in several companies related to the field of web site development.",
+            "p2":"Currently I work on my own in order to deliver value to your business, I've been specializing in online commerce, Sass and other products."
+        }
+        
+    },
+    "blog_posts":[
+        {
+            "post_image_alt":"multiple devices, computer, cellphone, notebook showing a website",
+            "tags":[
+                "TECHNOLOGY"
+            ],
+            "post_title":"Is it still worth creating websites in 2022?"
+            
+        },
+        {
+            "post_image_alt":"on the image it says 'SEO' made with objects like gear and a magnifying glass",
+            "tags":[
+                "TUTORIAL"
+            ],
+            "post_title":"How can I improve my site's SEO."
+            
+        },
+        {
+            "post_image_alt":"a small shopping cart on top of a computer keyboard, the 'enter' key is colored yellow.",
+            "tags":[
+                "PROGRAMMING"
+            ],
+            "post_title":"5 tips to leverage your e-commerce."
+            
+        },
+        {
+            "post_image_alt":"multiple devices, computer, cellphone, notebook showing a website",
+            "tags":[
+                "MARKETING",
+                "TUTORIAL"
+            ],
+            "post_title":"Is it still worth creating websites in 2022?"
+            
+        }
+    ],
+    "benefits":{
+        "title":"BENEFITS",
+        "metrics":{
+            "small_text":"METRICS",
+            "title":"Analyze website information",
+            "subtitle":"With the Google Analytics tool you can have some data important to your customers. as:",
+            "list":{
+                "0":"How many people are accessing your site.",
+                "1":"Which page they are visiting.",
+                "2":"Nationality of the visitor.",
+                "3":"Average engagement time.",
+                "4":"What device is he using."
+            },
+            "final_para":"Fundamental tool that you will have when hiring a website with us!"
+
+        },
+        "responsive":{
+            "small_text":"RESPONSIVE",
+            "title":"Compatible with multiple devices.",
+            "subtitle":"The cell phone has become the main means of accessing the internet, so our sites are made to serve various devices such as:",
+            "squares":{
+                "0":"COMPUTER",
+                "1":"PHONE",
+                "2":"TABLET"
+            }
+        }
+    },
+    "portfolio":{
+        "title":"PORTFOLIO",
+        "projects":{
+            "0":{
+                "project_image_alt":"image containing a website page from the linkshare domain.",
+                "title":"Link-share",
+                "description":"platform for storing links, with it you can share with someone else your platforms such as facebook, instagram, tiktok and etc..."
+            },
+            "1":{
+                "project_image_alt":"image of an airline ticket sales website called sos airline tickets.",
+                "title":"SOS Airline Tickets",
+                "description":"Website for a company that sells airline tickets and other additional services, the entire design was created from scratch and we performed the SEO optimization so that it had a good ranking in google."
+            },
+            "2":{
+                "project_image_alt":"image of an airline ticket sales website called Universo Turismo.",
+                "title":"Tourism Universe",
+                "description":"platform that offers air ticket reservations located in Belém, a company with branches in several states of Brazil is constantly growing."
+            }
+        }
+    },
+    "offer":{
+        "title":"Create your website at ",
+        "degrade":"ARCODE SOLUTIONS",
+        "description":"FULLY CUSTOM SITE",
+        "description2":"FROM R$599.90",
+        "button":"MAKE A BUDGET NOW!"
+    },
+    "contact":{
+        "title":"CONTACT",
+        "inputs_label":{
+            "message":"Message",
+            "name":"Name",
+            "email":"Email",
+            "phone":"phone",
+            "button":"SEND NOW!"
+
+        }
+    },
+    "faq":{
+        "title":"FAQ",
+        "faq_question":{
+            "faq1":{
+                "question":"How do I request the creation of my website?",
+                "answer":"You call us on WhatsApp and tell us a little about your website and what you want. Our time will answer you quickly and ask for as much information as possible so that your site is perfect. We started doing it right away."
+            },
+            "faq2":{
+                "question":"How much does it cost to maintain my website?",
+                "answer":"We charge R$40.00 per month to keep the site up and running all the time. This amount includes the cost of hosting. No other amount will be charged."
+            },
+            "faq3":{
+                "question":"How long does it take for my site to be found by search engines?",
+                "answer":"Usually, search engines like Google and Yahoo take a maximum of 03 months to locate your site on the net. However, we register our clients on the search engines right after the project is completed to make this process faster."
+            },
+            "faq4":{
+                "question":"Why have a website?",
+                "answer":"In the Digital Age we are living in, having a website makes all the difference for a company. Because the internet has definitely become an important showcase for companies, and not exposing your products and services on this network can harm business and company development."
+            }
+        }
+    },
+    "footer":{
+        "footer_image_alt":"secure site google certificate image",
+        "description":" | ARCODESOLUÇÕES LTDA | All rights reserved."
+    }
+}

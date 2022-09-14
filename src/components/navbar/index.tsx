@@ -1,19 +1,22 @@
 import * as S from "./styles";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import * as React from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import SwipeableTemporaryDrawer from "../sidebar";
 import { Avatar, Button, IconButton, Stack, Typography } from "@mui/material";
 import { useAppContext } from "../../contexts/AppContext";
 import MenuIcon from "@mui/icons-material/Menu";
-import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 const Navbar: React.FunctionComponent = (): JSX.Element => {
+  const { t, i18n } = useTranslation("common");
   const router = useRouter();
+  const { locales } = router;
+
   const { toggleDrawer } = useAppContext();
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
     setAnchorEl(event.currentTarget);
@@ -21,7 +24,14 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const { status, data: session } = useSession();
+
+  const handleLanguage = async (event: React.MouseEvent, lang: string) => {
+    await i18n.changeLanguage(lang);
+    if (lang !== "pt") {
+      router.push(`/${lang}`);
+    }
+    handleClose();
+  };
 
   return (
     <>
@@ -33,7 +43,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
               src="/tmp/image/arcode_logo.png"
               width="140px"
               height="51px"
-              alt="logo da empresa arcode, contém um círculo azul."
+              alt={t("navbar.logo_alt")}
               priority
               layout="fixed"
               placeholder="blur"
@@ -42,16 +52,16 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
           </div>
           <ul className="menu">
             <li>
-              <a href="#about">Sobre Nós</a>
+              <a href="#about">{t("navbar.about_us")}</a>
             </li>
             <li>
-              <a href="#contact">Contato</a>
+              <a href="#contact">{t("navbar.contact")}</a>
             </li>
             <li>
-              <a href="#portfolio">Portifólio</a>
+              <a href="#portfolio">{t("navbar.portfolio")}</a>
             </li>
             <li>
-              <a href="#faq">FAQ</a>
+              <a href="#faq">{t("navbar.faq")}</a>
             </li>
             <li>
               <a
@@ -62,7 +72,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
                 onClick={handleClick}
                 className="anchor__dropdown"
               >
-                Idiomas
+                {t("navbar.menu_languages.languages")}
                 <Image
                   src="/tmp/svg/arrow_down_menu.svg"
                   alt="arrow down icon"
@@ -76,12 +86,18 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
                 open={open}
                 onClose={handleClose}
                 MenuListProps={{
-                  "aria-labelledby": "basic-button",
+                  "aria-labelledby": "basic-button"
                 }}
               >
-                <MenuItem onClick={handleClose}>Portuguese</MenuItem>
-                <MenuItem onClick={handleClose}>English</MenuItem>
-                <MenuItem onClick={handleClose}>Spanish</MenuItem>
+                {locales?.map((language, index) => {
+                  return (
+                    <Link key={index} href={"/"} locale={language}>
+                      <MenuItem onClick={(e) => handleLanguage(e, language)}>
+                        {language}
+                      </MenuItem>
+                    </Link>
+                  );
+                })}
               </Menu>
             </li>
           </ul>

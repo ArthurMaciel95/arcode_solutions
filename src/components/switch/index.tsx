@@ -17,7 +17,7 @@ type SwitchProps = {
 
 export default function SwitchLabel({
   label,
-  Labelposition = "end",
+  Labelposition = "end"
 }: SwitchProps) {
   return (
     <FormControlLabel

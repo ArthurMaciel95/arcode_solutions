@@ -49,8 +49,8 @@ export const Container = styled.section`
   }
 
   div .avatar {
-    max-width: 356px;
-    max-height: 356px;
+    max-width: 300px;
+    max-height: 300px;
     background: linear-gradient(
         to right,
         var(--primary-color),

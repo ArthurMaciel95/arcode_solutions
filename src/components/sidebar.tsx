@@ -27,7 +27,7 @@ export default function SwipeableTemporaryDrawer() {
                 <ListItemText primary={text} />
               </ListItemButton>
             </ListItem>
-          ),
+          )
         )}
       </List>
     </Box>

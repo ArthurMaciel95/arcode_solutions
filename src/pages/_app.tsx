@@ -6,8 +6,10 @@ import * as gtag from "../lib/gtag";
 import Analytics from "../components/analytics/googleAnalytics";
 import { GlobalStyles } from "../styles/globals";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { SessionProvider } from "next-auth/react";
 import NextjsProgressbar from "nextjs-progressbar";
+import { appWithTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { GetStaticProps } from "next";
 declare module "@mui/material/Button" {
   interface ButtonPropsVariantOverrides {
     whatsapp: true;
@@ -22,14 +24,14 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
 
   const arcodeTheme = createTheme({
     palette: {
-      mode: prefersDarkMode ? "dark" : "light",
+      mode: prefersDarkMode ? "dark" : "light"
     },
     components: {
       MuiButton: {
         variants: [
           {
             props: {
-              variant: "whatsapp",
+              variant: "whatsapp"
             },
             style: {
               color: "#fff",
@@ -37,55 +39,55 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
               fontWeight: "600",
               "&:hover": {
                 backgroundColor: "#38b718",
-                color: "#fff",
-              },
-            },
+                color: "#fff"
+              }
+            }
           },
           {
             props: {
-              variant: "contained",
+              variant: "contained"
             },
             style: {
               color: "#fff",
               background:
                 "linear-gradient(90deg, rgba(73,111,249,1) 0%, rgba(88,191,255,1) 100%)",
-              fontWeight: "600",
-            },
+              fontWeight: "600"
+            }
           },
           {
             props: {
-              variant: "cancel",
+              variant: "cancel"
             },
             style: {
               color: "#E43B3B",
-              background: "transparent",
-            },
-          },
-        ],
+              background: "transparent"
+            }
+          }
+        ]
       },
 
       MuiTextField: {
         variants: [
           {
             props: {
-              variant: "outlined",
+              variant: "outlined"
             },
             style: {
               color: "var(--font-gray-color)",
 
               fontWeight: "600",
               "&:hover": {
-                borderColor: "grey",
+                borderColor: "grey"
               },
               "& .MuiButton-startIcon": {
                 position: "absolute",
-                left: 0,
-              },
-            },
-          },
-        ],
-      },
-    },
+                left: 0
+              }
+            }
+          }
+        ]
+      }
+    }
   });
 
   useEffect(() => {
@@ -100,14 +102,12 @@ function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
 
   return (
     <ThemeProvider theme={arcodeTheme}>
-      <SessionProvider session={session}>
-        <GlobalStyles />
-        <NextjsProgressbar />
-        <Component {...pageProps} />
-      </SessionProvider>
+      <GlobalStyles />
+      <NextjsProgressbar />
+      <Component {...pageProps} />
       <Analytics />
     </ThemeProvider>
   );
 }
 
-export default MyApp;
+export default appWithTranslation(MyApp);

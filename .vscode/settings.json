@@ -1,5 +1,5 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "terminal.integrated.fontSize": 12,
   "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
@@ -7,4 +7,5 @@
   "editor.lineHeight": 14,
   "git.ignoreLimitWarning": true,
   "typescript.tsdk": "node_modules\\typescript\\lib",
+  "prettier.endOfLine": "auto"
 }

@@ -1,4 +1,4 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 
 import AboutUs from "components/about-us";
@@ -17,6 +17,7 @@ import { AppContextProvider } from "contexts/AppContext";
 import DialogCustom from "components/modal-custom/modal-configuration-cookie/indexs";
 import Offer from "components/offer";
 import "animate.css/animate.min.css";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 const Home: NextPage = () => {
   return (
     <>
@@ -46,6 +47,14 @@ const Home: NextPage = () => {
       </AppContextProvider>
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale as string, ["common"]))
+    }
+  };
 };
 
 export default Home;

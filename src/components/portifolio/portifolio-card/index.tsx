@@ -8,7 +8,7 @@ const CardPortifolio = ({
   title,
   description,
   url,
-  alt,
+  alt
 }: CardProps) => {
   return (
     <S.Container>

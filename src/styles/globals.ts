@@ -12,7 +12,8 @@ export const GlobalStyles = createGlobalStyle`
     --tags-color:#09749d;
     --font-link-color:#576d96;
     --font-black-color:#313131;
-    --font-gray-color:#505050;
+    --font-gray-color:#4B4B4B;
+    --font-gray-color-ligth:#656565;
     --font-white-ligth-color:#D3DDFF;
     --fs-lg-header:3rem;
     --fs-sm-header:2rem;
@@ -60,6 +61,7 @@ export const GlobalStyles = createGlobalStyle`
     --font-link-color:#0066ff;
     --font-black-color:#f2f2f2;
     --font-gray-color:#d1d1d1;
+    --font-gray-color-ligth:#aeaeae;
     --font-white-ligth-color:#D3DDFF;
     --fs-lg-header:3rem;
     --fs-sm-header:2rem;
