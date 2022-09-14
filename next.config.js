@@ -1,31 +1,14 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPWA = require("next-pwa");
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const withPlugins = require("next-compose-plugins");
+const { i18n } = require("./next-i18next.config");
+
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
   images: {
-    domains: ["lh3.googleusercontent.com"],
+    domains: ["lh3.googleusercontent.com"]
   },
-  i18n: {
-    locales: ["en-US", "pt-BR", "es-ES"],
-    defaultLocale: "pt-BR"
-  },
+  i18n
 };
 
-module.exports = withPlugins(
-  [
-    withPWA({
-      reactStrictMode: true,
-      pwa: {
-        dest: "public",
-        register: true,
-        skipWaiting: true,
-        disable: process.env.NODE_ENV === "development",
-      },
-    }),
-  ],
-  nextConfig,
-);
+module.exports = nextConfig;

@@ -20,7 +20,7 @@ const Post = () => {
 
     <Typography key="3" color="text.primary">
       Post
-    </Typography>,
+    </Typography>
   ];
   return (
     <>

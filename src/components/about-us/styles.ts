@@ -22,8 +22,11 @@ export const Container = styled.section`
 
   .dashed-circle {
     position: absolute;
-    right: -12rem;
-    top: -11rem;
+    right: 2rem;
+
+    top: -7rem;
+    width: 200px;
+    height: 200px;
   }
 
   .dashed-circle img {
@@ -32,7 +35,6 @@ export const Container = styled.section`
 
   .dashed-line {
     position: absolute;
-    left: -25%;
   }
 
   .dashed-line img {
@@ -49,8 +51,8 @@ export const Container = styled.section`
   }
 
   div .avatar {
-    max-width: 356px;
-    max-height: 356px;
+    max-width: 300px;
+    max-height: 300px;
     background: linear-gradient(
         to right,
         var(--primary-color),

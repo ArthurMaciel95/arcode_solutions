@@ -1,0 +1,157 @@
+{
+    "navbar":{
+        "logo_alt":"Logotipo de la empresa Arcode, contiene un círculo azul.",
+        "about_us":"Sobre nosotros",
+        "contact":"Contacto",
+        "portfolio":"Portfolio",
+        "faq":"FAQ",
+        "menu_languages":{
+            "languages":"idiomas",
+            "portuguese":"Portugués",
+            "english":"Inglés",
+            "spanish":"Español"
+        }
+    },
+    "hero":{
+        "title":"¿NECESITA UNA PÁGINA WEB PARA SU NEGOCIO?",
+        "subtitle":"Ingrese a la era digital y sea visto por sus clientes potenciales.",
+        "buttons_hero":{
+            "btn_whats":"HACER UN PRESUPUESTO",
+            "btn_outline":"VER PORTAFOLIO"
+        }
+    },
+    "about_me":{
+        "title":"SOBRE MÍ",
+        "owner_name":"Arthur Nogueira",
+        "owner_image_alt":"imagen de la cara de arthur rocha, vestido con camisa blanca, cabello negro y ojos marrones.",
+        "description":{
+            "p1":"Desde 2018 me he estado perfeccionando en la creación de sitios web, he aprendido varias técnicas que han evolucionado en la construcción de sitios web. He trabajado en varias empresas relacionadas con el campo del desarrollo de sitios web.",
+            "p2":"Actualmente trabajo por mi cuenta con el fin de entregar valor a su negocio, me he ido especializando en comercio online, Sass y otros productos."
+        }
+        
+    },
+    "blog_posts":{
+        "0":{
+            "post_image_alt":"varios dispositivos, computadora, teléfono celular, computadora portátil que muestra un sitio web",
+            "tags":[
+                "TECNOLOGÍA"
+            ],
+            "post_title":"¿Todavía vale la pena crear sitios web en 2022?"
+            
+        },
+        "1":{
+            "post_image_alt":"en la imagen dice 'SEO' hecho con objetos como equipo y una lupa",
+            "tags":[
+                "TUTORIAL"
+            ],
+            "post_title":"¿Cómo puedo mejorar el SEO de mi sitio?"
+            
+        },
+        "2":{
+            "post_image_alt":"un pequeño carrito de compras en la parte superior de un teclado de computadora, la tecla 'enter' es de color amarillo.",
+            "tags":["PROGRAMACIÓN"
+            ],
+            "post_title":"5 consejos para potenciar tu e-commerce."
+            
+        },
+        "3":{
+            "post_image_alt":"varios dispositivos, computadora, teléfono celular, computadora portátil que muestra un sitio web",
+            "tags":[
+                "MARKETING",
+                "TUTORIAL"
+            ],
+            "post_title":"¿Todavía vale la pena crear sitios web en 2022?"
+            
+        }
+},
+    "benefits":{
+        "title":"BENEFICIOS",
+        "metrics":{
+            "small_text":"MÉTRICA",
+            "title":"Analizar la información del sitio web.",
+            "subtitle":"Con la herramienta de Google Analytics puedes tener algunos datos importantes para tus clientes. como:",
+            "list":{
+                "0":"Cuántas personas están accediendo a su sitio.",
+                "1":"Qué página están visitando.",
+                "2":"Nacionalidad del visitante.",
+                "3":"Tiempo medio de compromiso.",
+                "4":"¿Qué dispositivo está usando?"
+            },
+            "final_para":"¡Herramienta fundamental que tendrás al contratar una web con nosotros!"
+
+        },
+        "responsive":{
+            "small_text":"SENSIBLE",
+            "title":"Compatible con múltiples dispositivos.",
+            "subtitle":"El celular se ha convertido en el principal medio de acceso a internet, por lo que nuestros sitios están hechos para servir a diversos dispositivos como:",
+            "squares":{
+                "0":"COMPUTADORA",
+                "1":"TELÉFONO",
+                "2":"TABLETA"
+            }
+        }
+    },
+    "portfolio":{
+        "title":"PORTAFOLIO",
+        "projects":{
+            "0":{
+                "project_image_alt":"imagen que contiene una página de sitio web del dominio linkshare.",
+                "title":"Link-share",
+                "description":"plataforma para almacenar enlaces, con ella puedes compartir con alguien más tus plataformas como facebook, instagram, tiktok y etc..."
+            },
+            "1":{
+                "project_image_alt":"imagen de un sitio web de venta de billetes de avión llamado billetes de avión sos.",
+                "title":"Boletos de avión SOS",
+                "description":"Sitio web para una empresa que vende boletos de avión y otros servicios adicionales, todo el diseño fue creado desde cero y realizamos la optimización SEO para que tuviera un buen ranking en google"
+            },
+            "2":{
+                "project_image_alt":"imagen de un sitio web de venta de boletos de avión llamado Universo Turismo.",
+                "title":"Universo Turístico",
+                "description":"plataforma que ofrece reservas de boletos aéreos ubicada en Belém, una empresa con sucursales en varios estados de Brasil está en constante crecimiento."
+            }
+        }
+    },
+    "offer":{
+        "title":"Crea tu sitio web en",
+        "degrade":"ARCODE SOLUCIONES",
+        "description":"SITIO TOTALMENTE PERSONALIZADO",
+        "description2":"DE R$599.90",
+        "button":"HAGA UN PRESUPUESTO AHORA!"
+    },
+    "contact":{
+        "title":"CONTACTO",
+        "inputs_label":{
+            "message":"Mensaje",
+            "name":"Nombre",
+            "email":"Email",
+            "phone":"teléfono",
+            "button":"¡ENVIAR AHORA!"
+
+        }
+    },
+    "faq":{
+        "title":"FAQ",
+        "faq_question":{
+            "faq1":{
+                "question":"¿Cómo solicito la creación de mi sitio web?",
+                "answer":"Nos llamas por WhatsApp y nos cuentas un poco sobre tu web y lo que quieres. Nuestro tiempo le responderá rápidamente y le pedirá la mayor cantidad de información posible para que su sitio sea perfecto. Empezamos a hacerlo enseguida."
+            },
+            "faq2":{
+                "question":"¿Cuánto cuesta mantener mi sitio web?",
+                "answer":"Cobramos R$ 40,00 por mes para mantener el sitio en funcionamiento todo el tiempo. Esta cantidad incluye el costo del hospedaje. No se cobrará ningún otro importe."
+            },
+            "faq3":{
+                "question":"¿Cuánto tiempo tardan los motores de búsqueda en encontrar mi sitio?",
+                "answer":"Por lo general, los motores de búsqueda como Google y Yahoo tardan un máximo de 03 meses en ubicar su sitio en la red. Sin embargo, registramos a nuestros clientes en los motores de búsqueda justo después de que se completa el proyecto para que este proceso sea más rápido."
+            },
+            "faq4":{
+                "question":"¿Por qué tener un sitio web?",
+                "answer":"En la era digital en la que vivimos, tener un sitio web marca la diferencia para una empresa. Porque definitivamente internet se ha convertido en un escaparate importante para las empresas, y no exponer sus productos y servicios en esta red puede perjudicar el desarrollo empresarial y empresarial."
+            }
+        }
+    },
+    "footer":{
+        "footer_image_alt":"sitio seguro imagen de certificado de google",
+        "description":" | ARCODE SOLUCIONES LTDA | Reservados todos los derechos."
+    }
+}

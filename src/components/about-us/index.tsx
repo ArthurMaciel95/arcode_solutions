@@ -1,8 +1,9 @@
 import * as S from "./styles";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-
+import { useTranslation } from "next-i18next";
 const AboutUs = () => {
+  const { t, i18n } = useTranslation("common");
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll={false}>
       <S.Container id="about">
@@ -28,26 +29,17 @@ const AboutUs = () => {
             height="300px"
           />
         </span>
-        <h2 className="title-section">SOBRE MIM</h2>
+        <h2 className="title-section">{t("about_me.title")}</h2>
         <div>
           <img
             src="/tmp/image/avatar_profile.jpg"
-            alt="imagem de rosto de arthur rocha, usando camisa branca, cabelo preto e olhos castalhos."
+            alt={t("about_me.owner_image_alt")}
             className="avatar"
           />
           <article className="about-description">
-            <h4>Arthur Nogueira</h4>
-            <p>
-              desde 2018 venho me aperfeiçoando na criação de sites, aprendi
-              diversas técnicas que evoluiram na construção de sites. já
-              trabalhei em diversas empresa relacionadas ao ramo de
-              desenvolvimento de web sites.
-            </p>
-            <p>
-              Atualmente trabalho por conta propria afim de entregar valor para
-              seu negócio, venho me especializando em comércio online, Sass e
-              outros produtos.
-            </p>
+            <h4>{t("about_me.owner_name")}</h4>
+            <p>{t("about_me.description.p1")}</p>
+            <p>{t("about_me.description.p2")}</p>
           </article>
         </div>
       </S.Container>

@@ -4,7 +4,9 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { useTranslation } from "next-i18next";
 const Fqa = () => {
+  const { t } = useTranslation();
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll={false}>
       <S.Container id="faq">
@@ -16,15 +18,10 @@ const Fqa = () => {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <p className="summary">Como solicitar a criação do meu site?</p>
+            <p className="summary">{t("faq.faq_question.faq1.question")}</p>
           </AccordionSummary>
           <AccordionDetails>
-            <p className="description">
-              Você chama a gente pelo <strong>WhatsApp</strong> e conta um pouco
-              sobre o seu site e o que você quer. Nosso time te responderá
-              rapidamente e pedirá o máximo de informações possível para que seu
-              site fique perfeito. Começamos a fazer no mesmo instante.
-            </p>
+            <p className="description">{t("faq.faq_question.faq1.answer")}</p>
           </AccordionDetails>
         </Accordion>
         <Accordion>
@@ -33,14 +30,10 @@ const Fqa = () => {
             aria-controls="panel2a-content"
             id="panel2a-header"
           >
-            <p className="summary">Quanto custa a manuteção do meu site?</p>
+            <p className="summary">{t("faq.faq_question.faq2.question")}</p>
           </AccordionSummary>
           <AccordionDetails>
-            <p className="description">
-              Cobramos <strong>R$40,00</strong> por mês para manter o site
-              funcionando e o tempo todo no ar. Esse valor inclui o custo de
-              hospedagem. Nenhum outro valor será cobrado.
-            </p>
+            <p className="description">{t("faq.faq_question.faq2.answer")}</p>
           </AccordionDetails>
         </Accordion>
         <Accordion>
@@ -49,19 +42,10 @@ const Fqa = () => {
             aria-controls="panel3a-content"
             id="panel3a-header"
           >
-            <p className="summary">
-              Quanto tempo demora para que meu site seja localizado por sites de
-              busca?
-            </p>
+            <p className="summary">{t("faq.faq_question.faq3.question")}</p>
           </AccordionSummary>
           <AccordionDetails>
-            <p className="description">
-              Normalmente, sites de busca como o Google e o Yahoo demoram no
-              <strong> máximo 03 meses</strong> para localizar seu site na rede.
-              Entretanto, cadastramos nossos clientes nos sites de buscas logo
-              após a finalização do projeto para que esse processo seja mais
-              rápido.
-            </p>
+            <p className="description">{t("faq.faq_question.faq3.answer")}</p>
           </AccordionDetails>
         </Accordion>
 
@@ -71,16 +55,10 @@ const Fqa = () => {
             aria-controls="panel4a-content"
             id="panel4a-header"
           >
-            <p className="summary">Por que ter um site?</p>
+            <p className="summary">{t("faq.faq_question.faq4.question")}</p>
           </AccordionSummary>
           <AccordionDetails>
-            <p className="description">
-              Na Era Digital em que estamos vivendo, fazer um site faz toda a
-              diferença para uma empresa. Pois a internet definitivamente se
-              tornou uma vitrine importante para as empresas, e não expor seus
-              produtos e serviços nesta rede pode prejudicar os negócios e o
-              desenvolvimento da empresa.
-            </p>
+            <p className="description">{t("faq.faq_question.faq4.answer")}</p>
           </AccordionDetails>
         </Accordion>
       </S.Container>

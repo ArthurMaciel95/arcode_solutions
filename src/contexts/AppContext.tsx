@@ -33,7 +33,7 @@ const defaultValues: appContextType = {
   OpenModal: () => null,
   handlerOnSubmit: () => null,
   setDisabledFields: () => false,
-  toggleDrawer: () => null,
+  toggleDrawer: () => null
 };
 
 const appContext = createContext<appContextType>(defaultValues);
@@ -112,7 +112,7 @@ export const AppContextProvider = ({ children }: Props) => {
         setDisabledFields,
         CloseModal,
         OpenModal,
-        handlerOnSubmit,
+        handlerOnSubmit
       }}
     >
       {children}

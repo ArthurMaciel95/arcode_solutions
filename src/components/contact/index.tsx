@@ -9,7 +9,9 @@ import { FormFieldsType, ErrorFormsType } from "../../types/formContact";
 import { useAppContext } from "../../contexts/AppContext";
 import * as Yup from "yup";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { useTranslation } from "next-i18next";
 const Contact = () => {
+  const { t } = useTranslation();
   const {
     OpenModal,
     loading,
@@ -17,7 +19,7 @@ const Contact = () => {
     disabled,
     setDisabledFields,
     setCookieIsAccept,
-    cookieAccept,
+    cookieAccept
   } = useAppContext();
 
   const [name, setName] = useState("");
@@ -26,7 +28,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState<ErrorFormsType>({
     isError: false,
-    message: "",
+    message: ""
   });
 
   const resolver: Resolver<FormFieldsType> = async (values) => {
@@ -36,17 +38,17 @@ const Contact = () => {
         ? {
             name: {
               type: "required",
-              message: "This is required.",
-            },
+              message: "This is required."
+            }
           }
-        : {},
+        : {}
     };
   };
 
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors }
   } = useForm<FormFieldsType>({ resolver });
 
   useEffect(() => {
@@ -58,7 +60,7 @@ const Contact = () => {
       name: Yup.string().required("O campo está vazio.").min(5).max(30),
       email: Yup.string().email("Email Inválido."),
       phone: Yup.string().required("Telefone inválido.").min(8).max(15),
-      message: Yup.string().required("O campo está vazio.").min(10),
+      message: Yup.string().required("O campo está vazio.").min(10)
     });
 
     return await FormValidationschema.validate(payload);
@@ -85,12 +87,12 @@ const Contact = () => {
             <div className="form-section-one">
               <TextField
                 id="outlined-field-name"
-                label="Nome"
+                label={t("contact.inputs_label.name")}
                 variant="outlined"
                 fullWidth
                 type="text"
                 sx={{
-                  marginBottom: "40px",
+                  marginBottom: "40px"
                 }}
                 {...register("name")}
                 error={error.isError}
@@ -100,20 +102,20 @@ const Contact = () => {
 
               <TextField
                 id="outlined-field-email"
-                label="Email"
+                label={t("contact.inputs_label.email")}
                 variant="outlined"
                 fullWidth
                 type="email"
                 sx={{
                   marginBottom: "40px",
-                  color: "#999",
+                  color: "#999"
                 }}
                 {...register("email")}
                 disabled={disabled}
               />
 
               <TextField
-                label="Celular"
+                label={t("contact.inputs_label.phone")}
                 {...register("phone")}
                 disabled={disabled}
               />
@@ -124,18 +126,18 @@ const Contact = () => {
                   padding: "20px",
                   fontWeight: "600",
                   letterSpacing: "4px",
-                  marginTop: "20px  ",
+                  marginTop: "20px  "
                 }}
                 type="submit"
                 disabled={disabled}
               >
-                ENVIAR AGORA!
+                {t("contact.inputs_label.button")}
               </Button>
             </div>
             <div className="form-section-two">
               <TextField
                 id="outlined-multiline-message"
-                label="Mensagem"
+                label={t("contact.inputs_label.message")}
                 multiline
                 type="text"
                 fullWidth

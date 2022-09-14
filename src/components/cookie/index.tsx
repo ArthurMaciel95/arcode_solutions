@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useAppContext } from "contexts/AppContext";
 import Image from "next/image";
-
+import { useTranslation } from "next-i18next";
 const CookieBar = () => {
+  const { t } = useTranslation();
   const [cookie, setCookie] = useState<boolean>();
   const { handlerDialog } = useAppContext();
   useEffect(() => {
@@ -20,30 +21,26 @@ const CookieBar = () => {
   return cookie ? (
     <S.Container>
       <h4>
-        Politica de Cookie
+        {t("cookie.title")}
         <Image
           src="/tmp/image/cookie.png"
           placeholder="blur"
           blurDataURL="/tmp/image/cookie.png"
-          alt="biscoito rodando em espiral"
+          alt={t("cookie.image_alt")}
           height="25px"
           width="25px"
           layout="fixed"
         />
       </h4>
       <article>
-        <p>
-          Utilizamos cookies essenciais e tecnologias semelhantes de acordo com
-          a nossa Política de Privacidade e, ao continuar navegando, você
-          concorda com estas condições.
-        </p>
+        <p>{t("cookie.description")}</p>
         <div>
-          <Link href="/policy-privacy">Confirir as Politicas de Cookies.</Link>
+          <Link href="/policy-privacy">{t("cookie.link")}</Link>
           <Button variant="outlined" onClick={() => handlerDialog(true)}>
-            Gerenciar Cookies
+            {t("cookie.btn.0")}
           </Button>
           <Button variant="contained" onClick={handlerCookieEnable}>
-            Aceitar todos
+            {t("cookie.btn.1")}
           </Button>
         </div>
       </article>

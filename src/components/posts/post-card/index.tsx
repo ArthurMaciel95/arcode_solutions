@@ -17,7 +17,7 @@ export const PostCard: React.FunctionComponent<PostCardProps> = ({
   title,
   url,
   tags,
-  createAt,
+  createAt
 }): JSX.Element => {
   return (
     <Link href={url}>

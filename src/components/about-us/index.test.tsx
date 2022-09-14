@@ -6,11 +6,11 @@ describe("<AboutUs/> is Rendering", () => {
     const { container } = render(<AboutUs />);
 
     expect(
-      screen.getByRole("heading", { name: /Arthur Nogueira/i }),
+      screen.getByRole("heading", { name: /Arthur Nogueira/i })
     ).toBeInTheDocument();
 
     expect(
-      screen.getByRole("heading", { name: /SOBRE MIM/i }),
+      screen.getByRole("heading", { name: /SOBRE MIM/i })
     ).toBeInTheDocument();
   });
 });
