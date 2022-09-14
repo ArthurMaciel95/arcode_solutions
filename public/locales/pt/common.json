@@ -3,7 +3,7 @@
         "logo_alt":"logo da empresa arcode, contém um círculo azul.",
         "about_us":"Sobre Nós",
         "contact":"Contato",
-        "Portfolio":"Portfolio",
+        "portfolio":"Portfolio",
         "faq":"FAQ",
         "menu_languages":{
             "languages":"Idiomas",
@@ -25,8 +25,8 @@
         "owner_name":"Arthur Nogueira",
         "owner_image_alt":"imagem de rosto de arthur rocha, usando camisa branca, cabelo preto e olhos castalhos.",
         "description":{
-            "p1":"desde 2018 venho me aperfeiçoando na criação de sites, aprendi diversas técnicas que evoluiram na construção de sites. já trabalhei em diversas empresa relacionadas ao ramo de desenvolvimento de web sites.",
-            "p2":"Atualmente trabalho por conta propria afim de entregar valor para seu negócio, venho me especializando em comércio online, Sass e outros produtos."
+            "p1":"Desde 2018 venho me aperfeiçoando na criação de sites, aprendi diversas técnicas que evoluíram na construção de sites.",
+            "p2":"Atualmente trabalho por conta própria de modo a entregar valor para seu negócio, venho me especializando em comércio online, Sass e outros produtos."
         }
         
     },

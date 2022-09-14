@@ -1,132 +1,131 @@
 {
     "navbar":{
-        "logo_alt":"Arcode company logo, contains a blue circle.",
-        "about_us":"About Us",
-        "contact":"Contact",
+        "logo_alt":"Logotipo de la empresa Arcode, contiene un círculo azul.",
+        "about_us":"Sobre nosotros",
+        "contact":"Contacto",
         "portfolio":"Portfolio",
         "faq":"FAQ",
         "menu_languages":{
-            "languages":"languages",
-            "portuguese":"Portuguese",
-            "english":"English",
-            "spanish":"Spanish"
+            "languages":"idiomas",
+            "portuguese":"Portugués",
+            "english":"Inglés",
+            "spanish":"Español"
         }
     },
     "hero":{
-        "title":"NEED A WEBSITE FOR YOUR BUSINESS?",
-        "subtitle":"Step into the digital age and be seen by your potential customers.",
+        "title":"¿NECESITA UNA PÁGINA WEB PARA SU NEGOCIO?",
+        "subtitle":"Ingrese a la era digital y sea visto por sus clientes potenciales.",
         "buttons_hero":{
-            "btn_whats":"MAKE A BUDGET",
-            "btn_outline":"SEE PORTFOLIO"
+            "btn_whats":"HACER UN PRESUPUESTO",
+            "btn_outline":"VER PORTAFOLIO"
         }
     },
     "about_me":{
-        "title":"ABOUT ME",
+        "title":"SOBRE MÍ",
         "owner_name":"Arthur Nogueira",
-        "owner_image_alt":"face image of arthur rocha, wearing white shirt, black hair and brown eyes.",
+        "owner_image_alt":"imagen de la cara de arthur rocha, vestido con camisa blanca, cabello negro y ojos marrones.",
         "description":{
-            "p1":"Since 2018 I've been perfecting myself in website creation, I've learned several techniques that have evolved in website construction. I have worked in several companies related to the field of web site development.",
-            "p2":"Currently I work on my own in order to deliver value to your business, I've been specializing in online commerce, Sass and other products."
+            "p1":"Desde 2018 me he estado perfeccionando en la creación de sitios web, he aprendido varias técnicas que han evolucionado en la construcción de sitios web. He trabajado en varias empresas relacionadas con el campo del desarrollo de sitios web.",
+            "p2":"Actualmente trabajo por mi cuenta con el fin de entregar valor a su negocio, me he ido especializando en comercio online, Sass y otros productos."
         }
         
     },
-    "blog_posts":[
-        {
-            "post_image_alt":"multiple devices, computer, cellphone, notebook showing a website",
+    "blog_posts":{
+        "0":{
+            "post_image_alt":"varios dispositivos, computadora, teléfono celular, computadora portátil que muestra un sitio web",
             "tags":[
-                "TECHNOLOGY"
+                "TECNOLOGÍA"
             ],
-            "post_title":"Is it still worth creating websites in 2022?"
+            "post_title":"¿Todavía vale la pena crear sitios web en 2022?"
             
         },
-        {
-            "post_image_alt":"on the image it says 'SEO' made with objects like gear and a magnifying glass",
+        "1":{
+            "post_image_alt":"en la imagen dice 'SEO' hecho con objetos como equipo y una lupa",
             "tags":[
                 "TUTORIAL"
             ],
-            "post_title":"How can I improve my site's SEO."
+            "post_title":"¿Cómo puedo mejorar el SEO de mi sitio?"
             
         },
-        {
-            "post_image_alt":"a small shopping cart on top of a computer keyboard, the 'enter' key is colored yellow.",
-            "tags":[
-                "PROGRAMMING"
+        "2":{
+            "post_image_alt":"un pequeño carrito de compras en la parte superior de un teclado de computadora, la tecla 'enter' es de color amarillo.",
+            "tags":["PROGRAMACIÓN"
             ],
-            "post_title":"5 tips to leverage your e-commerce."
+            "post_title":"5 consejos para potenciar tu e-commerce."
             
         },
-        {
-            "post_image_alt":"multiple devices, computer, cellphone, notebook showing a website",
+        "3":{
+            "post_image_alt":"varios dispositivos, computadora, teléfono celular, computadora portátil que muestra un sitio web",
             "tags":[
                 "MARKETING",
                 "TUTORIAL"
             ],
-            "post_title":"Is it still worth creating websites in 2022?"
+            "post_title":"¿Todavía vale la pena crear sitios web en 2022?"
             
         }
-    ],
+},
     "benefits":{
-        "title":"BENEFITS",
+        "title":"BENEFICIOS",
         "metrics":{
-            "small_text":"METRICS",
-            "title":"Analyze website information",
-            "subtitle":"With the Google Analytics tool you can have some data important to your customers. as:",
+            "small_text":"MÉTRICA",
+            "title":"Analizar la información del sitio web.",
+            "subtitle":"Con la herramienta de Google Analytics puedes tener algunos datos importantes para tus clientes. como:",
             "list":{
-                "0":"How many people are accessing your site.",
-                "1":"Which page they are visiting.",
-                "2":"Nationality of the visitor.",
-                "3":"Average engagement time.",
-                "4":"What device is he using."
+                "0":"Cuántas personas están accediendo a su sitio.",
+                "1":"Qué página están visitando.",
+                "2":"Nacionalidad del visitante.",
+                "3":"Tiempo medio de compromiso.",
+                "4":"¿Qué dispositivo está usando?"
             },
-            "final_para":"Fundamental tool that you will have when hiring a website with us!"
+            "final_para":"¡Herramienta fundamental que tendrás al contratar una web con nosotros!"
 
         },
         "responsive":{
-            "small_text":"RESPONSIVE",
-            "title":"Compatible with multiple devices.",
-            "subtitle":"The cell phone has become the main means of accessing the internet, so our sites are made to serve various devices such as:",
+            "small_text":"SENSIBLE",
+            "title":"Compatible con múltiples dispositivos.",
+            "subtitle":"El celular se ha convertido en el principal medio de acceso a internet, por lo que nuestros sitios están hechos para servir a diversos dispositivos como:",
             "squares":{
-                "0":"COMPUTER",
-                "1":"PHONE",
-                "2":"TABLET"
+                "0":"COMPUTADORA",
+                "1":"TELÉFONO",
+                "2":"TABLETA"
             }
         }
     },
     "portfolio":{
-        "title":"PORTFOLIO",
+        "title":"PORTAFOLIO",
         "projects":{
             "0":{
-                "project_image_alt":"image containing a website page from the linkshare domain.",
+                "project_image_alt":"imagen que contiene una página de sitio web del dominio linkshare.",
                 "title":"Link-share",
-                "description":"platform for storing links, with it you can share with someone else your platforms such as facebook, instagram, tiktok and etc..."
+                "description":"plataforma para almacenar enlaces, con ella puedes compartir con alguien más tus plataformas como facebook, instagram, tiktok y etc..."
             },
             "1":{
-                "project_image_alt":"image of an airline ticket sales website called sos airline tickets.",
-                "title":"SOS Airline Tickets",
-                "description":"Website for a company that sells airline tickets and other additional services, the entire design was created from scratch and we performed the SEO optimization so that it had a good ranking in google."
+                "project_image_alt":"imagen de un sitio web de venta de billetes de avión llamado billetes de avión sos.",
+                "title":"Boletos de avión SOS",
+                "description":"Sitio web para una empresa que vende boletos de avión y otros servicios adicionales, todo el diseño fue creado desde cero y realizamos la optimización SEO para que tuviera un buen ranking en google"
             },
             "2":{
-                "project_image_alt":"image of an airline ticket sales website called Universo Turismo.",
-                "title":"Tourism Universe",
-                "description":"platform that offers air ticket reservations located in Belém, a company with branches in several states of Brazil is constantly growing."
+                "project_image_alt":"imagen de un sitio web de venta de boletos de avión llamado Universo Turismo.",
+                "title":"Universo Turístico",
+                "description":"plataforma que ofrece reservas de boletos aéreos ubicada en Belém, una empresa con sucursales en varios estados de Brasil está en constante crecimiento."
             }
         }
     },
     "offer":{
-        "title":"Create your website at ",
-        "degrade":"ARCODE SOLUTIONS",
-        "description":"FULLY CUSTOM SITE",
-        "description2":"FROM R$599.90",
-        "button":"MAKE A BUDGET NOW!"
+        "title":"Crea tu sitio web en",
+        "degrade":"ARCODE SOLUCIONES",
+        "description":"SITIO TOTALMENTE PERSONALIZADO",
+        "description2":"DE R$599.90",
+        "button":"HAGA UN PRESUPUESTO AHORA!"
     },
     "contact":{
-        "title":"CONTACT",
+        "title":"CONTACTO",
         "inputs_label":{
-            "message":"Message",
-            "name":"Name",
+            "message":"Mensaje",
+            "name":"Nombre",
             "email":"Email",
-            "phone":"phone",
-            "button":"SEND NOW!"
+            "phone":"teléfono",
+            "button":"¡ENVIAR AHORA!"
 
         }
     },
@@ -134,25 +133,25 @@
         "title":"FAQ",
         "faq_question":{
             "faq1":{
-                "question":"How do I request the creation of my website?",
-                "answer":"You call us on WhatsApp and tell us a little about your website and what you want. Our time will answer you quickly and ask for as much information as possible so that your site is perfect. We started doing it right away."
+                "question":"¿Cómo solicito la creación de mi sitio web?",
+                "answer":"Nos llamas por WhatsApp y nos cuentas un poco sobre tu web y lo que quieres. Nuestro tiempo le responderá rápidamente y le pedirá la mayor cantidad de información posible para que su sitio sea perfecto. Empezamos a hacerlo enseguida."
             },
             "faq2":{
-                "question":"How much does it cost to maintain my website?",
-                "answer":"We charge R$40.00 per month to keep the site up and running all the time. This amount includes the cost of hosting. No other amount will be charged."
+                "question":"¿Cuánto cuesta mantener mi sitio web?",
+                "answer":"Cobramos R$ 40,00 por mes para mantener el sitio en funcionamiento todo el tiempo. Esta cantidad incluye el costo del hospedaje. No se cobrará ningún otro importe."
             },
             "faq3":{
-                "question":"How long does it take for my site to be found by search engines?",
-                "answer":"Usually, search engines like Google and Yahoo take a maximum of 03 months to locate your site on the net. However, we register our clients on the search engines right after the project is completed to make this process faster."
+                "question":"¿Cuánto tiempo tardan los motores de búsqueda en encontrar mi sitio?",
+                "answer":"Por lo general, los motores de búsqueda como Google y Yahoo tardan un máximo de 03 meses en ubicar su sitio en la red. Sin embargo, registramos a nuestros clientes en los motores de búsqueda justo después de que se completa el proyecto para que este proceso sea más rápido."
             },
             "faq4":{
-                "question":"Why have a website?",
-                "answer":"In the Digital Age we are living in, having a website makes all the difference for a company. Because the internet has definitely become an important showcase for companies, and not exposing your products and services on this network can harm business and company development."
+                "question":"¿Por qué tener un sitio web?",
+                "answer":"En la era digital en la que vivimos, tener un sitio web marca la diferencia para una empresa. Porque definitivamente internet se ha convertido en un escaparate importante para las empresas, y no exponer sus productos y servicios en esta red puede perjudicar el desarrollo empresarial y empresarial."
             }
         }
     },
     "footer":{
-        "footer_image_alt":"secure site google certificate image",
-        "description":" | ARCODESOLUÇÕES LTDA | All rights reserved."
+        "footer_image_alt":"sitio seguro imagen de certificado de google",
+        "description":" | ARCODE SOLUCIONES LTDA | Reservados todos los derechos."
     }
 }

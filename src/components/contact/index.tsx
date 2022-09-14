@@ -131,7 +131,7 @@ const Contact = () => {
                 type="submit"
                 disabled={disabled}
               >
-                {t("contact.btn.message")}
+                {t("contact.inputs_label.button")}
               </Button>
             </div>
             <div className="form-section-two">

@@ -1,11 +1,13 @@
 import * as S from "./styles";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 const Footer = () => {
+  const { t } = useTranslation("common");
   return (
     <S.Footer>
       <Image
         src="/tmp/image/google_secure.png"
-        alt="imagem de certificado do google de site seguro;"
+        alt={t("footer.footer_image_alt")}
         width="145px"
         height="50px"
         placeholder="blur"
@@ -13,8 +15,8 @@ const Footer = () => {
         layout="fixed"
       />
       <p>
-        © {new Date().getFullYear()} | ARCODESOLUÇÕES LTDA | Todos os direitos
-        reservados.
+        © {new Date().getFullYear()}
+        {t("footer.description")}
       </p>
     </S.Footer>
   );
