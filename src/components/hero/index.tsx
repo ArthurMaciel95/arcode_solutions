@@ -40,8 +40,6 @@ const Hero = () => {
           alt="seta apontando para baixo"
           width="35px"
           height="35px"
-          placeholder="blur"
-          blurDataURL="/tmp/svg/arrow_down.svg"
         />
       </span>
     </S.Container>

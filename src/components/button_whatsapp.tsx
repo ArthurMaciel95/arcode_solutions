@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 const ButtonWhatsapp = () => {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
   return (
     <Button
       target="_blank"
