@@ -1,9 +1,8 @@
 import * as S from "./styles";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import { useTranslation } from "next-i18next";
+
 const AboutUs = () => {
-  const { t, i18n } = useTranslation("common");
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll={false}>
       <S.Container id="about">
@@ -21,12 +20,12 @@ const AboutUs = () => {
         <span className="dots">
           <Image
             src="/tmp/svg/dots.svg"
-            alt="pessoa usando camisa branca, olhos e cabelo castanho."
+            alt=""
             layout="fill"
-            objectFit="cover"
             placeholder="blur"
             blurDataURL="/tmp/svg/dots.svg"
-            height="300px"
+            height="300"
+            width="300"
           />
         </span>
         <h2 className="title-section">{t("about_me.title")}</h2>

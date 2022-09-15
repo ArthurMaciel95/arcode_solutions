@@ -25,11 +25,10 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
     setAnchorEl(null);
   };
 
-  const handleLanguage = async (event: React.MouseEvent, lang: string) => {
+  const handleLanguage = async (lang: string) => {
     await i18n.changeLanguage(lang);
-    if (lang !== "pt") {
-      router.push(`/${lang}`);
-    }
+    router.locale = lang;
+
     handleClose();
   };
 
@@ -92,7 +91,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
                 {locales?.map((language, index) => {
                   return (
                     <Link key={index} href={"/"} locale={language}>
-                      <MenuItem onClick={(e) => handleLanguage(e, language)}>
+                      <MenuItem onClick={() => handleLanguage(language)}>
                         {language}
                       </MenuItem>
                     </Link>

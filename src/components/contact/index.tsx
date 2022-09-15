@@ -3,7 +3,6 @@ import * as S from "./styles";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import InputMask from "react-input-mask";
 import { useForm, Resolver, SubmitHandler } from "react-hook-form";
 import { FormFieldsType, ErrorFormsType } from "../../types/formContact";
 import { useAppContext } from "../../contexts/AppContext";
