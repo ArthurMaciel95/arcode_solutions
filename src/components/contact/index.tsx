@@ -6,10 +6,12 @@ import Button from "@mui/material/Button";
 import { useForm, Resolver, SubmitHandler } from "react-hook-form";
 import { FormFieldsType, ErrorFormsType } from "../../types/formContact";
 import { useAppContext } from "../../contexts/AppContext";
+import { useRouter } from "next/router";
 import * as Yup from "yup";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { useTranslation } from "next-i18next";
 const Contact = () => {
+  const router = useRouter();
   const { t } = useTranslation();
   const {
     OpenModal,
@@ -20,15 +22,6 @@ const Contact = () => {
     setCookieIsAccept,
     cookieAccept
   } = useAppContext();
-
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [message, setMessage] = useState("");
-  const [error, setError] = useState<ErrorFormsType>({
-    isError: false,
-    message: ""
-  });
 
   const resolver: Resolver<FormFieldsType> = async (values) => {
     return {
@@ -47,8 +40,17 @@ const Contact = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors }
-  } = useForm<FormFieldsType>({ resolver });
+    formState: { errors },
+    reset
+  } = useForm<FormFieldsType>({
+    resolver,
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      message: ""
+    }
+  });
 
   useEffect(() => {
     setCookieIsAccept(!window.localStorage.getItem("cookie_accept") as boolean);
@@ -69,13 +71,37 @@ const Contact = () => {
    * função para limpar campos de contatos.
    */
   function cleaningInputs(): void {
-    setName("");
-    setEmail("");
-    setPhone("");
-    setMessage("");
+    reset({
+      name: "",
+      email: "",
+      phone: "",
+      message: ""
+    });
   }
 
-  const onSubmit: SubmitHandler<FormFieldsType> = (data) => console.log(data);
+  async function sendEmail(data: object): Promise<void> {
+    const urlPath = router.basePath;
+    const response = await fetch(`${urlPath}/api/send-email`, {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+      OpenModal();
+      //mostrar modal
+    }
+  }
+
+  const onSubmit: SubmitHandler<FormFieldsType> = (data) => {
+    handlerLoading();
+    sendEmail(data);
+    handlerLoading();
+    cleaningInputs();
+  };
 
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll={false}>
@@ -94,9 +120,7 @@ const Contact = () => {
                   marginBottom: "40px"
                 }}
                 {...register("name")}
-                error={error.isError}
                 disabled={disabled}
-                helperText={error.isError ? error.message : ""}
               />
 
               <TextField
