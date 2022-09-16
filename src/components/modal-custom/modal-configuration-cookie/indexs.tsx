@@ -7,20 +7,20 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import { Divider } from "@mui/material";
-import * as S from "./styles";
+
 import SwitchLabel from "components/switch";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
+
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const DialogCustom = () => {
   const { handlerDialog, showDialog } = useAppContext();
 
-  const handleClickOpen = () => {
-    handlerDialog(true);
-  };
+  // const handleClickOpen = () => {
+  //   handlerDialog(true);
+  // };
 
   const handleClose = () => {
     handlerDialog(false);

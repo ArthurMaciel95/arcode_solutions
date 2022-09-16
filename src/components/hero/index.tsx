@@ -4,7 +4,7 @@ import Image from "next/image";
 import ButtonWhatsapp from "../button_whatsapp";
 import { useTranslation } from "next-i18next";
 const Hero = () => {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
   return (
     <S.Container>
       <section className="hero">
