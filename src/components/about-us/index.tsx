@@ -1,8 +1,9 @@
 import * as S from "./styles";
 import Image from "next/image";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-
+import { useTranslation } from "next-i18next";
 const AboutUs = () => {
+  const { t } = useTranslation();
   return (
     <AnimationOnScroll animateIn="animate__fadeIn" animatePreScroll={false}>
       <S.Container id="about">
