@@ -9,7 +9,7 @@ import SimpleBackdrop from "components/loading_backdrop";
 import ModalCustom from "components/modal-custom";
 import Navbar from "components/navbar";
 import Portifolio from "components/portifolio";
-
+import AboutUs from "components/about-us";
 import Services from "components/services";
 import { AppContextProvider } from "contexts/AppContext";
 import DialogCustom from "components/modal-custom/modal-configuration-cookie/indexs";
@@ -34,7 +34,7 @@ const Home: NextPage = () => {
         <ModalCustom />
         <Navbar />
         <Hero />
-
+        <AboutUs />
         {/*<Posts />*/}
         <Portifolio />
         <Services />
