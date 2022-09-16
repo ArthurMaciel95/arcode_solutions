@@ -1,7 +1,5 @@
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
-
-import AboutUs from "components/about-us";
 import Contact from "components/contact";
 import CookieBar from "components/cookie";
 import Fqa from "components/faq";
@@ -11,7 +9,7 @@ import SimpleBackdrop from "components/loading_backdrop";
 import ModalCustom from "components/modal-custom";
 import Navbar from "components/navbar";
 import Portifolio from "components/portifolio";
-import Posts from "components/posts";
+
 import Services from "components/services";
 import { AppContextProvider } from "contexts/AppContext";
 import DialogCustom from "components/modal-custom/modal-configuration-cookie/indexs";
@@ -36,7 +34,7 @@ const Home: NextPage = () => {
         <ModalCustom />
         <Navbar />
         <Hero />
-        <AboutUs />
+
         {/*<Posts />*/}
         <Portifolio />
         <Services />

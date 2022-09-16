@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import * as S from "./styles";
 import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { useForm, Resolver, SubmitHandler } from "react-hook-form";
-import { FormFieldsType, ErrorFormsType } from "../../types/formContact";
+import { FormFieldsType } from "../../types/formContact";
 import { useAppContext } from "../../contexts/AppContext";
 import { useRouter } from "next/router";
 import * as Yup from "yup";
@@ -15,12 +15,11 @@ const Contact = () => {
   const { t } = useTranslation();
   const {
     OpenModal,
-    loading,
+
     handlerLoading,
     disabled,
     setDisabledFields,
-    setCookieIsAccept,
-    cookieAccept
+    setCookieIsAccept
   } = useAppContext();
 
   const resolver: Resolver<FormFieldsType> = async (values) => {
@@ -96,10 +95,12 @@ const Contact = () => {
     }
   }
 
-  const onSubmit: SubmitHandler<FormFieldsType> = (data) => {
+  const onSubmit: SubmitHandler<FormFieldsType> = async (data) => {
+    setDisabledFields(true);
     handlerLoading();
-    sendEmail(data);
+    await sendEmail(data);
     handlerLoading();
+    setDisabledFields(false);
     cleaningInputs();
   };
 
