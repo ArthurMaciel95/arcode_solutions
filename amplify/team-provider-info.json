@@ -1,0 +1,15 @@
+{
+  "arcode": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-arcodesolutions-arcode-175600-authRole",
+      "UnauthRoleArn": "arn:aws:iam::448125056877:role/amplify-arcodesolutions-arcode-175600-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::448125056877:role/amplify-arcodesolutions-arcode-175600-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-arcodesolutions-arcode-175600-deployment",
+      "UnauthRoleName": "amplify-arcodesolutions-arcode-175600-unauthRole",
+      "StackName": "amplify-arcodesolutions-arcode-175600",
+      "StackId": "arn:aws:cloudformation:us-west-2:448125056877:stack/amplify-arcodesolutions-arcode-175600/f92a9ca0-3601-11ed-888f-06edfb690cb5",
+      "AmplifyAppId": "d2mtr5ifwk6ryh"
+    }
+  }
+}
