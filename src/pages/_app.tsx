@@ -8,8 +8,6 @@ import { GlobalStyles } from "../styles/globals";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import NextjsProgressbar from "nextjs-progressbar";
 import { appWithTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { GetStaticProps } from "next";
 declare module "@mui/material/Button" {
   interface ButtonPropsVariantOverrides {
     whatsapp: true;
