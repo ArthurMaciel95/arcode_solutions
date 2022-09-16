@@ -10,7 +10,7 @@ const CookieBar = () => {
   const [cookie, setCookie] = useState<boolean>();
   const { handlerDialog } = useAppContext();
   useEffect(() => {
-    setCookie((state) => !window.localStorage.getItem("cookie_accept"));
+    setCookie(() => !window.localStorage.getItem("cookie_accept"));
   }, []);
 
   function handlerCookieEnable(): void {
