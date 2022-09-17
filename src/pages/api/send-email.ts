@@ -16,33 +16,16 @@ const sendEmail = async (req: NextApiRequest, res: NextApiResponse) => {
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
   });
 
-  await awsSES
-    .sendEmail({
-      Source: "no-reply@arcodesolucoes.com",
-      Destination: {
-        ToAddresses: ["arthurnmrocha@gmail.com"]
-      },
-      Message: {
-        Subject: {
-          Data: `Pedido de Orçamento feito do cliente ${body.name}`,
-          Charset: "utf-8"
-        },
-        Body: {
-          Text: {
-            Data: body.message
-          },
-          Html: {
-            Data: `
-            Nome:${body.name}<br/>
-            Telefone:${body.phone}<br/>
-            Email:${body.email}<br/>
-            Message:${body.message}
-            `
-          }
-        }
-      }
-    })
-    .promise();
+  const params = {
+    Source: "no-reply@arcodesolucoes.com",
+    Destination: {
+      ToAddresses: ["arthurnmrocha@gmail.com"]
+    },
+    Template: "template-budget",
+    TemplateData: JSON.stringify(body)
+  };
+
+  await awsSES.sendTemplatedEmail(params).promise();
 
   return res.json({
     ok: true

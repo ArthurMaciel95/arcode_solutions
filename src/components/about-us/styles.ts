@@ -31,7 +31,7 @@ export const Container = styled.section`
     position: absolute;
   }
   .dashed-line img {
-    width: 100vw;
+    width: 100%;
   }
   @keyframes spinning {
     from {

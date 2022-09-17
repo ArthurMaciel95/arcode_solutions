@@ -12,6 +12,8 @@ export const Container = styled.section`
   }
 
   .services__area {
+    width: 70vw;
+    margin: 0 auto;
   }
 
   .services__area .services__layout {
@@ -78,6 +80,9 @@ export const Container = styled.section`
   }
 
   @media screen and (max-width: 720px) {
+    .services__area {
+      width: 95vw;
+    }
   }
 
   @media screen and (max-width: 540px) {
@@ -92,6 +97,13 @@ export const Container = styled.section`
         div {
           h3 {
             font-size: 2rem;
+            font-weight: 600;
+          }
+          p {
+            font-size: 20px;
+          }
+          ul li {
+            font-size: 16px;
           }
         }
       }
