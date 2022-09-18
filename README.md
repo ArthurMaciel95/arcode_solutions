@@ -11,10 +11,10 @@
 2. digite o comando "npm i" para instalar as dependencias
 3. digite o comando "npm run dev" para rodar no ambiente de desenvolvimento.
 
-<h1 align=center>Tecnologias Utilizadas</h1>
+<h1 align=left>Tecnologias Utilizadas</h1>
 
-NODEJS
-NEXTJS
-I18N
-ESLINT
-VSCODE
+- NODEJS
+- NEXTJS
+- I18N
+- ESLINT
+- VSCODE
