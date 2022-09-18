@@ -15,5 +15,5 @@
   },
   "editor.lineHeight": 14,
   "git.ignoreLimitWarning": true,
-  "prettier.endOfLine": "auto"
+  "prettier.endOfLine": "all"
 }
