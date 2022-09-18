@@ -1,170 +1,158 @@
 {
-    "navbar":{
-        "logo_alt":"logo da empresa arcode, contém um círculo azul.",
-        "about_us":"Sobre Nós",
-        "contact":"Contato",
-        "portfolio":"Portfolio",
-        "faq":"FAQ",
-        "menu_languages":{
-            "languages":"Idiomas",
-            "portuguese":"Português",
-            "english":"Inglês",
-            "spanish":"Espanhol"
-        }
-    },
-    "hero":{
-        "title":"PRECISANDO DE UM SITE PARA SEU NEGÓCIO?",
-        "subtitle":"Entre para a era digital e seja visto pelo seus clientes em potencial.",
-        "buttons_hero":{
-            "btn_whats":"FAÇA UM ORÇAMENTO",
-            "btn_outline":"VER PORTIFOLIO"
-        }
-    },
-    "about_me":{
-        "title":"SOBRE MIM",
-        "owner_name":"Arthur Nogueira",
-        "owner_image_alt":"imagem de rosto de arthur rocha, usando camisa branca, cabelo preto e olhos castalhos.",
-        "description":{
-            "p1":"Desde 2018 venho me aperfeiçoando na criação de sites, aprendi diversas técnicas que evoluíram na construção de sites.",
-            "p2":"Atualmente trabalho por conta própria de modo a entregar valor para seu negócio, venho me especializando em comércio online, Sass e outros produtos."
-        }
-        
-    },
-    "blog_posts":[
-        {
-            "post_image_alt":"vários dispositivos, computador, celular, notebook mostrando um site",
-            "tags":[
-                "TECNOLOGIA"
-            ],
-            "post_title":"Ainda vale a pena criar sites em 2022?"
-            
-        },
-        {
-            "post_image_alt":"na imagem está escrito 'SEO' feitas com objetos como engrenagem e uma lente de aumento",
-            "tags":[
-                "TUTORIAL"
-            ],
-            "post_title":"Como posso melhorar o SEO do meu site."
-            
-        },
-        {
-            "post_image_alt":"um carrinho de compra pequeno em cima de uma teclado de computador, a tecla 'entrar' está na cor amarela.",
-            "tags":[
-                "PROGRAMAÇÃO"
-            ],
-            "post_title":"5 dicas para alavancar seu e-commerce."
-            
-        },
-        {
-            "post_image_alt":"vários dispositivos, computador, celular, notebook mostrando um site",
-            "tags":[
-                "MARKETING",
-                "TUTORIAL"
-            ],
-            "post_title":"Ainda vale a pena criar sites em 2022?"
-            
-        }
-    ],
-    "portfolio":{
-        "title":"PORTIFÓLIO",
-        "projects":[
-            {
-                "project_image_alt":"imagem contendo uma página de site do dominio linkshare.",
-                "title":"Link-share",
-                "description":"plataforma para armazenamento de links , com ela você consegue compartilhar com outra pessoa sua plataformas como facebook, instagram, tiktok e etc..."
-            },
-            {
-                "project_image_alt":"imagem de um site de vendas de passagens aereas chamado sos passagens aereas.",
-                "title":"SOS Passagens Aereas",
-                "description":"Site para uma empresa de vendas de passagens aereas e outros serviços adicionais, foi criado todo o design do zero e realizamos a otimização do SEO para que tivesse um bom ranqueamento no google."
-            },
-            {
-                "project_image_alt":"imagem de um site de vendas de passagens aereas chamado universo turismo.",
-                "title":"Universo Turismo",
-                "description":"plataforma que oferece reservas de passagens aereas localizada em Belém, empresa com filiais em diversos estado do brasil esta em constante crescimento."
-            }
-        ]
-    },
-    "offer":{
-        "title":"Crie seu site na",
-        "degrade":"ARCODE SOLUTIONS",
-        "description":"SITE TOTALMENTE PERSONALIZADO",
-        "description2":"APARTIR DE R$599,90",
-        "button":"FAÇA UM ORÇAMENTO AGORA!"
-    },
- 
-    "contact":{
-        "title":"ENTRE EM CONTATO",
-        "inputs_label":{
-            "message":"Menssagem",
-            "name":"Nome",
-            "email":"Email",
-            "phone":"Celular",
-            "button":"ENVIAR AGORA!"
-
-        }
-    },
-    "benefits":{
-        "title":"VANTAGENS",
-        "metrics":{
-            "small_text":"METRICAS",
-            "title":"Analise informações do site",
-            "subtitle":"Com a ferramenta Google Analytics você pode ter  bastante dados do seu site. como:",
-            "list":{
-                "0":"Quantas pessoas estão acessando em tempo real.",
-                "1":"Quais página elas estão visitando.",
-                "2":"Nacionalidade de quem visita.",
-                "3":"Tempo médio de engajamento. ",
-                "4":"Qual dispositivo ele está utilizando."
-            },
-            "final_para":"Ferramenta fudamental que você terá ao contratar um site conosco!"
-
-        },
-        "responsive":{
-            "small_text":"RESPONSIVIDADE",
-            "title":"Compatível com diversos dispositivos",
-            "subtitle":"O celular se tornou o principal meio de acesso á internet, por isso nossos sites são feitos para atender diversos dispositivos como:",
-            "squares":{
-                "0":"COMPUTADOR",
-                "1":"CELULAR",
-                "2":"TABLET"
-            },
-            "image_alt":""
-        }
-    },
-    "faq":{
-        "title":"PERGUNTAS FREQUENTES",
-        "faq_question":{
-            "faq1":{
-                "question":"Como solicitar a criação do meu site?",
-                "answer":"Você chama a gente pelo WhatsApp e conta um pouco sobre o seu site e o que você quer. Nosso time te responderá rapidamente e pedirá o máximo de informações possível para que seu site fique perfeito. Começamos a fazer no mesmo instante."
-            },
-            "faq2":{
-                "question":"Quanto custa a manuteção do meu site?",
-                "answer":"Cobramos R$40,00 por mês para manter o site funcionando e o tempo todo no ar. Esse valor inclui o custo de hospedagem. Nenhum outro valor será cobrado."
-            },
-            "faq3":{
-                "question":"Quanto tempo demora para que meu site seja localizado por sites de busca?",
-                "answer":"Normalmente, sites de busca como o Google e o Yahoo demoram no máximo 03 meses para localizar seu site na rede. Entretanto, cadastramos nossos clientes nos sites de buscas logo após a finalização do projeto para que esse processo seja mais rápido."
-            },
-            "faq4":{
-                "question":"Por que ter um site?",
-                "answer":"Na Era Digital em que estamos vivendo, fazer um site faz toda a diferença para uma empresa. Pois a internet definitivamente se tornou uma vitrine importante para as empresas, e não expor seus produtos e serviços nesta rede pode prejudicar os negócios e o desenvolvimento da empresa."
-            }
-        }
-    },
-    "footer":{
-        "footer_image_alt":"imagem de certificado do google de site seguro",
-        "description":" | ARCODESOLUÇÕES LTDA | Todos os direitos reservados."
-    },
-    "cookie":{
-        "title":"Politica de Cookie",
-        "image_alt":"biscoito rodando em espiral",
-        "link":"Confirir as Politicas de Cookies.",
-        "description":"Utilizamos cookies essenciais e tecnologias semelhantes de acordo com a nossa Política de Privacidade e, ao continuar navegando, você concorda com estas condições.",
-        "btn":{
-            "0":"Gerenciar Cookies",
-            "1":"Aceitar todos"
-        }
+  "navbar": {
+    "logo_alt": "logo da empresa arcode, contém um círculo azul.",
+    "about_us": "Sobre Nós",
+    "contact": "Contato",
+    "portfolio": "Portfolio",
+    "faq": "FAQ",
+    "menu_languages": {
+      "languages": "Idiomas",
+      "portuguese": "Português",
+      "english": "Inglês",
+      "spanish": "Espanhol"
     }
+  },
+  "hero": {
+    "title": "PRECISANDO DE UM SITE PARA SEU NEGÓCIO?",
+    "subtitle": "Entre para a era digital e seja visto pelo seus clientes em potencial.",
+    "buttons_hero": {
+      "btn_whats": "FAÇA UM ORÇAMENTO",
+      "btn_outline": "VER PORTIFOLIO"
+    }
+  },
+  "about_me": {
+    "title": "SOBRE MIM",
+    "owner_name": "Arthur Nogueira",
+    "owner_image_alt": "imagem de rosto de arthur rocha, usando camisa branca, cabelo preto e olhos castalhos.",
+    "description": {
+      "p1": "Desde 2018 venho me aperfeiçoando na criação de sites, aprendi diversas técnicas que evoluíram na construção de sites.",
+      "p2": "Atualmente trabalho por conta própria de modo a entregar valor para seu negócio, venho me especializando em comércio online, Sass e outros produtos."
+    }
+  },
+  "blog_posts": [
+    {
+      "post_image_alt": "vários dispositivos, computador, celular, notebook mostrando um site",
+      "tags": ["TECNOLOGIA"],
+      "post_title": "Ainda vale a pena criar sites em 2022?"
+    },
+    {
+      "post_image_alt": "na imagem está escrito 'SEO' feitas com objetos como engrenagem e uma lente de aumento",
+      "tags": ["TUTORIAL"],
+      "post_title": "Como posso melhorar o SEO do meu site."
+    },
+    {
+      "post_image_alt": "um carrinho de compra pequeno em cima de uma teclado de computador, a tecla 'entrar' está na cor amarela.",
+      "tags": ["PROGRAMAÇÃO"],
+      "post_title": "5 dicas para alavancar seu e-commerce."
+    },
+    {
+      "post_image_alt": "vários dispositivos, computador, celular, notebook mostrando um site",
+      "tags": ["MARKETING", "TUTORIAL"],
+      "post_title": "Ainda vale a pena criar sites em 2022?"
+    }
+  ],
+  "portfolio": {
+    "title": "PORTIFÓLIO",
+    "projects": [
+      {
+        "project_image_alt": "imagem contendo uma página de site do dominio linkshare.",
+        "title": "Link-share",
+        "description": "plataforma para armazenamento de links , com ela você consegue compartilhar com outra pessoa sua plataformas como facebook, instagram, tiktok e etc..."
+      },
+      {
+        "project_image_alt": "imagem de um site de vendas de passagens aereas chamado sos passagens aereas.",
+        "title": "SOS Passagens Aereas",
+        "description": "Site para uma empresa de vendas de passagens aereas e outros serviços adicionais, foi criado todo o design do zero e realizamos a otimização do SEO para que tivesse um bom ranqueamento no google."
+      },
+      {
+        "project_image_alt": "imagem de um site de vendas de passagens aereas chamado universo turismo.",
+        "title": "Universo Turismo",
+        "description": "plataforma que oferece reservas de passagens aereas localizada em Belém, empresa com filiais em diversos estado do brasil esta em constante crescimento."
+      }
+    ]
+  },
+  "offer": {
+    "title": "Crie seu site na",
+    "degrade": "ARCODE SOLUTIONS",
+    "description": "SITE TOTALMENTE PERSONALIZADO",
+    "description2": "APARTIR DE R$599,90",
+    "button": "FAÇA UM ORÇAMENTO AGORA!"
+  },
+
+  "contact": {
+    "title": "ENTRE EM CONTATO",
+    "inputs_label": {
+      "message": "Menssagem",
+      "name": "Nome",
+      "email": "Email",
+      "phone": "Celular",
+      "button": "ENVIAR AGORA!"
+    }
+  },
+  "benefits": {
+    "title": "VANTAGENS",
+    "metrics": {
+      "small_text": "METRICAS",
+      "title": "Analise informações do site",
+      "subtitle": "Com a ferramenta Google Analytics você pode ter  bastante dados do seu site. como:",
+      "list": {
+        "0": "Quantas pessoas estão acessando em tempo real.",
+        "1": "Quais página elas estão visitando.",
+        "2": "Nacionalidade de quem visita.",
+        "3": "Tempo médio de engajamento. ",
+        "4": "Qual dispositivo ele está utilizando."
+      },
+      "final_para": "Ferramenta fudamental que você terá ao contratar um site conosco!"
+    },
+    "responsive": {
+      "small_text": "RESPONSIVIDADE",
+      "title": "Compatível com diversos dispositivos",
+      "subtitle": "O celular se tornou o principal meio de acesso á internet, por isso nossos sites são feitos para atender diversos dispositivos como:",
+      "squares": {
+        "0": "COMPUTADOR",
+        "1": "CELULAR",
+        "2": "TABLET"
+      },
+      "image_alt": ""
+    }
+  },
+  "faq": {
+    "title": "PERGUNTAS FREQUENTES",
+    "faq_question": {
+      "faq1": {
+        "question": "Como solicitar a criação do meu site?",
+        "answer": "Você chama a gente pelo WhatsApp e conta um pouco sobre o seu site e o que você quer. Nosso time te responderá rapidamente e pedirá o máximo de informações possível para que seu site fique perfeito. Começamos a fazer no mesmo instante."
+      },
+      "faq2": {
+        "question": "Quanto custa a manuteção do meu site?",
+        "answer": "Cobramos R$40,00 por mês para manter o site funcionando e o tempo todo no ar. Esse valor inclui o custo de hospedagem. Nenhum outro valor será cobrado."
+      },
+      "faq3": {
+        "question": "Quanto tempo demora para que meu site seja localizado por sites de busca?",
+        "answer": "Normalmente, sites de busca como o Google e o Yahoo demoram no máximo 03 meses para localizar seu site na rede. Entretanto, cadastramos nossos clientes nos sites de buscas logo após a finalização do projeto para que esse processo seja mais rápido."
+      },
+      "faq4": {
+        "question": "Por que ter um site?",
+        "answer": "Na Era Digital em que estamos vivendo, fazer um site faz toda a diferença para uma empresa. Pois a internet definitivamente se tornou uma vitrine importante para as empresas, e não expor seus produtos e serviços nesta rede pode prejudicar os negócios e o desenvolvimento da empresa."
+      }
+    }
+  },
+  "footer": {
+    "footer_image_alt": "imagem de certificado do google de site seguro",
+    "description": " | ARCODESOLUÇÕES LTDA | Todos os direitos reservados."
+  },
+  "cookie": {
+    "title": "Politica de Cookie",
+    "image_alt": "biscoito rodando em espiral",
+    "link": "Confirir as Politicas de Cookies.",
+    "description": "Utilizamos cookies essenciais e tecnologias semelhantes de acordo com a nossa Política de Privacidade e, ao continuar navegando, você concorda com estas condições.",
+    "btn": {
+      "0": "Gerenciar Cookies",
+      "1": "Aceitar todos"
+    }
+  },
+  "modal_email": {
+    "title": "Messagem enviada com sucesso!",
+    "btn": "FECHAR A JANELA"
+  }
 }
