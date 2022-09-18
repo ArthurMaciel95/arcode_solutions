@@ -85,14 +85,19 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
                 open={open}
                 onClose={handleClose}
                 MenuListProps={{
-                  "aria-labelledby": "basic-button"
+                  "aria-labelledby": "basic-button",
                 }}
               >
                 {locales?.map((language, index) => {
                   return (
                     <Link key={index} href={"/"} locale={language}>
                       <MenuItem onClick={() => handleLanguage(language)}>
-                        {language}
+                        {(language === "pt" &&
+                          t("navbar.menu_languages.portuguese")) ||
+                          (language === "es" &&
+                            t("navbar.menu_languages.spanish")) ||
+                          (language === "en" &&
+                            t("navbar.menu_languages.english"))}
                       </MenuItem>
                     </Link>
                   );

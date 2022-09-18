@@ -6,10 +6,10 @@ import { useAppContext } from "../../contexts/AppContext";
 import * as S from "./styles";
 import React from "react";
 import Image from "next/image";
-
+import { useTranslation } from "next-i18next";
 const ModalCustom = () => {
   const { CloseModal, showModal } = useAppContext();
-
+  const { t } = useTranslation("common");
   return (
     <div>
       <Modal
@@ -20,12 +20,12 @@ const ModalCustom = () => {
         closeAfterTransition
         BackdropComponent={Backdrop}
         BackdropProps={{
-          timeout: 500
+          timeout: 500,
         }}
       >
         <Fade in={showModal}>
           <S.Container>
-            <h3>Messagem enviada com sucesso!</h3>
+            <h3>{t("modal_email.title")}</h3>
             <Image
               src="/tmp/svg/check_success.svg"
               alt=""
@@ -39,7 +39,7 @@ const ModalCustom = () => {
               sx={{ fontWeight: "600", letterSpacing: "22%" }}
               onClick={CloseModal}
             >
-              FECHAR A JANELA
+              {t("modal_email.btn")}
             </Button>
           </S.Container>
         </Fade>
