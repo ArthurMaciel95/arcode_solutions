@@ -19,7 +19,7 @@ const Contact = () => {
     handlerLoading,
     disabled,
     setDisabledFields,
-    setCookieIsAccept,
+    setCookieIsAccept
   } = useAppContext();
 
   const resolver: Resolver<FormFieldsType> = async (values) => {
@@ -29,10 +29,10 @@ const Contact = () => {
         ? {
             name: {
               type: "required",
-              message: "This is required.",
-            },
+              message: "This is required."
+            }
           }
-        : {},
+        : {}
     };
   };
 
@@ -40,15 +40,15 @@ const Contact = () => {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
+    reset
   } = useForm<FormFieldsType>({
     resolver,
     defaultValues: {
       name: "",
       email: "",
       phone: "",
-      message: "",
-    },
+      message: ""
+    }
   });
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const Contact = () => {
       name: Yup.string().required("O campo está vazio.").min(5).max(30),
       email: Yup.string().email("Email Inválido."),
       phone: Yup.string().required("Telefone inválido.").min(8).max(15),
-      message: Yup.string().required("O campo está vazio.").min(10),
+      message: Yup.string().required("O campo está vazio.").min(10)
     });
 
     return await FormValidationschema.validate(payload);
@@ -74,7 +74,7 @@ const Contact = () => {
       name: "",
       email: "",
       phone: "",
-      message: "",
+      message: ""
     });
   }
 
@@ -84,9 +84,9 @@ const Contact = () => {
       method: "POST",
       headers: {
         Accept: "application/json",
-        "Content-Type": "application/json",
+        "Content-Type": "application/json"
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(data)
     });
 
     if (response.ok) {
@@ -118,7 +118,7 @@ const Contact = () => {
                 fullWidth
                 type="text"
                 sx={{
-                  marginBottom: "40px",
+                  marginBottom: "40px"
                 }}
                 {...register("name")}
                 disabled={disabled}
@@ -132,7 +132,7 @@ const Contact = () => {
                 type="email"
                 sx={{
                   marginBottom: "40px",
-                  color: "#999",
+                  color: "#999"
                 }}
                 {...register("email")}
                 disabled={disabled}
@@ -150,7 +150,7 @@ const Contact = () => {
                   padding: "20px",
                   fontWeight: "600",
                   letterSpacing: "4px",
-                  marginTop: "20px  ",
+                  marginTop: "20px  "
                 }}
                 type="submit"
                 disabled={disabled}
