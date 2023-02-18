@@ -85,7 +85,7 @@ const Navbar: React.FunctionComponent = (): JSX.Element => {
                 open={open}
                 onClose={handleClose}
                 MenuListProps={{
-                  "aria-labelledby": "basic-button",
+                  "aria-labelledby": "basic-button"
                 }}
               >
                 {locales?.map((language, index) => {

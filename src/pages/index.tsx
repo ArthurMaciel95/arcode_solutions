@@ -34,9 +34,9 @@ const Home: NextPage = () => {
         <ModalCustom />
         <Navbar />
         <Hero />
-        <AboutUs />
         {/*<Posts />*/}
         <Portifolio />
+        <AboutUs />
         <Services />
         <Offer />
         <Contact />
