@@ -16,6 +16,7 @@ import DialogCustom from "components/modal-custom/modal-configuration-cookie/ind
 import Offer from "components/offer";
 import "animate.css/animate.min.css";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Posts from "components/posts";
 const Home: NextPage = () => {
   return (
     <>
@@ -34,7 +35,7 @@ const Home: NextPage = () => {
         <ModalCustom />
         <Navbar />
         <Hero />
-        {/*<Posts />*/}
+        <Posts />
         <Portifolio />
         <AboutUs />
         <Services />

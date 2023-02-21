@@ -69,10 +69,7 @@ class MyDocument extends Document {
             name="twitter:description"
             content="Crie seu site na ARCODE SOLUCÕES, conosco você terá seu site do seu jeito. também lhe ajudamos a alavancar seus negócios através de SEO."
           />
-          <meta
-            name="twitter:image"
-            content="https://i.imgur.com/8Q825KL.png"
-          />
+          <meta name="twitter:image" content="/tmp/image/seo_arcode.png" />
           <meta name="twitter:creator" content="@ArthurRocha" />
           <meta
             name="description"
@@ -96,11 +93,11 @@ class MyDocument extends Document {
             property="og:description"
             content="Crie seu site na ARCODE SOLUCÕES, conosco você terá seu site do seu jeito. também lhe ajudamos a alavancar seus negócios através de SEO."
           />
-          <meta property="og:image" content="https://i.imgur.com/8Q825KL.png" />
+          <meta property="og:image" content="/tmp/image/seo_arcode.png" />
 
           <meta
             name="keywords"
-            content="site,fazer,criar,arcode,fazer,plataforma,ecommerce,vendas,soluções,orçamento,seo, criar site, como aumentar minha vendas, aumentar, negócio, medidas, métricas,"
+            content="site,fazer,criar,arcode,fazer,plataforma,ecommerce,vendas,soluções,orçamento,seo, criar site, como aumentar minha vendas, aumentar, negócio, medidas, métricas,criacao de site,landpage"
           />
 
           <meta name="author" content="ARCODE SOLUÇÕES WEB" />
