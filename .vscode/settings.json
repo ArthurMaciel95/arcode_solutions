@@ -11,7 +11,7 @@
   "editor.formatOnSave": true,
   "terminal.integrated.fontSize": 12,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.lineHeight": 16,
   "git.ignoreLimitWarning": true,

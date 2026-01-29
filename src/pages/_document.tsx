@@ -62,6 +62,10 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:url" content="https://www.arcodesolucoes.com" />
           <meta
+            name="google-adsense-account"
+            content="ca-pub-5946726783245102"
+          ></meta>
+          <meta
             name="twitter:title"
             content="Arcode, Criação de site para seu negócio."
           />
